@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="php_outline_rounded">
+        M20.1 30q-.5 0-.85-.35t-.35-.85v-9.6q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v3.25h5.4V19.2q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v9.6q0 .5-.35.85t-.85.35q-.5 0-.85-.35t-.35-.85v-3.95h-5.4v3.95q0 .5-.35.85t-.85.35ZM7.2 30q-.5 0-.85-.35T6 28.8v-9.3q0-.65.425-1.075Q6.85 18 7.5 18h6.1q1 0 1.7.7t.7 1.7v3.2q0 1-.7 1.7t-1.7.7H8.4v2.8q0 .5-.35.85T7.2 30Zm1.2-6.4h5.2v-3.2H8.4ZM34.2 30q-.5 0-.85-.35T33 28.8v-9.3q0-.65.425-1.075Q33.85 18 34.5 18h6.1q1 0 1.7.7t.7 1.7v3.2q0 1-.7 1.7t-1.7.7h-5.2v2.8q0 .5-.35.85t-.85.35Zm1.2-6.4h5.2v-3.2h-5.2Z
+    </Geometry>
+    <Geometry x:Key="php_filled_rounded">
+        M20.1 30q-.5 0-.85-.35t-.35-.85v-9.6q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v3.25h5.4V19.2q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v9.6q0 .5-.35.85t-.85.35q-.5 0-.85-.35t-.35-.85v-3.95h-5.4v3.95q0 .5-.35.85t-.85.35ZM7.2 30q-.5 0-.85-.35T6 28.8v-9.3q0-.65.425-1.075Q6.85 18 7.5 18h6.1q1 0 1.7.7t.7 1.7v3.2q0 1-.7 1.7t-1.7.7H8.4v2.8q0 .5-.35.85T7.2 30Zm1.2-6.4h5.2v-3.2H8.4ZM34.2 30q-.5 0-.85-.35T33 28.8v-9.3q0-.65.425-1.075Q33.85 18 34.5 18h6.1q1 0 1.7.7t.7 1.7v3.2q0 1-.7 1.7t-1.7.7h-5.2v2.8q0 .5-.35.85t-.85.35Zm1.2-6.4h5.2v-3.2h-5.2Z
+    </Geometry>
+    <Geometry x:Key="php_outline_sharp">
+        M18.9 30V18h2.4v4.45h5.4V18h2.4v12h-2.4v-5.15h-5.4V30ZM6 30V18h10v8H8.4v4Zm2.4-6.4h5.2v-3.2H8.4ZM33 30V18h10v8h-7.6v4Zm2.4-6.4h5.2v-3.2h-5.2Z
+    </Geometry>
+    <Geometry x:Key="php_filled_sharp">
+        M18.9 30V18h2.4v4.45h5.4V18h2.4v12h-2.4v-5.15h-5.4V30ZM6 30V18h10v8H8.4v4Zm2.4-6.4h5.2v-3.2H8.4ZM33 30V18h10v8h-7.6v4Zm2.4-6.4h5.2v-3.2h-5.2Z
+    </Geometry>
+    <Style x:Key="php"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource php_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource php_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource php_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource php_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

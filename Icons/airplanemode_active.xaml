@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="airplanemode_active_outline_rounded">
+        M17.5 44v-2.1l4-3V26.35L4 31.5v-2.9l17.5-10.3V6.5q0-1.05.725-1.775Q22.95 4 24 4q1.05 0 1.775.725.725.725.725 1.775v11.8L44 28.6v2.9l-17.5-5.15V38.9l4 3V44L24 42.15Z
+    </Geometry>
+    <Geometry x:Key="airplanemode_active_filled_rounded">
+        M17.5 44v-2.1l4-3V26.35L4 31.5v-2.9l17.5-10.3V6.5q0-1.05.725-1.775Q22.95 4 24 4q1.05 0 1.775.725.725.725.725 1.775v11.8L44 28.6v2.9l-17.5-5.15V38.9l4 3V44L24 42.15Z
+    </Geometry>
+    <Geometry x:Key="airplanemode_active_outline_sharp">
+        M17.5 44v-2.1l4-3V26.35L4 31.5v-2.9l17.5-10.3V6.5q0-1.05.725-1.775Q22.95 4 24 4q1.05 0 1.775.725.725.725.725 1.775v11.8L44 28.6v2.9l-17.5-5.15V38.9l4 3V44L24 42.15Z
+    </Geometry>
+    <Geometry x:Key="airplanemode_active_filled_sharp">
+        M17.5 44v-2.1l4-3V26.35L4 31.5v-2.9l17.5-10.3V6.5q0-1.05.725-1.775Q22.95 4 24 4q1.05 0 1.775.725.725.725.725 1.775v11.8L44 28.6v2.9l-17.5-5.15V38.9l4 3V44L24 42.15Z
+    </Geometry>
+    <Style x:Key="airplanemode_active"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource airplanemode_active_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource airplanemode_active_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource airplanemode_active_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource airplanemode_active_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="123_outline_rounded">
+        M12.2 30q-.5 0-.85-.35T11 28.8v-8.4H9.2q-.5 0-.85-.35T8 19.2q0-.5.35-.85T9.2 18h2.7q.65 0 1.075.425.425.425.425 1.075v9.3q0 .5-.35.85t-.85.35Zm6.9 0q-.65 0-1.075-.425-.425-.425-.425-1.075v-4q0-.75.475-1.225.475-.475 1.225-.475h4.9v-2.4h-5.4q-.5 0-.85-.35t-.35-.85q0-.5.35-.85t.85-.35h6.1q.75 0 1.225.475.475.475.475 1.225v3.8q0 .75-.475 1.225-.475.475-1.225.475H20v2.4h5.4q.5 0 .85.35t.35.85q0 .5-.35.85t-.85.35Zm12.1 0q-.5 0-.85-.35T30 28.8q0-.5.35-.85t.85-.35h5.4v-2.4h-3.4q-.5 0-.85-.35T32 24q0-.5.35-.85t.85-.35h3.4v-2.4h-5.4q-.5 0-.85-.35T30 19.2q0-.5.35-.85t.85-.35h6.1q.75 0 1.225.475Q39 18.95 39 19.7v8.6q0 .75-.475 1.225Q38.05 30 37.3 30Z
+    </Geometry>
+    <Geometry x:Key="123_filled_rounded">
+        M12.2 30q-.5 0-.85-.35T11 28.8v-8.4H9.2q-.5 0-.85-.35T8 19.2q0-.5.35-.85T9.2 18h2.7q.65 0 1.075.425.425.425.425 1.075v9.3q0 .5-.35.85t-.85.35Zm6.9 0q-.65 0-1.075-.425-.425-.425-.425-1.075v-4q0-.75.475-1.225.475-.475 1.225-.475h4.9v-2.4h-5.4q-.5 0-.85-.35t-.35-.85q0-.5.35-.85t.85-.35h6.1q.75 0 1.225.475.475.475.475 1.225v3.8q0 .75-.475 1.225-.475.475-1.225.475H20v2.4h5.4q.5 0 .85.35t.35.85q0 .5-.35.85t-.85.35Zm12.1 0q-.5 0-.85-.35T30 28.8q0-.5.35-.85t.85-.35h5.4v-2.4h-3.4q-.5 0-.85-.35T32 24q0-.5.35-.85t.85-.35h3.4v-2.4h-5.4q-.5 0-.85-.35T30 19.2q0-.5.35-.85t.85-.35h6.1q.75 0 1.225.475Q39 18.95 39 19.7v8.6q0 .75-.475 1.225Q38.05 30 37.3 30Z
+    </Geometry>
+    <Geometry x:Key="123_outline_sharp">
+        M11 30v-9.6H8V18h5.4v12Zm6.6 0v-7.2h6.6v-2.4h-6.6V18h9v7.2H20v2.4h6.6V30ZM30 30v-2.4h6.6v-2.4H32v-2.4h4.6v-2.4H30V18h9v12Z
+    </Geometry>
+    <Geometry x:Key="123_filled_sharp">
+        M11 30v-9.6H8V18h5.4v12Zm6.6 0v-7.2h6.6v-2.4h-6.6V18h9v7.2H20v2.4h6.6V30ZM30 30v-2.4h6.6v-2.4H32v-2.4h4.6v-2.4H30V18h9v12Z
+    </Geometry>
+    <Style x:Key="123"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource 123_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource 123_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource 123_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource 123_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

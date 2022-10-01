@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="work_history_outline_rounded">
+        M7 39V14.35 39Zm0 3q-1.2 0-2.1-.9Q4 40.2 4 39V14.35q0-1.2.9-2.1.9-.9 2.1-.9h9.5V7q0-1.15.9-2.075Q18.3 4 19.5 4h9q1.2 0 2.1.925.9.925.9 2.075v4.35H41q1.2 0 2.1.9.9.9.9 2.1v11.9q-.7-.55-1.425-1-.725-.45-1.575-.85V14.35H7V39.025 39h16.7q.2.8.5 1.55t.7 1.45Zm12.5-30.65h9V7h-9ZM36 45.65q-3.95 0-6.8-2.85-2.85-2.85-2.85-6.8 0-3.95 2.85-6.8 2.85-2.85 6.8-2.85 3.95 0 6.8 2.85 2.85 2.85 2.85 6.8 0 3.95-2.85 6.8-2.85 2.85-6.8 2.85Zm3.7-4.6 1.35-1.35-4.2-3.8v-6.2h-2.1v6.8Z
+    </Geometry>
+    <Geometry x:Key="work_history_filled_rounded">
+        M19.5 11.35h9V7h-9ZM36 45.65q-4.05 0-6.85-2.8T26.35 36q0-4.05 2.8-6.85t6.85-2.8q4.05 0 6.85 2.8t2.8 6.85q0 4.05-2.8 6.85T36 45.65Zm3.7-4.6 1.35-1.35-4.2-3.8v-6.2h-2.1v6.8ZM24.9 42H7q-1.25 0-2.125-.875T4 39V14.35q0-1.25.875-2.125T7 11.35h9.5V7q0-1.25.875-2.125T19.5 4h9q1.25 0 2.125.875T31.5 7v4.35H41q1.25 0 2.125.875T44 14.35v11.9q-1.7-1.4-3.75-2.15T36 23.35q-5.3 0-8.975 3.675T23.35 36q0 1.6.4 3.1T24.9 42Z
+    </Geometry>
+    <Geometry x:Key="work_history_outline_sharp">
+        M7 39V14.35 39Zm-3 3V11.35h12.5V4h15v7.35H44v14.9q-.7-.55-1.425-1-.725-.45-1.575-.85V14.35H7V39h16.7q.2.8.5 1.55t.7 1.45Zm15.5-30.65h9V7h-9ZM36 45.65q-3.95 0-6.8-2.85-2.85-2.85-2.85-6.8 0-3.95 2.85-6.8 2.85-2.85 6.8-2.85 3.95 0 6.8 2.85 2.85 2.85 2.85 6.8 0 3.95-2.85 6.8-2.85 2.85-6.8 2.85Zm3.7-4.6 1.35-1.35-4.2-3.8v-6.2h-2.1v6.8Z
+    </Geometry>
+    <Geometry x:Key="work_history_filled_sharp">
+        M4 42V11.35h12.5V4h15v7.35H44v14.9q-1.7-1.4-3.725-2.15-2.025-.75-4.275-.75-5.2 0-8.925 3.725Q23.35 30.8 23.35 36q0 1.6.4 3.1T24.9 42Zm15.5-30.65h9V7h-9ZM36 45.65q-3.95 0-6.8-2.85-2.85-2.85-2.85-6.8 0-3.95 2.85-6.8 2.85-2.85 6.8-2.85 3.95 0 6.8 2.85 2.85 2.85 2.85 6.8 0 3.95-2.85 6.8-2.85 2.85-6.8 2.85Zm3.7-4.6 1.35-1.35-4.2-3.8v-6.2h-2.1v6.8Z
+    </Geometry>
+    <Style x:Key="work_history"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource work_history_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource work_history_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource work_history_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource work_history_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

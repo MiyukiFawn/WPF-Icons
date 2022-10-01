@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="keyboard_double_arrow_down_outline_rounded">
+        M24 24.75q-.3 0-.55-.1-.25-.1-.5-.35l-9.9-9.9q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45L24 21.15l8.85-8.85q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-9.9 9.9q-.25.25-.5.35-.25.1-.55.1Zm0 12.65q-.3 0-.55-.1-.25-.1-.5-.35l-9.9-9.9q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45L24 33.8l8.85-8.85q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-9.9 9.9q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="keyboard_double_arrow_down_filled_rounded">
+        M24 24.75q-.3 0-.55-.1-.25-.1-.5-.35l-9.9-9.9q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45L24 21.15l8.85-8.85q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-9.9 9.9q-.25.25-.5.35-.25.1-.55.1Zm0 12.65q-.3 0-.55-.1-.25-.1-.5-.35l-9.9-9.9q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45L24 33.8l8.85-8.85q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-9.9 9.9q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="keyboard_double_arrow_down_outline_sharp">
+        M24 38 12 26l2.1-2.1 9.9 9.9 9.9-9.9L36 26Zm0-12.65-12-12 2.1-2.1 9.9 9.9 9.9-9.9 2.1 2.1Z
+    </Geometry>
+    <Geometry x:Key="keyboard_double_arrow_down_filled_sharp">
+        M24 38 12 26l2.1-2.1 9.9 9.9 9.9-9.9L36 26Zm0-12.65-12-12 2.1-2.1 9.9 9.9 9.9-9.9 2.1 2.1Z
+    </Geometry>
+    <Style x:Key="keyboard_double_arrow_down"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource keyboard_double_arrow_down_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource keyboard_double_arrow_down_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource keyboard_double_arrow_down_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource keyboard_double_arrow_down_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

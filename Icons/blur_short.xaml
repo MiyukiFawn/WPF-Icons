@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="blur_short_outline_rounded">
+        M30 31q2.9 0 4.95-2.05Q37 26.9 37 24q0-2.9-2.05-4.95Q32.9 17 30 17q-2.9 0-4.95 2.05Q23 21.1 23 24q0 2.9 2.05 4.95Q27.1 31 30 31Zm0 3q-3.7 0-6.5-2.425T20.1 25.5h-6.6q-.65 0-1.075-.425Q12 24.65 12 24q0-.65.425-1.075.425-.425 1.075-.425h6.6q.2-1.6.9-3t1.85-2.5H9.5q-.65 0-1.075-.425Q8 16.15 8 15.5q0-.65.425-1.075Q8.85 14 9.5 14H30q4.15 0 7.075 2.925T40 24q0 4.15-2.925 7.075T30 34Z
+    </Geometry>
+    <Geometry x:Key="blur_short_filled_rounded">
+        M30 31q2.9 0 4.95-2.05Q37 26.9 37 24q0-2.9-2.05-4.95Q32.9 17 30 17q-2.9 0-4.95 2.05Q23 21.1 23 24q0 2.9 2.05 4.95Q27.1 31 30 31Zm0 3q-3.7 0-6.5-2.425T20.1 25.5h-6.6q-.65 0-1.075-.425Q12 24.65 12 24q0-.65.425-1.075.425-.425 1.075-.425h6.6q.2-1.6.9-3t1.85-2.5H9.5q-.65 0-1.075-.425Q8 16.15 8 15.5q0-.65.425-1.075Q8.85 14 9.5 14H30q4.15 0 7.075 2.925T40 24q0 4.15-2.925 7.075T30 34Z
+    </Geometry>
+    <Geometry x:Key="blur_short_outline_sharp">
+        M30 31q2.9 0 4.95-2.05Q37 26.9 37 24q0-2.9-2.05-4.95Q32.9 17 30 17q-2.9 0-4.95 2.05Q23 21.1 23 24q0 2.9 2.05 4.95Q27.1 31 30 31Zm0 3q-3.7 0-6.5-2.425T20.1 25.5h-6.6q-.65 0-1.075-.425Q12 24.65 12 24q0-.65.425-1.075.425-.425 1.075-.425h6.6q.2-1.6.9-3t1.85-2.5H9.5q-.65 0-1.075-.425Q8 16.15 8 15.5q0-.65.425-1.075Q8.85 14 9.5 14H30q4.15 0 7.075 2.925T40 24q0 4.15-2.925 7.075T30 34Z
+    </Geometry>
+    <Geometry x:Key="blur_short_filled_sharp">
+        M30 31q2.9 0 4.95-2.05Q37 26.9 37 24q0-2.9-2.05-4.95Q32.9 17 30 17q-2.9 0-4.95 2.05Q23 21.1 23 24q0 2.9 2.05 4.95Q27.1 31 30 31Zm0 3q-3.7 0-6.5-2.425T20.1 25.5h-6.6q-.65 0-1.075-.425Q12 24.65 12 24q0-.65.425-1.075.425-.425 1.075-.425h6.6q.2-1.6.9-3t1.85-2.5H9.5q-.65 0-1.075-.425Q8 16.15 8 15.5q0-.65.425-1.075Q8.85 14 9.5 14H30q4.15 0 7.075 2.925T40 24q0 4.15-2.925 7.075T30 34Z
+    </Geometry>
+    <Style x:Key="blur_short"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource blur_short_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource blur_short_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource blur_short_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource blur_short_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

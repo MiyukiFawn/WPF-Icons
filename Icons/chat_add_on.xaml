@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="chat_add_on_outline_rounded">
+        M6 42V11q0-1.2.9-2.1Q7.8 8 9 8h26q1.2 0 2.1.9.9.9.9 2.1v11.15q-.5-.1-.975-.125Q36.55 22 36 22h-.5q-.25 0-.5.05V11H9v23.75L10.75 33h13.3q-.05.25-.05.475V34q0 .55.025 1.025.025.475.125.975H12Zm8-23v-3h16v3Zm0 8.5v-3h10v3Zm20.5 14v-6h-6v-3h6v-6h3v6h6v3h-6v6Z
+    </Geometry>
+    <Geometry x:Key="chat_add_on_filled_rounded">
+        M6 42V11q0-1.2.9-2.1Q7.8 8 9 8h26q1.2 0 2.1.9.9.9.9 2.1v11.15q-.5-.1-.975-.125Q36.55 22 36 22h-.5q-.25 0-.5.05V11H9v23.75L10.75 33h13.3q-.05.25-.05.475V34q0 .55.025 1.025.025.475.125.975H12Zm8-23v-3h16v3Zm0 8.5v-3h10v3Zm20.5 14v-6h-6v-3h6v-6h3v6h6v3h-6v6Z
+    </Geometry>
+    <Geometry x:Key="chat_add_on_outline_sharp">
+        M6 42V11q0-1.2.9-2.1Q7.8 8 9 8h26q1.2 0 2.1.9.9.9.9 2.1v11.15q-.5-.1-.975-.125Q36.55 22 36 22h-.5q-.25 0-.5.05V11H9v23.75L10.75 33h13.3q-.05.25-.05.475V34q0 .55.025 1.025.025.475.125.975H12Zm8-23v-3h16v3Zm0 8.5v-3h10v3Zm20.5 14v-6h-6v-3h6v-6h3v6h6v3h-6v6Z
+    </Geometry>
+    <Geometry x:Key="chat_add_on_filled_sharp">
+        M6 42V11q0-1.2.9-2.1Q7.8 8 9 8h26q1.2 0 2.1.9.9.9.9 2.1v11.15q-.5-.1-.975-.125Q36.55 22 36 22h-.5q-.25 0-.5.05V11H9v23.75L10.75 33h13.3q-.05.25-.05.475V34q0 .55.025 1.025.025.475.125.975H12Zm8-23v-3h16v3Zm0 8.5v-3h10v3Zm20.5 14v-6h-6v-3h6v-6h3v6h6v3h-6v6Z
+    </Geometry>
+    <Style x:Key="chat_add_on"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource chat_add_on_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource chat_add_on_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource chat_add_on_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource chat_add_on_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

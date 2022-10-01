@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="key_visualizer_outline_rounded">
+        M6 42v-3h6v3Zm0-8.5v-3h16v3Zm0-8v-3h36v3Zm0-8v-3h16v3ZM6 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Zm10.25 33v-3H32v3Zm0-8.5v-3H42v3Zm-.25-16v-3h16v3ZM26 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Z
+    </Geometry>
+    <Geometry x:Key="key_visualizer_filled_rounded">
+        M6 42v-3h6v3Zm0-8.5v-3h16v3Zm0-8v-3h36v3Zm0-8v-3h16v3ZM6 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Zm10.25 33v-3H32v3Zm0-8.5v-3H42v3Zm-.25-16v-3h16v3ZM26 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Z
+    </Geometry>
+    <Geometry x:Key="key_visualizer_outline_sharp">
+        M6 42v-3h6v3Zm0-8.5v-3h16v3Zm0-8v-3h36v3Zm0-8v-3h16v3ZM6 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Zm10.25 33v-3H32v3Zm0-8.5v-3H42v3Zm-.25-16v-3h16v3ZM26 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Z
+    </Geometry>
+    <Geometry x:Key="key_visualizer_filled_sharp">
+        M6 42v-3h6v3Zm0-8.5v-3h16v3Zm0-8v-3h36v3Zm0-8v-3h16v3ZM6 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Zm10.25 33v-3H32v3Zm0-8.5v-3H42v3Zm-.25-16v-3h16v3ZM26 9V6h6v3Zm10 33v-3h6v3Zm0-33V6h6v3Z
+    </Geometry>
+    <Style x:Key="key_visualizer"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource key_visualizer_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource key_visualizer_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource key_visualizer_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource key_visualizer_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

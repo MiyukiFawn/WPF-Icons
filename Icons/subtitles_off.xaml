@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="subtitles_off_outline_rounded">
+        M13.5 24.5q-.65 0-1.075-.425Q12 23.65 12 23q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q15 22.35 15 23q0 .65-.425 1.075-.425.425-1.075.425Zm15.35 0-3-3h8.65q.65 0 1.075.425Q36 22.35 36 23q0 .65-.425 1.075-.425.425-1.075.425ZM40.7 44.85 35.85 40H7q-1.2 0-2.1-.875Q4 38.25 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h1.1l3 3H7v26h25.95l-6.6-6.5H13.5q-.65 0-1.075-.425Q12 29.65 12 29q0-.65.425-1.075.425-.425 1.075-.425h9.9L3.1 7.2q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l37.6 37.65q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Zm2.85-5.6L41 36.7V11H15.4l-3-3H41q1.15 0 2.075.925Q44 9.85 44 11v26q0 .6-.1 1.15-.1.55-.35 1.1ZM28.2 23.8Zm-8.2.25Z
+    </Geometry>
+    <Geometry x:Key="subtitles_off_filled_rounded">
+        M13.5 24.5q.65 0 1.075-.425Q15 23.65 15 23q0-.65-.45-1.075-.45-.425-1.05-.425-.65 0-1.075.425Q12 22.35 12 23q0 .65.425 1.075.425.425 1.075.425Zm9.9 3h-9.9q-.65 0-1.075.425Q12 28.35 12 29q0 .65.425 1.075.425.425 1.075.425h12.95Zm20.15 11.7-14.7-14.7h5.65q.65 0 1.075-.425Q36 23.65 36 23q0-.65-.425-1.075-.425-.425-1.075-.425h-8.65L12.4 8H41q1.15 0 2.075.925Q44 9.85 44 11v26q0 .6-.1 1.125t-.35 1.075Zm-2.85 5.65L35.85 40H7q-1.2 0-2.1-.875Q4 38.25 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h1.1l16.45 16.5H20.4L3.1 7.2q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l37.6 37.65q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="subtitles_off_outline_sharp">
+        m41.75 45.9-5.9-5.9H4V8h4.1l3 3H7v26h25.95l-6.6-6.5H12v-3h11.4L2.05 6.15l2.1-2.1 39.7 39.75ZM44 39.7l-3-3V11H15.4l-3-3H44ZM28.9 24.5l-3-3H36v3Zm-16.9 0v-3h3v3Zm16.2-.7Zm-8.2.25Z
+    </Geometry>
+    <Geometry x:Key="subtitles_off_filled_sharp">
+        M36 21.5H25.85L12.4 8H44v31.65L28.85 24.5H36Zm5.75 24.4-5.9-5.9H4V8h3v3.15l-4.95-5 2.1-2.1 39.7 39.75ZM23.4 27.5H12v3h14.45Zm-11.4-3h3v-3h-3Z
+    </Geometry>
+    <Style x:Key="subtitles_off"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource subtitles_off_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource subtitles_off_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource subtitles_off_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource subtitles_off_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

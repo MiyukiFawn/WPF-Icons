@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="push_pin_outline_rounded">
+        m31.7 25.6 4.3 3.85v3H25.5V44.5L24 46l-1.5-1.5V32.45H12v-3l4-3.85V9h-2.5V6h20.7v3h-2.5Zm-15.65 3.85h15.6L28.7 26.7V9H19v17.7Zm7.8 0Z
+    </Geometry>
+    <Geometry x:Key="push_pin_filled_rounded">
+        m31.7 25.6 4.3 3.85v3H25.5V44.5L24 46l-1.5-1.5V32.45H12v-3l4-3.85V8.95h-2.5v-3h20.7v3h-2.5Z
+    </Geometry>
+    <Geometry x:Key="push_pin_outline_sharp">
+        m31.7 25.6 4.3 3.85v3H25.5V44.5L24 46l-1.5-1.5V32.45H12v-3l4-3.85V9h-2.5V6h20.7v3h-2.5Zm-15.65 3.85h15.6L28.7 26.7V9H19v17.7Zm7.8 0Z
+    </Geometry>
+    <Geometry x:Key="push_pin_filled_sharp">
+        m31.7 25.6 4.3 3.85v3H25.5V44.5L24 46l-1.5-1.5V32.45H12v-3l4-3.85V8.95h-2.5v-3h20.7v3h-2.5Z
+    </Geometry>
+    <Style x:Key="push_pin"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource push_pin_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource push_pin_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource push_pin_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource push_pin_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

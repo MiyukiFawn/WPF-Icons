@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="more_up_outline_rounded">
+        M35 32V13H16v-3h22v22ZM25 42V23H6v-3h22v22Z
+    </Geometry>
+    <Geometry x:Key="more_up_filled_rounded">
+        M35 32V13H16v-3h22v22ZM25 42V23H6v-3h22v22Z
+    </Geometry>
+    <Geometry x:Key="more_up_outline_sharp">
+        M35 32V13H16v-3h22v22ZM25 42V23H6v-3h22v22Z
+    </Geometry>
+    <Geometry x:Key="more_up_filled_sharp">
+        M35 32V13H16v-3h22v22ZM25 42V23H6v-3h22v22Z
+    </Geometry>
+    <Style x:Key="more_up"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource more_up_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource more_up_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource more_up_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource more_up_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

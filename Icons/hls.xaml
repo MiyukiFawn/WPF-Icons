@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="hls_outline_rounded">
+        M7.2 30q-.5 0-.85-.35T6 28.8v-9.6q0-.5.35-.85T7.2 18q.5 0 .85.35t.35.85v3.25h4.9V19.2q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v9.6q0 .5-.35.85t-.85.35q-.5 0-.85-.35t-.35-.85v-3.95H8.4v3.95q0 .5-.35.85T7.2 30Zm25.5 0q-.7 0-1.2-.5t-.5-1.2v-1.1q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v.4h5.2v-2.65h-6.15q-.6 0-1.025-.425Q31 24.1 31 23.5v-3.8q0-.7.5-1.2t1.2-.5h6.6q.7 0 1.2.5t.5 1.2v1.1q0 .5-.35.85t-.85.35q-.5 0-.85-.35t-.35-.85v-.4h-5.2v2.65h6.15q.6 0 1.025.425Q41 23.9 41 24.5v3.8q0 .7-.5 1.2t-1.2.5Zm-11.4 0q-.65 0-1.075-.425-.425-.425-.425-1.075v-9.3q0-.5.35-.85T21 18q.5 0 .85.35t.35.85v8.4H27q.5 0 .85.35t.35.85q0 .5-.35.85T27 30Z
+    </Geometry>
+    <Geometry x:Key="hls_filled_rounded">
+        M7.2 30q-.5 0-.85-.35T6 28.8v-9.6q0-.5.35-.85T7.2 18q.5 0 .85.35t.35.85v3.25h4.9V19.2q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v9.6q0 .5-.35.85t-.85.35q-.5 0-.85-.35t-.35-.85v-3.95H8.4v3.95q0 .5-.35.85T7.2 30Zm25.5 0q-.7 0-1.2-.5t-.5-1.2v-1.1q0-.5.35-.85t.85-.35q.5 0 .85.35t.35.85v.4h5.2v-2.4h-5.9q-.7 0-1.2-.5t-.5-1.2v-3.8q0-.7.5-1.2t1.2-.5h6.6q.7 0 1.2.5t.5 1.2v1.1q0 .5-.35.85t-.85.35q-.5 0-.85-.35t-.35-.85v-.4h-5.2v2.4h5.9q.7 0 1.2.5t.5 1.2v3.8q0 .7-.5 1.2t-1.2.5Zm-11.4 0q-.65 0-1.075-.425-.425-.425-.425-1.075v-9.3q0-.5.35-.85T21 18q.5 0 .85.35t.35.85v8.4H27q.5 0 .85.35t.35.85q0 .5-.35.85T27 30Z
+    </Geometry>
+    <Geometry x:Key="hls_outline_sharp">
+        M6 30V18h2.4v4.45h4.9V18h2.4v12h-2.4v-5.15H8.4V30Zm25 0v-4h2.4v1.6h5.2v-2.65H31V18h10v4h-2.4v-1.6h-5.2v2.65H41V30Zm-11.2 0V18h2.4v9.6h6V30Z
+    </Geometry>
+    <Geometry x:Key="hls_filled_sharp">
+        M6 30V18h2.4v4.45h4.9V18h2.4v12h-2.4v-5.15H8.4V30Zm25 0v-4h2.4v1.6h5.2v-2.4H31V18h10v4h-2.4v-1.6h-5.2v2.4H41V30Zm-11.2 0V18h2.4v9.6h6V30Z
+    </Geometry>
+    <Style x:Key="hls"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource hls_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource hls_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource hls_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource hls_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

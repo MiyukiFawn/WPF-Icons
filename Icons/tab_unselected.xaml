@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="tab_unselected_outline_rounded">
+        M28.4 40v-3h4.1v3ZM15.5 11V8h4.15v3ZM27 19.7q-1.25 0-2.125-.875T24 16.7V8h17q1.2 0 2.1.9.9.9.9 2.1v8.7ZM36.9 40v-3H41v-4.25h3V37q0 1.2-.9 2.1-.9.9-2.1.9Zm-17 0v-3H24v3ZM41 28.35V24.1h3v4.25Zm-37 4.2V28.3h3v4.25Zm0-8.65v-4.25h3v4.25ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37h3v3ZM4 15.25V11q0-1.2.9-2.1Q5.8 8 7 8h4.15v3H7v4.25ZM11.4 40v-3h4.1v3Z
+    </Geometry>
+    <Geometry x:Key="tab_unselected_filled_rounded">
+        M28.4 40v-3h4.1v3ZM15.5 11V8h4.15v3ZM27 19.7q-1.25 0-2.125-.875T24 16.7V8h17q1.2 0 2.1.9.9.9.9 2.1v8.7ZM36.9 40v-3H41v-4.25h3V37q0 1.2-.9 2.1-.9.9-2.1.9Zm-17 0v-3H24v3ZM41 28.35V24.1h3v4.25Zm-37 4.2V28.3h3v4.25Zm0-8.65v-4.25h3v4.25ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37h3v3ZM4 15.25V11q0-1.2.9-2.1Q5.8 8 7 8h4.15v3H7v4.25ZM11.4 40v-3h4.1v3Z
+    </Geometry>
+    <Geometry x:Key="tab_unselected_outline_sharp">
+        M28.4 40v-3h4.1v3ZM15.5 11V8h4.15v3Zm8.5 8.7V8h20v11.7ZM36.9 40v-3H41v-4.25h3V40Zm-17 0v-3H24v3ZM41 28.35V24.1h3v4.25Zm-37 4.2V28.3h3v4.25Zm0-8.65v-4.25h3v4.25ZM4 40v-3h3v3Zm0-24.75V8h7.15v3H7v4.25ZM11.4 40v-3h4.1v3Z
+    </Geometry>
+    <Geometry x:Key="tab_unselected_filled_sharp">
+        M28.4 40v-3h4.1v3ZM15.5 11V8h4.15v3Zm8.5 8.7V8h20v11.7ZM36.9 40v-3H41v-4.25h3V40Zm-17 0v-3H24v3ZM41 28.35V24.1h3v4.25Zm-37 4.2V28.3h3v4.25Zm0-8.65v-4.25h3v4.25ZM4 40v-3h3v3Zm0-24.75V8h7.15v3H7v4.25ZM11.4 40v-3h4.1v3Z
+    </Geometry>
+    <Style x:Key="tab_unselected"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource tab_unselected_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource tab_unselected_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource tab_unselected_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource tab_unselected_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

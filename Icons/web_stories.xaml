@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="web_stories_outline_rounded">
+        M35 41V7q1.4 0 2.2.725.8.725.8 2.275v28q0 1.55-.8 2.275Q36.4 41 35 41ZM7 44q-1.25 0-2.125-.875T4 41V7q0-1.25.875-2.125T7 4h20q1.25 0 2.125.875T30 7v34q0 1.25-.875 2.125T27 44Zm36-6.05V10.1q1 0 1.5.425T45 12.1v23.85q0 1.15-.5 1.575-.5.425-1.5.425ZM7 41h20V7H7v34ZM7 7v34V7Z
+    </Geometry>
+    <Geometry x:Key="web_stories_filled_rounded">
+        M35 41V7q1.4 0 2.2.725.8.725.8 2.275v28q0 1.55-.8 2.275Q36.4 41 35 41ZM7 44q-1.25 0-2.125-.875T4 41V7q0-1.25.875-2.125T7 4h20q1.25 0 2.125.875T30 7v34q0 1.25-.875 2.125T27 44Zm36-6.05V10.1q1 0 1.5.425T45 12.1v23.85q0 1.15-.5 1.575-.5.425-1.5.425Z
+    </Geometry>
+    <Geometry x:Key="web_stories_outline_sharp">
+        M37 41V7h3v34ZM6 44V4h26v40Zm39-6.05V10.1h2v27.85ZM9 41h20V7H9ZM9 7v34Z
+    </Geometry>
+    <Geometry x:Key="web_stories_filled_sharp">
+        M37 41V7h3v34ZM6 44V4h26v40Zm39-6.05V10.1h2v27.85Z
+    </Geometry>
+    <Style x:Key="web_stories"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource web_stories_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource web_stories_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource web_stories_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource web_stories_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

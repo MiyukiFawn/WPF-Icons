@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="photo_camera_back_outline_rounded">
+        M14.15 34.7h20q.5 0 .7-.4.2-.4-.1-.8l-5.6-7.35q-.25-.3-.6-.3t-.6.3l-5.7 7.55-4-4.95q-.25-.3-.6-.3t-.6.3l-3.5 4.75q-.3.4-.1.8.2.4.7.4ZM7 42q-1.2 0-2.1-.9Q4 40.2 4 39V13.35q0-1.15.9-2.075.9-.925 2.1-.925h7.35l2.75-3.3q.4-.55 1-.8T19.4 6h9.2q.7 0 1.3.25.6.25 1 .8l2.75 3.3H41q1.15 0 2.075.925Q44 12.2 44 13.35V39q0 1.2-.925 2.1-.925.9-2.075.9Zm34-3V13.35H7V39ZM24 26.15Z
+    </Geometry>
+    <Geometry x:Key="photo_camera_back_filled_rounded">
+        M14.15 34.7h20q.45 0 .65-.4t-.05-.8l-5.6-7.35q-.25-.3-.6-.3t-.6.3l-5.7 7.55-4-4.95q-.25-.3-.6-.3t-.6.3l-3.5 4.75q-.3.4-.1.8.2.4.7.4ZM7 42q-1.2 0-2.1-.9Q4 40.2 4 39V13.35q0-1.15.9-2.075.9-.925 2.1-.925h7.35l2.75-3.3q.4-.55 1-.8T19.4 6h9.2q.7 0 1.3.25.6.25 1 .8l2.75 3.3H41q1.15 0 2.075.925Q44 12.2 44 13.35V39q0 1.2-.925 2.1-.925.9-2.075.9Z
+    </Geometry>
+    <Geometry x:Key="photo_camera_back_outline_sharp">
+        M12.65 34.7h23l-7.1-9.35-6.3 8.35-4.6-5.7ZM4 42V10.35h10.35L18 6h12l3.65 4.35H44V42Zm3-3h34V13.35H7Zm17-12.85Z
+    </Geometry>
+    <Geometry x:Key="photo_camera_back_filled_sharp">
+        M12.65 34.7h23l-7.1-9.35-6.3 8.35-4.6-5.7ZM4 42V10.35h10.35L18 6h12l3.65 4.35H44V42Z
+    </Geometry>
+    <Style x:Key="photo_camera_back"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource photo_camera_back_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource photo_camera_back_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource photo_camera_back_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource photo_camera_back_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

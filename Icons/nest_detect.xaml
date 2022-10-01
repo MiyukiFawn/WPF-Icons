@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="nest_detect_outline_rounded">
+        M18.5 44q-2.7 0-4.6-1.9-1.9-1.9-1.9-4.6V7q0-1.25.875-2.125T15 4h7q1.25 0 2.125.875T25 7v30.5q0 2.7-1.9 4.6-1.9 1.9-4.6 1.9ZM15 32q1-.6 1.875-.8.875-.2 1.625-.2t1.625.2Q21 31.4 22 32V7h-7Zm3.5 9q1.45 0 2.475-1.025Q22 38.95 22 37.5q0-1.45-1.025-2.475Q19.95 34 18.5 34q-1.45 0-2.475 1.025Q15 36.05 15 37.5q0 1.45 1.025 2.475Q17.05 41 18.5 41ZM33 36q-1.25 0-2.125-.875T30 33V15q0-1.25.875-2.125T33 12h4q1.25 0 2.125.875T40 15v18q0 1.25-.875 2.125T37 36Zm0-3h4V15h-4v18Z
+    </Geometry>
+    <Geometry x:Key="nest_detect_filled_rounded">
+        M18.5 44q-2.7 0-4.6-1.9-1.9-1.9-1.9-4.6V7q0-1.25.875-2.125T15 4h7q1.25 0 2.125.875T25 7v30.5q0 2.7-1.9 4.6-1.9 1.9-4.6 1.9ZM15 32q1-.6 1.875-.8.875-.2 1.625-.2t1.625.2Q21 31.4 22 32V7h-7Zm3.5 9q1.45 0 2.475-1.025Q22 38.95 22 37.5q0-1.45-1.025-2.475Q19.95 34 18.5 34q-1.45 0-2.475 1.025Q15 36.05 15 37.5q0 1.45 1.025 2.475Q17.05 41 18.5 41ZM33 36q-1.25 0-2.125-.875T30 33V15q0-1.25.875-2.125T33 12h4q1.25 0 2.125.875T40 15v18q0 1.25-.875 2.125T37 36Zm0-3h4V15h-4v18Z
+    </Geometry>
+    <Geometry x:Key="nest_detect_outline_sharp">
+        M18.5 44q-2.7 0-4.6-1.9-1.9-1.9-1.9-4.6V7q0-1.25.875-2.125T15 4h7q1.25 0 2.125.875T25 7v30.5q0 2.7-1.9 4.6-1.9 1.9-4.6 1.9ZM15 32q1-.6 1.875-.8.875-.2 1.625-.2t1.625.2Q21 31.4 22 32V7h-7Zm3.5 9q1.45 0 2.475-1.025Q22 38.95 22 37.5q0-1.45-1.025-2.475Q19.95 34 18.5 34q-1.45 0-2.475 1.025Q15 36.05 15 37.5q0 1.45 1.025 2.475Q17.05 41 18.5 41ZM33 36q-1.25 0-2.125-.875T30 33V15q0-1.25.875-2.125T33 12h4q1.25 0 2.125.875T40 15v18q0 1.25-.875 2.125T37 36Zm0-3h4V15h-4v18Z
+    </Geometry>
+    <Geometry x:Key="nest_detect_filled_sharp">
+        M18.5 44q-2.7 0-4.6-1.9-1.9-1.9-1.9-4.6V7q0-1.25.875-2.125T15 4h7q1.25 0 2.125.875T25 7v30.5q0 2.7-1.9 4.6-1.9 1.9-4.6 1.9ZM15 32q1-.6 1.875-.8.875-.2 1.625-.2t1.625.2Q21 31.4 22 32V7h-7Zm3.5 9q1.45 0 2.475-1.025Q22 38.95 22 37.5q0-1.45-1.025-2.475Q19.95 34 18.5 34q-1.45 0-2.475 1.025Q15 36.05 15 37.5q0 1.45 1.025 2.475Q17.05 41 18.5 41ZM33 36q-1.25 0-2.125-.875T30 33V15q0-1.25.875-2.125T33 12h4q1.25 0 2.125.875T40 15v18q0 1.25-.875 2.125T37 36Zm0-3h4V15h-4v18Z
+    </Geometry>
+    <Style x:Key="nest_detect"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource nest_detect_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource nest_detect_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource nest_detect_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource nest_detect_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="smart_button_outline_rounded">
+        M7 34q-1.25 0-2.125-.875T4 31V17q0-1.25.875-2.125T7 14h34q1.25 0 2.125.875T44 17v14q0 1.25-.875 2.125T41 34h-3.2v-3H41V17H7v14h13.2v3Zm21.2 2.25-1-2.25-2.25-1q-.7-.35-.7-.8 0-.45.7-.8l2.25-1 1-2.25q.35-.7.8-.7.45 0 .8.7l1 2.25 2.25 1q.7.35.7.8 0 .45-.7.8l-2.25 1-1 2.25q-.35.7-.8.7-.45 0-.8-.7Zm5.2-10.15-.45-1.05-1.05-.45q-.55-.25-.55-.6t.55-.6l1.05-.45.45-1.05q.25-.55.6-.55t.6.55l.45 1.05 1.05.45q.55.25.55.6t-.55.6l-1.05.45-.45 1.05q-.25.55-.6.55t-.6-.55Z
+    </Geometry>
+    <Geometry x:Key="smart_button_filled_rounded">
+        M7 34q-1.25 0-2.125-.875T4 31V17q0-1.25.875-2.125T7 14h34q1.25 0 2.125.875T44 17v14q0 1.25-.875 2.125T41 34h-3.2v-3H41V17H7v14h13.2v3Zm21.2 2.25-1-2.25-2.25-1q-.7-.35-.7-.8 0-.45.7-.8l2.25-1 1-2.25q.35-.7.8-.7.45 0 .8.7l1 2.25 2.25 1q.7.35.7.8 0 .45-.7.8l-2.25 1-1 2.25q-.35.7-.8.7-.45 0-.8-.7Zm5.2-10.15-.45-1.05-1.05-.45q-.55-.25-.55-.6t.55-.6l1.05-.45.45-1.05q.25-.55.6-.55t.6.55l.45 1.05 1.05.45q.55.25.55.6t-.55.6l-1.05.45-.45 1.05q-.25.55-.6.55t-.6-.55Z
+    </Geometry>
+    <Geometry x:Key="smart_button_outline_sharp">
+        M4 34V14h40v20h-6.2v-3H41V17H7v14h13.2v3Zm25 4-1.8-4-4-1.8 4-1.8 1.8-4 1.8 4 4 1.8-4 1.8Zm5-10.6-1.05-2.35L30.6 24l2.35-1.05L34 20.6l1.05 2.35L37.4 24l-2.35 1.05Z
+    </Geometry>
+    <Geometry x:Key="smart_button_filled_sharp">
+        M4 34V14h40v20h-6.2v-3H41V17H7v14h13.2v3Zm25 4-1.8-4-4-1.8 4-1.8 1.8-4 1.8 4 4 1.8-4 1.8Zm5-10.6-1.05-2.35L30.6 24l2.35-1.05L34 20.6l1.05 2.35L37.4 24l-2.35 1.05Z
+    </Geometry>
+    <Style x:Key="smart_button"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource smart_button_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource smart_button_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource smart_button_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource smart_button_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

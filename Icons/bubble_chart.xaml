@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="bubble_chart_outline_rounded">
+        M13.75 36.15q-3.25 0-5.5-2.25T6 28.4q0-3.25 2.25-5.5t5.5-2.25q3.25 0 5.5 2.25t2.25 5.5q0 3.25-2.25 5.5t-5.5 2.25Zm0-3q2 0 3.375-1.375T18.5 28.4q0-2-1.375-3.375T13.75 23.65q-2 0-3.375 1.375T9 28.4q0 2 1.375 3.375t3.375 1.375Zm19.5-5.65q-4.5 0-7.625-3.125T22.5 16.75q0-4.5 3.125-7.625T33.25 6q4.5 0 7.625 3.125T44 16.75q0 4.5-3.125 7.625T33.25 27.5Zm-4 14.5q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6Zm4-17.5q3.25 0 5.5-2.25t2.25-5.5q0-3.25-2.25-5.5T33.25 9q-3.25 0-5.5 2.25t-2.25 5.5q0 3.25 2.25 5.5t5.5 2.25Zm-4 14.5q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q30.3 34 29.25 34q-1.05 0-1.775.725-.725.725-.725 1.775 0 1.05.725 1.775Q28.2 39 29.25 39Zm4-22.25ZM13.75 28.4Zm15.5 8.1Z
+    </Geometry>
+    <Geometry x:Key="bubble_chart_filled_rounded">
+        M13.75 36.15q-3.25 0-5.5-2.25T6 28.4q0-3.25 2.25-5.5t5.5-2.25q3.25 0 5.5 2.25t2.25 5.5q0 3.25-2.25 5.5t-5.5 2.25Zm19.5-8.65q-4.5 0-7.625-3.125T22.5 16.75q0-4.5 3.125-7.625T33.25 6q4.5 0 7.625 3.125T44 16.75q0 4.5-3.125 7.625T33.25 27.5Zm-4 14.5q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6Z
+    </Geometry>
+    <Geometry x:Key="bubble_chart_outline_sharp">
+        M13.75 36.15q-3.25 0-5.5-2.25T6 28.4q0-3.25 2.25-5.5t5.5-2.25q3.25 0 5.5 2.25t2.25 5.5q0 3.25-2.25 5.5t-5.5 2.25Zm0-3q2 0 3.375-1.375T18.5 28.4q0-2-1.375-3.375T13.75 23.65q-2 0-3.375 1.375T9 28.4q0 2 1.375 3.375t3.375 1.375Zm19.5-5.65q-4.5 0-7.625-3.125T22.5 16.75q0-4.5 3.125-7.625T33.25 6q4.5 0 7.625 3.125T44 16.75q0 4.5-3.125 7.625T33.25 27.5Zm-4 14.5q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6Zm4-17.5q3.25 0 5.5-2.25t2.25-5.5q0-3.25-2.25-5.5T33.25 9q-3.25 0-5.5 2.25t-2.25 5.5q0 3.25 2.25 5.5t5.5 2.25Zm-4 14.5q1.05 0 1.775-.725.725-.725.725-1.775 0-1.05-.725-1.775Q30.3 34 29.25 34q-1.05 0-1.775.725-.725.725-.725 1.775 0 1.05.725 1.775Q28.2 39 29.25 39Zm4-22.25ZM13.75 28.4Zm15.5 8.1Z
+    </Geometry>
+    <Geometry x:Key="bubble_chart_filled_sharp">
+        M13.75 36.15q-3.25 0-5.5-2.25T6 28.4q0-3.25 2.25-5.5t5.5-2.25q3.25 0 5.5 2.25t2.25 5.5q0 3.25-2.25 5.5t-5.5 2.25Zm19.5-8.65q-4.5 0-7.625-3.125T22.5 16.75q0-4.5 3.125-7.625T33.25 6q4.5 0 7.625 3.125T44 16.75q0 4.5-3.125 7.625T33.25 27.5Zm-4 14.5q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6Z
+    </Geometry>
+    <Style x:Key="bubble_chart"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource bubble_chart_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource bubble_chart_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource bubble_chart_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource bubble_chart_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

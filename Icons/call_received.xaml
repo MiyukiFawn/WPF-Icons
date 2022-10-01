@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="call_received_outline_rounded">
+        M11.5 40q-.65 0-1.075-.425Q10 39.15 10 38.5V21.7q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q13 21.05 13 21.7v13.2l23.85-23.85q.4-.4 1.05-.425.65-.025 1.05.425.45.4.45 1.05t-.45 1.1L15.15 37H28.3q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.95 40 28.3 40Z
+    </Geometry>
+    <Geometry x:Key="call_received_filled_rounded">
+        M11.5 40q-.65 0-1.075-.425Q10 39.15 10 38.5V21.7q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q13 21.05 13 21.7v13.2l23.85-23.85q.4-.4 1.05-.425.65-.025 1.05.425.45.4.45 1.05t-.45 1.1L15.15 37H28.3q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.95 40 28.3 40Z
+    </Geometry>
+    <Geometry x:Key="call_received_outline_sharp">
+        M10 38V18.2h3v14.7L37.9 8l2.1 2.15L15.15 35H29.8v3Z
+    </Geometry>
+    <Geometry x:Key="call_received_filled_sharp">
+        M10 38V18.2h3v14.7L37.9 8l2.1 2.15L15.15 35H29.8v3Z
+    </Geometry>
+    <Style x:Key="call_received"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource call_received_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource call_received_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource call_received_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource call_received_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

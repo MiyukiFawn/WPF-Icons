@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="filter_alt_outline_rounded">
+        M22 40q-.85 0-1.425-.575Q20 38.85 20 38V26L8.05 10.75q-.7-.85-.2-1.8Q8.35 8 9.4 8h29.2q1.05 0 1.55.95t-.2 1.8L28 26v12q0 .85-.575 1.425Q26.85 40 26 40Zm2-13.8L36 11H12Zm0 0Z
+    </Geometry>
+    <Geometry x:Key="filter_alt_filled_rounded">
+        M22 40q-.85 0-1.425-.575Q20 38.85 20 38V26L8.05 10.75q-.7-.85-.2-1.8Q8.35 8 9.4 8h29.2q1.05 0 1.55.95t-.2 1.8L28 26v12q0 .85-.575 1.425Q26.85 40 26 40Z
+    </Geometry>
+    <Geometry x:Key="filter_alt_outline_sharp">
+        M28 26v14h-8V26L5.9 8h36.2Zm-4 .2L36 11H12Zm0 0Z
+    </Geometry>
+    <Geometry x:Key="filter_alt_filled_sharp">
+        M28 26v14h-8V26L5.9 8h36.2Z
+    </Geometry>
+    <Style x:Key="filter_alt"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource filter_alt_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource filter_alt_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource filter_alt_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource filter_alt_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

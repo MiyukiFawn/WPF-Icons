@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="airline_seat_individual_suite_outline_rounded">
+        M5 34q-1.25 0-2.125-.875T2 31V17q0-.65.425-1.075Q2.85 15.5 3.5 15.5q.65 0 1.075.425Q5 16.35 5 17v14h17.65V18.5q0-1.25.875-2.125t2.125-.875h13.1q3.1 0 5.175 2.075Q46 19.65 46 22.75V31q0 1.25-.875 2.125T43 34Zm20.65-3H43v-8.25q0-1.65-1.3-2.95-1.3-1.3-2.95-1.3h-13.1Zm0-12.5V31ZM13.5 28.05q-2.25 0-3.775-1.525T8.2 22.75q0-2.25 1.525-3.775T13.5 17.45q2.25 0 3.775 1.525T18.8 22.75q0 2.25-1.525 3.775T13.5 28.05Zm0-3q.95 0 1.625-.675t.675-1.625q0-.95-.675-1.625T13.5 20.45q-.95 0-1.625.675T11.2 22.75q0 .95.675 1.625t1.625.675Zm0-2.3Z
+    </Geometry>
+    <Geometry x:Key="airline_seat_individual_suite_filled_rounded">
+        M5 34q-1.25 0-2.125-.875T2 31V17q0-.65.425-1.075Q2.85 15.5 3.5 15.5q.65 0 1.075.425Q5 16.35 5 17v14h17.65V18.5q0-1.25.875-2.125t2.125-.875h13.1q3.1 0 5.175 2.075Q46 19.65 46 22.75V31q0 1.25-.875 2.125T43 34Zm8.5-5.95q-2.25 0-3.775-1.525T8.2 22.75q0-2.25 1.525-3.775T13.5 17.45q2.25 0 3.775 1.525T18.8 22.75q0 2.25-1.525 3.775T13.5 28.05Z
+    </Geometry>
+    <Geometry x:Key="airline_seat_individual_suite_outline_sharp">
+        M2 34V15.5h3V31h17.65V15.5H46V34Zm23.65-3H43V18.5H25.65Zm0 0V18.5 31ZM13.5 28.05q-2.25 0-3.775-1.525T8.2 22.75q0-2.25 1.525-3.775T13.5 17.45q2.25 0 3.775 1.525T18.8 22.75q0 2.25-1.525 3.775T13.5 28.05Zm0-3q.95 0 1.625-.675t.675-1.625q0-.95-.675-1.625T13.5 20.45q-.95 0-1.625.675T11.2 22.75q0 .95.675 1.625t1.625.675Zm0-2.3Z
+    </Geometry>
+    <Geometry x:Key="airline_seat_individual_suite_filled_sharp">
+        M2 34V15.5h3V31h17.65V15.5H46V34Zm11.5-5.95q-2.25 0-3.775-1.525T8.2 22.75q0-2.25 1.525-3.775T13.5 17.45q2.25 0 3.775 1.525T18.8 22.75q0 2.25-1.525 3.775T13.5 28.05Z
+    </Geometry>
+    <Style x:Key="airline_seat_individual_suite"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource airline_seat_individual_suite_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource airline_seat_individual_suite_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource airline_seat_individual_suite_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource airline_seat_individual_suite_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

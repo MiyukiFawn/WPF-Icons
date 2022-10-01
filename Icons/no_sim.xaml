@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="no_sim_outline_rounded">
+        m40 36.15-3-3V7H21.35l-5.25 5.25-2.2-2.2 5.4-5.4q.3-.3.7-.475.4-.175.85-.175H37q1.25 0 2.125.9T40 7Zm1.25 9.7L12.1 16.65l-1.1 1.1V41h26v-3.6l3 3v.6q0 1.2-.9 2.1-.9.9-2.1.9H11q-1.2 0-2.1-.9Q8 42.2 8 41V17.2q0-.45.15-.875t.5-.725l1.2-1.15-6.9-6.9q-.4-.4-.4-1T3 5.5q.45-.45 1.05-.45.6 0 1.05.45l38.3 38.3q.4.4.4 1t-.45 1.05q-.45.45-1.05.45-.6 0-1.05-.45ZM26.75 22.9Zm-2.3 6.1Z
+    </Geometry>
+    <Geometry x:Key="no_sim_filled_rounded">
+        m40.05 36.15-26.1-26.1 5.4-5.4q.3-.3.725-.475T20.9 4h16.15q1.25 0 2.125.9T40.05 7Zm1.2 9.7-8.4-8.4 2.1-2.1L40 40.4l.6.6q-.45 1.2-1.425 2.1Q38.2 44 37 44H11q-1.2 0-2.1-.9Q8 42.2 8 41V17.2q0-.45.15-.875t.5-.725l1.2-1.15L3 7.6q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l38.25 38.25q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="no_sim_outline_sharp">
+        m40 36.15-3-3V7H21.35l-5.25 5.25-2.2-2.2L19.95 4H40ZM26.75 22.9Zm-2.3 6.1ZM42.3 46.9 12.1 16.65l-1.1 1.1V41h26v-3.6l3 3V44H8V16.25l1.85-1.8-7.9-7.9 2.1-2.1L44.4 44.8Z
+    </Geometry>
+    <Geometry x:Key="no_sim_filled_sharp">
+        m40 36.15-26.1-26.1L19.95 4H40Zm2.3 10.75-9.45-9.45 2.1-2.1L40 40.4V44H8V16.25l1.85-1.8-7.9-7.9 2.1-2.1L44.4 44.8Z
+    </Geometry>
+    <Style x:Key="no_sim"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource no_sim_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource no_sim_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource no_sim_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource no_sim_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

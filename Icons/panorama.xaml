@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="panorama_outline_rounded">
+        M13.35 32H34.7q.45 0 .65-.4t-.05-.8l-5.85-7.95q-.25-.3-.6-.3t-.6.3l-5.95 7.9-4-5.6q-.25-.3-.6-.325-.35-.025-.6.275l-4.35 5.7q-.3.4-.075.8.225.4.675.4ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.25 0 2.125.9T44 11v26q0 1.2-.875 2.1-.875.9-2.125.9Zm0-3V11v26Zm0 0h34V11H7v26Z
+    </Geometry>
+    <Geometry x:Key="panorama_filled_rounded">
+        M13.35 32H34.7q.45 0 .65-.4t-.05-.8l-5.85-7.95q-.25-.3-.6-.3t-.6.3l-5.95 7.9-4-5.6q-.25-.3-.6-.325-.35-.025-.6.275l-4.35 5.7q-.3.4-.075.8.225.4.675.4ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.25 0 2.125.9T44 11v26q0 1.2-.875 2.1-.875.9-2.125.9Z
+    </Geometry>
+    <Geometry x:Key="panorama_outline_sharp">
+        M11.85 32H36.2l-7.35-9.95-6.55 8.7-4.6-6.45ZM4 40V8h40v32Zm3-3h34V11H7Zm0 0V11v26Z
+    </Geometry>
+    <Geometry x:Key="panorama_filled_sharp">
+        M11.85 32H36.2l-7.35-9.95-6.55 8.7-4.6-6.45ZM4 40V8h40v32Z
+    </Geometry>
+    <Style x:Key="panorama"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource panorama_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource panorama_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource panorama_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource panorama_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="punch_clock_outline_rounded">
+        M9 44q-1.15 0-2.075-.925Q6 42.15 6 41V15q0-1.15.925-2.075Q7.85 12 9 12h3.5V5q0-1.25.875-2.125T15.5 2h17q1.25 0 2.125.875T35.5 5v7H39q1.15 0 2.075.925Q42 13.85 42 15v26q0 1.15-.925 2.075Q40.15 44 39 44Zm6.5-32h17V5h-17ZM9 41h30V15H9v26Zm15-3.25q-4.05 0-6.9-2.85-2.85-2.85-2.85-6.9 0-4.05 2.85-6.9 2.85-2.85 6.9-2.85 4.05 0 6.9 2.85 2.85 2.85 2.85 6.9 0 4.05-2.85 6.9-2.85 2.85-6.9 2.85Zm0-2.5q3 0 5.125-2.125T31.25 28q0-3-2.125-5.125T24 20.75q-3 0-5.125 2.125T16.75 28q0 3 2.125 5.125T24 35.25ZM25.6 31l-2.4-2.4q-.1-.1-.2-.5V24q0-.4.3-.7.3-.3.7-.3.4 0 .7.3.3.3.3.7v3.6l2 2q.3.3.3.7 0 .4-.3.7-.3.3-.7.3-.4 0-.7-.3ZM24 28Z
+    </Geometry>
+    <Geometry x:Key="punch_clock_filled_rounded">
+        M9 44q-1.15 0-2.075-.925Q6 42.15 6 41V15q0-1.15.925-2.075Q7.85 12 9 12h3.5V5q0-1.25.875-2.125T15.5 2h17q1.25 0 2.125.875T35.5 5v7H39q1.15 0 2.075.925Q42 13.85 42 15v26q0 1.15-.925 2.075Q40.15 44 39 44Zm6.5-32h17V5h-17ZM24 36.7q3.6 0 6.15-2.55Q32.7 31.6 32.7 28q0-3.6-2.55-6.15Q27.6 19.3 24 19.3q-3.6 0-6.15 2.55Q15.3 24.4 15.3 28q0 3.6 2.55 6.15Q20.4 36.7 24 36.7Zm1.6-5.7-2.4-2.4-.2-.5V24q0-.4.3-.7.3-.3.7-.3.4 0 .7.3.3.3.3.7v3.6l2 2q.3.3.3.7 0 .4-.3.7-.3.3-.7.3-.4 0-.7-.3Z
+    </Geometry>
+    <Geometry x:Key="punch_clock_outline_sharp">
+        M6 44V12h6.5V2h23v10H42v32Zm9.5-32h17V5h-17ZM9 41h30V15H9Zm15-3.25q-4.05 0-6.9-2.85-2.85-2.85-2.85-6.9 0-4.05 2.85-6.9 2.85-2.85 6.9-2.85 4.05 0 6.9 2.85 2.85 2.85 2.85 6.9 0 4.05-2.85 6.9-2.85 2.85-6.9 2.85Zm0-2.5q3 0 5.125-2.125T31.25 28q0-3-2.125-5.125T24 20.75q-3 0-5.125 2.125T16.75 28q0 3 2.125 5.125T24 35.25Zm2.3-3.55L23 28.4V23h2v4.6l2.7 2.7ZM24 28Z
+    </Geometry>
+    <Geometry x:Key="punch_clock_filled_sharp">
+        M6 44V12h6.5V2h23v10H42v32Zm9.5-32h17V5h-17ZM24 36.7q3.6 0 6.15-2.55Q32.7 31.6 32.7 28q0-3.6-2.55-6.15Q27.6 19.3 24 19.3q-3.6 0-6.15 2.55Q15.3 24.4 15.3 28q0 3.6 2.55 6.15Q20.4 36.7 24 36.7Zm2.3-5L23 28.4V23h2v4.6l2.7 2.7Z
+    </Geometry>
+    <Style x:Key="punch_clock"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource punch_clock_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource punch_clock_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource punch_clock_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource punch_clock_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

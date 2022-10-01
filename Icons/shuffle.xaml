@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="shuffle_outline_rounded">
+        M19.8 21.8 8.65 10.65q-.45-.45-.45-1.075T8.65 8.5q.4-.4 1.05-.4t1.05.4l11.2 11.15Zm10.8 18.7q-.65 0-1.075-.425Q29.1 39.65 29.1 39q0-.65.425-1.075.425-.425 1.075-.425h4.75l-9.2-9.15 2.1-2.15 9.3 9.2v-4.85q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425.425.425.425 1.075V39q0 .65-.425 1.075-.425.425-1.075.425Zm-22-1.1q-.45-.4-.45-1.025 0-.625.45-1.075l26.85-26.85H30.6q-.65 0-1.075-.425Q29.1 9.6 29.1 8.95q0-.65.425-1.075.425-.425 1.075-.425h8.45q.65 0 1.075.425.425.425.425 1.075v8.45q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075v-4.8L10.7 39.45q-.4.4-1.025.4-.625 0-1.075-.45Z
+    </Geometry>
+    <Geometry x:Key="shuffle_filled_rounded">
+        M19.8 21.8 8.65 10.65q-.45-.45-.45-1.075T8.65 8.5q.4-.4 1.05-.4t1.05.4l11.2 11.15Zm10.8 18.7q-.65 0-1.075-.425Q29.1 39.65 29.1 39q0-.65.425-1.075.425-.425 1.075-.425h4.75l-9.2-9.15 2.1-2.15 9.3 9.2v-4.85q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425.425.425.425 1.075V39q0 .65-.425 1.075-.425.425-1.075.425Zm-22-1.1q-.45-.4-.45-1.025 0-.625.45-1.075l26.85-26.85H30.6q-.65 0-1.075-.425Q29.1 9.6 29.1 8.95q0-.65.425-1.075.425-.425 1.075-.425h8.45q.65 0 1.075.425.425.425.425 1.075v8.45q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075v-4.8L10.7 39.45q-.4.4-1.025.4-.625 0-1.075-.45Z
+    </Geometry>
+    <Geometry x:Key="shuffle_outline_sharp">
+        M29.05 40.5v-3h6.25l-9.2-9.15 2.1-2.15 9.3 9.2v-6.35h3V40.5Zm-19.45 0-2.1-2.15 27.9-27.9h-6.35v-3H40.5V18.9h-3v-6.3Zm10.15-18.7L7.5 9.6l2.15-2.15 12.25 12.2Z
+    </Geometry>
+    <Geometry x:Key="shuffle_filled_sharp">
+        M29.05 40.5v-3h6.25l-9.2-9.15 2.1-2.15 9.3 9.2v-6.35h3V40.5Zm-19.45 0-2.1-2.15 27.9-27.9h-6.35v-3H40.5V18.9h-3v-6.3Zm10.15-18.7L7.5 9.6l2.15-2.15 12.25 12.2Z
+    </Geometry>
+    <Style x:Key="shuffle"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource shuffle_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource shuffle_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource shuffle_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource shuffle_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="crib_outline_rounded">
+        M11 29h26v-8H21V11h-5q-2.1 0-3.55 1.45Q11 13.9 11 16v13Zm13 12q1.15 0 2.275-.15t2.225-.5V32h-9v8.35q1.1.35 2.25.5Q22.9 41 24 41Zm0 3q-3.35 0-6.45-1.1t-5.75-3.2q-.55-.4-.575-1.05-.025-.65.475-1.15.4-.4 1-.45.6-.05 1.05.35.65.5 1.325.925.675.425 1.425.825V32H11q-1.2 0-2.1-.9Q8 30.2 8 29V16q0-3.3 2.35-5.65Q12.7 8 16 8h5q1.25 0 2.125.875T24 11v7h13q1.2 0 2.1.9.9.9.9 2.1v8q0 1.2-.9 2.1-.9.9-2.1.9h-5.5v7.15q.75-.4 1.425-.825.675-.425 1.325-.925.45-.4 1.05-.35.6.05 1 .45.5.5.475 1.15-.025.65-.575 1.05-2.65 2.1-5.75 3.2T24 44Zm0-24Z
+    </Geometry>
+    <Geometry x:Key="crib_filled_rounded">
+        M24 41q1.15 0 2.275-.15t2.225-.5V32h-9v8.35q1.1.35 2.225.5Q22.85 41 24 41Zm0 3q-3.35 0-6.45-1.1t-5.75-3.2q-.55-.4-.575-1.05-.025-.65.475-1.15.4-.4 1-.45.6-.05 1.05.35.65.5 1.325.925.675.425 1.425.825V32H11q-1.2 0-2.1-.9Q8 30.2 8 29V16q0-3.3 2.35-5.65Q12.7 8 16 8h5q1.25 0 2.125.875T24 11v7h13q1.2 0 2.1.9.9.9.9 2.1v8q0 1.2-.9 2.1-.9.9-2.1.9h-5.5v7.15q.75-.4 1.425-.825.675-.425 1.325-.925.45-.4 1.05-.35.6.05 1 .45.5.5.475 1.15-.025.65-.575 1.05-2.65 2.1-5.75 3.2T24 44Z
+    </Geometry>
+    <Geometry x:Key="crib_outline_sharp">
+        M11 29h26v-8H21V11h-5q-2.1 0-3.55 1.45Q11 13.9 11 16Zm13 12q1.15 0 2.275-.15t2.225-.5V32h-9v8.35q1.1.35 2.225.5Q22.85 41 24 41Zm0 3q-3.75 0-7.2-1.4t-6.25-3.95l2.15-2.15q.85.8 1.8 1.45.95.65 2 1.2V32H8V16q0-3.3 2.35-5.65Q12.7 8 16 8h8v10h16v14h-8.5v7.15q1.05-.55 2-1.2.95-.65 1.8-1.45l2.15 2.15q-2.8 2.55-6.25 3.95Q27.75 44 24 44Zm0-24Z
+    </Geometry>
+    <Geometry x:Key="crib_filled_sharp">
+        M24 41q1.15 0 2.275-.15t2.225-.5V32h-9v8.35q1.1.35 2.225.5Q22.85 41 24 41Zm0 3q-3.75 0-7.2-1.4t-6.25-3.95l2.15-2.15q.85.8 1.8 1.45.95.65 2 1.2V32H8V16q0-3.3 2.35-5.65Q12.7 8 16 8h8v10h16v14h-8.5v7.15q1.05-.55 2-1.2.95-.65 1.8-1.45l2.15 2.15q-2.8 2.55-6.25 3.95Q27.75 44 24 44Z
+    </Geometry>
+    <Style x:Key="crib"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource crib_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource crib_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource crib_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource crib_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

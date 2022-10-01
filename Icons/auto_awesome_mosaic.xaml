@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="auto_awesome_mosaic_outline_rounded">
+        M22.55 42H9q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.55Zm-3-3V9H9v30Zm6-16.55V6H39q1.2 0 2.1.9.9.9.9 2.1v13.45Zm3-3H39V9H28.55Zm-3 22.55V25.45H42V39q0 1.2-.9 2.1-.9.9-2.1.9Zm3-3H39V28.45H28.55Zm-9-15Zm9-4.55Zm0 9Z
+    </Geometry>
+    <Geometry x:Key="auto_awesome_mosaic_filled_rounded">
+        M22.55 42H9q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h13.55Zm3-19.55V6H39q1.2 0 2.1.9.9.9.9 2.1v13.45Zm0 19.55V25.45H42V39q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="auto_awesome_mosaic_outline_sharp">
+        M22.55 42H6V6h16.55Zm-3-3V9H9v30Zm6-16.55V6H42v16.45Zm3-3H39V9H28.55Zm-3 22.55V25.45H42V42Zm3-3H39V28.45H28.55Zm-9-15Zm9-4.55Zm0 9Z
+    </Geometry>
+    <Geometry x:Key="auto_awesome_mosaic_filled_sharp">
+        M22.55 42H6V6h16.55Zm3-19.55V6H42v16.45Zm0 19.55V25.45H42V42Z
+    </Geometry>
+    <Style x:Key="auto_awesome_mosaic"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource auto_awesome_mosaic_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource auto_awesome_mosaic_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource auto_awesome_mosaic_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource auto_awesome_mosaic_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

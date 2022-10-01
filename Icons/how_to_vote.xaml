@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="how_to_vote_outline_rounded">
+        M9 44q-1.2 0-2.1-.9Q6 42.2 6 41v-9.9l6.75-7.45 2.15 2.15L9 32.25h30l-5.55-6.3 2.15-2.15 6.4 7.3V41q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h30v-5.75H9V41Zm13.1-12.25-7.95-7.95q-.95-.95-.85-2.125.1-1.175 1-2.075L24.9 6q.85-.85 2.1-.875Q28.25 5.1 29.15 6l7.95 7.95q.85.85.875 2.025Q38 17.15 37 18.15l-10.6 10.6q-.85.85-2.1.9-1.25.05-2.2-.9ZM34.55 15.9l-7.5-7.5-10.4 10.4 7.5 7.5ZM9 41v-5.75V41Z
+    </Geometry>
+    <Geometry x:Key="how_to_vote_filled_rounded">
+        M9 44q-1.2 0-2.1-.9Q6 42.2 6 41v-9.9l6.75-7.45 2.15 2.15L9 32.25h30l-5.55-6.3 2.15-2.15 6.4 7.3V41q0 1.2-.9 2.1-.9.9-2.1.9Zm13.1-15.25-7.95-7.95q-.95-.95-.85-2.125.1-1.175 1-2.075L24.9 6q.85-.85 2.1-.875Q28.25 5.1 29.15 6l7.95 7.95q.85.85.875 2.025Q38 17.15 37 18.15l-10.6 10.6q-.85.85-2.1.9-1.25.05-2.2-.9ZM34.55 15.9l-7.5-7.5-10.4 10.4 7.5 7.5Z
+    </Geometry>
+    <Geometry x:Key="how_to_vote_outline_sharp">
+        M9 32.25h30l-5.55-6.3 2.15-2.15 6.4 7.3V44H6V31.1l6.75-7.45 2.15 2.15Zm15.25-1.35-12.1-12.15 14.9-14.9L39.15 16Zm-.1-4.6 10.4-10.4-7.5-7.5-10.4 10.4ZM9 41h30v-5.75H9Zm0 0v-5.75V41Z
+    </Geometry>
+    <Geometry x:Key="how_to_vote_filled_sharp">
+        M9 32.25h30l-5.55-6.3 2.15-2.15 6.4 7.3V44H6V31.1l6.75-7.45 2.15 2.15Zm15.25-1.35-12.1-12.15 14.9-14.9L39.15 16Zm-.1-4.6 10.4-10.4-7.5-7.5-10.4 10.4Z
+    </Geometry>
+    <Style x:Key="how_to_vote"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource how_to_vote_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource how_to_vote_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource how_to_vote_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource how_to_vote_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

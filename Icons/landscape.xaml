@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="landscape_outline_rounded">
+        M5 36q-.95 0-1.35-.825-.4-.825.15-1.575l9-12q.45-.6 1.2-.6t1.2.6L23.75 33H40L28 17.05l-6.25 8.3-1.9-2.5 6.95-9.25q.45-.6 1.2-.6t1.2.6l15 20q.55.75.15 1.575T43 36Zm22.5-3ZM8 33h12l-6-8Zm0 0h12Z
+    </Geometry>
+    <Geometry x:Key="landscape_filled_rounded">
+        M5 36q-.95 0-1.35-.825-.4-.825.15-1.575l9-12q.45-.6 1.2-.6t1.2.6l7.65 10.2q.4.5 1 .6.6.1 1.1-.3.45-.35.6-.85.15-.5-.1-1l-5.6-7.4 6.95-9.25q.45-.6 1.2-.6t1.2.6l15 20q.55.75.15 1.575T43 36Z
+    </Geometry>
+    <Geometry x:Key="landscape_outline_sharp">
+        m2 36 12-16 9.75 13H40L28 17.05l-6.25 8.3-1.9-2.5L28 12l18 24Zm25.5-3ZM8 33h12l-6-8Zm0 0h12Z
+    </Geometry>
+    <Geometry x:Key="landscape_filled_sharp">
+        m2 36 12-16 9.75 13h3.75l-7.65-10.15L28 12l18 24Z
+    </Geometry>
+    <Style x:Key="landscape"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource landscape_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource landscape_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource landscape_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource landscape_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

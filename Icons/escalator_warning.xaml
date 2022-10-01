@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="escalator_warning_outline_rounded">
+        M13 11.65q-1.5 0-2.575-1.075Q9.35 9.5 9.35 8q0-1.5 1.075-2.575Q11.5 4.35 13 4.35q1.5 0 2.575 1.075Q16.65 6.5 16.65 8q0 1.5-1.075 2.575Q14.5 11.65 13 11.65ZM34.75 23q-1.25 0-2.125-.875T31.75 20q0-1.25.875-2.125T34.75 17q1.25 0 2.125.875T37.75 20q0 1.25-.875 2.125T34.75 23ZM11 44q-.65 0-1.075-.425Q9.5 43.15 9.5 42.5v-13h-2q-.65 0-1.075-.425Q6 28.65 6 28V17q0-1.25.875-2.125T9 14h7.6q.85 0 1.575.45T19.3 15.7l6.8 13.9 3.65-3.9q.3-.35.725-.525Q30.9 25 31.35 25h6.45q.9 0 1.55.65T40 27.2V34q0 .65-.425 1.075-.425.425-1.075.425h-1v7q0 .65-.425 1.075Q36.65 44 36 44h-4q-.65 0-1.075-.425-.425-.425-.425-1.075V28.85L28 31.5q-.25.25-.525.375T26.9 32H25q-.4 0-.775-.225t-.575-.625l-6.15-12.3V42.5q0 .65-.425 1.075Q16.65 44 16 44Z
+    </Geometry>
+    <Geometry x:Key="escalator_warning_filled_rounded">
+        M13 11.65q-1.5 0-2.575-1.075Q9.35 9.5 9.35 8q0-1.5 1.075-2.575Q11.5 4.35 13 4.35q1.5 0 2.575 1.075Q16.65 6.5 16.65 8q0 1.5-1.075 2.575Q14.5 11.65 13 11.65ZM34.75 23q-1.25 0-2.125-.875T31.75 20q0-1.25.875-2.125T34.75 17q1.25 0 2.125.875T37.75 20q0 1.25-.875 2.125T34.75 23ZM11 44q-.65 0-1.075-.425Q9.5 43.15 9.5 42.5v-13h-2q-.65 0-1.075-.425Q6 28.65 6 28V17q0-1.25.875-2.125T9 14h7.6q.85 0 1.575.45T19.3 15.7l6.8 13.9 3.65-3.9q.3-.35.725-.525Q30.9 25 31.35 25h6.45q.9 0 1.55.65T40 27.2V34q0 .65-.425 1.075-.425.425-1.075.425h-1v7q0 .65-.425 1.075Q36.65 44 36 44h-4q-.65 0-1.075-.425-.425-.425-.425-1.075V28.85L28 31.5q-.25.25-.525.375T26.9 32H25q-.4 0-.775-.225t-.575-.625l-6.15-12.3V42.5q0 .65-.425 1.075Q16.65 44 16 44Z
+    </Geometry>
+    <Geometry x:Key="escalator_warning_outline_sharp">
+        M13 11.65q-1.5 0-2.575-1.075Q9.35 9.5 9.35 8q0-1.5 1.075-2.575Q11.5 4.35 13 4.35q1.5 0 2.575 1.075Q16.65 6.5 16.65 8q0 1.5-1.075 2.575Q14.5 11.65 13 11.65ZM34.75 23q-1.25 0-2.125-.875T31.75 20q0-1.25.875-2.125T34.75 17q1.25 0 2.125.875T37.75 20q0 1.25-.875 2.125T34.75 23ZM9.5 44V29.5H6V14h12.45l7.65 15.6 4.3-4.6H40v10.5h-2.5V44h-7V28.85L27.55 32h-3.5L17.5 18.85V44Z
+    </Geometry>
+    <Geometry x:Key="escalator_warning_filled_sharp">
+        M13 11.65q-1.5 0-2.575-1.075Q9.35 9.5 9.35 8q0-1.5 1.075-2.575Q11.5 4.35 13 4.35q1.5 0 2.575 1.075Q16.65 6.5 16.65 8q0 1.5-1.075 2.575Q14.5 11.65 13 11.65ZM34.75 23q-1.25 0-2.125-.875T31.75 20q0-1.25.875-2.125T34.75 17q1.25 0 2.125.875T37.75 20q0 1.25-.875 2.125T34.75 23ZM9.5 44V29.5H6V14h12.45l7.65 15.6 4.3-4.6H40v10.5h-2.5V44h-7V28.85L27.55 32h-3.5L17.5 18.85V44Z
+    </Geometry>
+    <Style x:Key="escalator_warning"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource escalator_warning_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource escalator_warning_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource escalator_warning_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource escalator_warning_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

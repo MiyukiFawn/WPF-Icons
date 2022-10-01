@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="sound_detection_glass_break_outline_rounded">
+        M6 42V6h36v36Zm3-12.1 9.95-10 7.95 7.95L39 14.3V9H9ZM9 39h30V18.8L27.05 32.2 19 24.15 9 34.2Z
+    </Geometry>
+    <Geometry x:Key="sound_detection_glass_break_filled_rounded">
+        M6 42V6h36v36Zm3-12.1 9.95-10 7.95 7.95L39 14.3V9H9ZM9 39h30V18.8L27.05 32.2 19 24.15 9 34.2Z
+    </Geometry>
+    <Geometry x:Key="sound_detection_glass_break_outline_sharp">
+        M6 42V6h36v36Zm3-12.1 9.95-10 7.95 7.95L39 14.3V9H9ZM9 39h30V18.8L27.05 32.2 19 24.15 9 34.2Z
+    </Geometry>
+    <Geometry x:Key="sound_detection_glass_break_filled_sharp">
+        M6 42V6h36v36Zm3-12.1 9.95-10 7.95 7.95L39 14.3V9H9ZM9 39h30V18.8L27.05 32.2 19 24.15 9 34.2Z
+    </Geometry>
+    <Style x:Key="sound_detection_glass_break"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource sound_detection_glass_break_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource sound_detection_glass_break_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource sound_detection_glass_break_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource sound_detection_glass_break_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

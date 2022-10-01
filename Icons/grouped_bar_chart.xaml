@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="grouped_bar_chart_outline_rounded">
+        M8 40V16h7v24Zm10.5 0V26h7v14ZM33 40V8h7v32Z
+    </Geometry>
+    <Geometry x:Key="grouped_bar_chart_filled_rounded">
+        M8 40V16h7v24Zm10.5 0V26h7v14ZM33 40V8h7v32Z
+    </Geometry>
+    <Geometry x:Key="grouped_bar_chart_outline_sharp">
+        M8 40V16h7v24Zm10.5 0V26h7v14ZM33 40V8h7v32Z
+    </Geometry>
+    <Geometry x:Key="grouped_bar_chart_filled_sharp">
+        M8 40V16h7v24Zm10.5 0V26h7v14ZM33 40V8h7v32Z
+    </Geometry>
+    <Style x:Key="grouped_bar_chart"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource grouped_bar_chart_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource grouped_bar_chart_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource grouped_bar_chart_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource grouped_bar_chart_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

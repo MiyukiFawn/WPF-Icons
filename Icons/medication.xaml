@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="medication_outline_rounded">
+        M24 34.55q.85 0 1.4-.575.55-.575.55-1.425V29h3.7q.85 0 1.425-.575.575-.575.575-1.425 0-.85-.575-1.425Q30.5 25 29.65 25h-3.7v-3.6q0-.85-.55-1.4-.55-.55-1.4-.55-.85 0-1.425.55-.575.55-.575 1.4V25h-3.65q-.85 0-1.425.575-.575.575-.575 1.425 0 .85.575 1.425Q17.5 29 18.35 29H22v3.6q0 .85.575 1.4.575.55 1.425.55ZM13 42q-1.25 0-2.125-.875T10 39V15.05q0-1.25.875-2.125T13 12.05h22q1.25 0 2.125.875T38 15.05v24.2q0 1.25-.875 2T35 42Zm0-2.75h22v-24.2H13v24.2ZM13.5 9q-.65 0-1.075-.425Q12 8.15 12 7.5q0-.65.425-1.075Q12.85 6 13.5 6h21.05q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q35.2 9 34.55 9Zm-.5 6.05v24.2-24.2Z
+    </Geometry>
+    <Geometry x:Key="medication_filled_rounded">
+        M24 35q.85 0 1.425-.575Q26 33.85 26 33v-4h4q.85 0 1.425-.575Q32 27.85 32 27q0-.85-.575-1.425Q30.85 25 30 25h-4v-4q0-.85-.575-1.425Q24.85 19 24 19q-.85 0-1.425.575Q22 20.15 22 21v4h-4q-.85 0-1.425.575Q16 26.15 16 27q0 .85.575 1.425Q17.15 29 18 29h4v4q0 .85.575 1.425Q23.15 35 24 35Zm-11 7q-1.25 0-2.125-.875T10 39V15.05q0-1.25.875-2.125T13 12.05h22q1.25 0 2.125.875T38 15.05V39q0 1.25-.875 2.125T35 42Zm.5-33q-.65 0-1.075-.425Q12 8.15 12 7.5q0-.65.425-1.075Q12.85 6 13.5 6h21q.65 0 1.075.425Q36 6.85 36 7.5q0 .65-.425 1.075Q35.15 9 34.5 9Z
+    </Geometry>
+    <Geometry x:Key="medication_outline_sharp">
+        M22 34.55h3.95V29h5.7v-4h-5.7v-5.55H22V25h-5.65v4H22ZM10 42V12.05h28V42Zm3-2.75h22v-24.2H13ZM12 9V6h24.05v3Zm1 30.25v-24.2 24.2Z
+    </Geometry>
+    <Geometry x:Key="medication_filled_sharp">
+        M22 35h4v-6h6v-4h-6v-6h-4v6h-6v4h6Zm-12 7V12.05h28V42Zm2-33V6h24v3Z
+    </Geometry>
+    <Style x:Key="medication"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource medication_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource medication_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource medication_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource medication_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

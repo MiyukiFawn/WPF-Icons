@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="request_quote_outline_rounded">
+        M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h16.8q.6 0 1.175.25.575.25.975.65l9.15 9.15q.4.4.65.975T40 16.2V41q0 1.2-.9 2.1-.9.9-2.1.9Zm0-29.05V7v34-26.05Zm8.5 21q-.65 0-1.075-.425Q18 35.1 18 34.45q0-.65.425-1.075.425-.425 1.075-.425H27v-3.5h-7.5q-.65 0-1.075-.425Q18 28.6 18 27.95v-6.5q0-.65.425-1.075.425-.425 1.075-.425h3v-.5q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425.425.425.425 1.075v.5h3q.65 0 1.075.425Q30 20.8 30 21.45q0 .65-.425 1.075-.425.425-1.075.425H21v3.5h7.5q.65 0 1.075.425Q30 27.3 30 27.95v6.5q0 .65-.425 1.075-.425.425-1.075.425h-3v.55q0 .65-.425 1.05t-1.075.4q-.65 0-1.075-.425-.425-.425-.425-1.075v-.5Zm17.5-21h-8.95q-.65 0-1.075-.425-.425-.425-.425-1.075V7H11v34h26Z
+    </Geometry>
+    <Geometry x:Key="request_quote_filled_rounded">
+        M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h16.8q.6 0 1.175.25.575.25.975.65l9.15 9.15q.4.4.65.975T40 16.2V41q0 1.2-.9 2.1-.9.9-2.1.9Zm13-6.05q.65 0 1.075-.425.425-.425.425-1.025v-.55h3q.65 0 1.075-.425Q30 35.1 30 34.45v-6.5q0-.65-.425-1.075-.425-.425-1.075-.425H21v-3.5h7.5q.65 0 1.075-.425Q30 22.1 30 21.45q0-.65-.425-1.075-.425-.425-1.075-.425h-3v-.5q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425-.425.425-.425 1.075v.5h-3q-.65 0-1.075.425Q18 20.8 18 21.45v6.5q0 .65.425 1.075.425.425 1.075.425H27v3.5h-7.5q-.65 0-1.075.425Q18 33.8 18 34.45q0 .65.45 1.075.45.425 1.05.425h3v.5q0 .65.425 1.075.425.425 1.075.425Zm5.3-23h6.45L27.8 7v6.45q0 .65.425 1.075.425.425 1.075.425Z
+    </Geometry>
+    <Geometry x:Key="request_quote_outline_sharp">
+        M8 44V4h21.05L40 14.95V44Zm3-29.05V7v34-26.05Zm11.5 23v-2H18v-3h9v-3.5h-9v-9.5h4.5v-2h3v2H30v3h-9v3.5h9v9.5h-4.5v2Zm5.05-23V7H11v34h26V14.95Z
+    </Geometry>
+    <Geometry x:Key="request_quote_filled_sharp">
+        M8 44V4h21.05L40 14.95V44Zm14.5-6.05h3v-2H30v-9.5h-9v-3.5h9v-3h-4.5v-2h-3v2H18v9.5h9v3.5h-9v3h4.5Zm5.3-23h7.95L27.8 7Z
+    </Geometry>
+    <Style x:Key="request_quote"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource request_quote_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource request_quote_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource request_quote_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource request_quote_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

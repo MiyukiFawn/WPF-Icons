@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="select_all_outline_rounded">
+        M6 9q0-1.2.9-2.1Q7.8 6 9 6v3Zm0 17.05V21.9h3v4.15ZM13.4 42v-3h4.15v3ZM6 17.55V13.4h3v4.15ZM21.95 9V6h4.15v3ZM39 9V6q1.2 0 2.1.9.9.9.9 2.1ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39h3Zm-3-7.4v-4.15h3v4.15ZM13.4 9V6h4.15v3Zm8.55 33v-3h4.15v3ZM39 26.05V21.9h3v4.15ZM39 42v-3h3q0 1.2-.9 2.1-.9.9-2.1.9Zm0-24.45V13.4h3v4.15Zm0 17.05v-4.15h3v4.15ZM30.45 42v-3h4.15v3Zm0-33V6h4.15v3ZM14.9 34.6q-.65 0-1.075-.425-.425-.425-.425-1.075V14.9q0-.65.425-1.075.425-.425 1.075-.425h18.2q.65 0 1.075.425.425.425.425 1.075v18.2q0 .65-.425 1.075-.425.425-1.075.425Zm1.5-3h15.2V16.4H16.4Z
+    </Geometry>
+    <Geometry x:Key="select_all_filled_rounded">
+        M6 9q0-1.2.9-2.1Q7.8 6 9 6v3Zm0 17.05V21.9h3v4.15ZM13.4 42v-3h4.15v3ZM6 17.55V13.4h3v4.15ZM21.95 9V6h4.15v3ZM39 9V6q1.2 0 2.1.9.9.9.9 2.1ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39h3Zm-3-7.4v-4.15h3v4.15ZM13.4 9V6h4.15v3Zm8.55 33v-3h4.15v3ZM39 26.05V21.9h3v4.15ZM39 42v-3h3q0 1.2-.9 2.1-.9.9-2.1.9Zm0-24.45V13.4h3v4.15Zm0 17.05v-4.15h3v4.15ZM30.45 42v-3h4.15v3Zm0-33V6h4.15v3ZM14.9 34.6q-.65 0-1.075-.425-.425-.425-.425-1.075V14.9q0-.65.425-1.075.425-.425 1.075-.425h18.2q.65 0 1.075.425.425.425.425 1.075v18.2q0 .65-.425 1.075-.425.425-1.075.425Zm1.5-3h15.2V16.4H16.4Z
+    </Geometry>
+    <Geometry x:Key="select_all_outline_sharp">
+        M6 9V6h3v3Zm0 17.05V21.9h3v4.15ZM13.4 42v-3h4.15v3ZM6 17.55V13.4h3v4.15ZM21.95 9V6h4.15v3ZM39 9V6h3v3ZM6 42v-3h3v3Zm0-7.4v-4.15h3v4.15ZM13.4 9V6h4.15v3Zm8.55 33v-3h4.15v3ZM39 26.05V21.9h3v4.15ZM39 42v-3h3v3Zm0-24.45V13.4h3v4.15Zm0 17.05v-4.15h3v4.15ZM30.45 42v-3h4.15v3Zm0-33V6h4.15v3ZM13.4 34.6V13.4h21.2v21.2Zm3-3h15.2V16.4H16.4Z
+    </Geometry>
+    <Geometry x:Key="select_all_filled_sharp">
+        M6 9V6h3v3Zm0 17.05V21.9h3v4.15ZM13.4 42v-3h4.15v3ZM6 17.55V13.4h3v4.15ZM21.95 9V6h4.15v3ZM39 9V6h3v3ZM6 42v-3h3v3Zm0-7.4v-4.15h3v4.15ZM13.4 9V6h4.15v3Zm8.55 33v-3h4.15v3ZM39 26.05V21.9h3v4.15ZM39 42v-3h3v3Zm0-24.45V13.4h3v4.15Zm0 17.05v-4.15h3v4.15ZM30.45 42v-3h4.15v3Zm0-33V6h4.15v3ZM13.4 34.6V13.4h21.2v21.2Zm3-3h15.2V16.4H16.4Z
+    </Geometry>
+    <Style x:Key="select_all"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource select_all_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource select_all_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource select_all_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource select_all_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="military_tech_outline_rounded">
+        M20.35 42.65q-.45.35-.875.025-.425-.325-.275-.875l1.4-4.5-3.65-2.7q-.45-.35-.25-.85t.7-.5h4.5l1.25-4.85-7-4.1q-1-.6-1.575-1.55Q14 21.8 14 20.65V7q0-1.25.875-2.125T17 4h14q1.25 0 2.125.875T34 7v13.65q0 1.15-.575 2.1-.575.95-1.575 1.55l-7.05 4.1 1.3 4.85h4.45q.55 0 .725.5.175.5-.275.85l-3.65 2.7 1.4 4.5q.15.55-.275.825-.425.275-.875-.025L24 39.95ZM17 7v13.65q0 .35.225.65.225.3.675.55l4.8 2.65V7H17Zm14 0h-5.3v17.5l4.4-2.65q.45-.25.675-.55.225-.3.225-.65Zm-6.8 9.2Zm-1.5-.45Zm3 0Z
+    </Geometry>
+    <Geometry x:Key="military_tech_filled_rounded">
+        M20.35 42.65q-.45.3-.875 0t-.275-.85l1.4-4.5-3.65-2.7q-.4-.35-.25-.85.15-.5.7-.5h4.5l1.25-4.85-7-4.1q-1-.6-1.575-1.55Q14 21.8 14 20.65V7q0-1.25.875-2.125T17 4h14q1.25 0 2.125.875T34 7v13.65q0 1.15-.575 2.1-.575.95-1.575 1.55l-7.05 4.1 1.3 4.85h4.45q.55 0 .7.5.15.5-.25.85l-3.65 2.7 1.4 4.5q.15.55-.275.85-.425.3-.875-.05L24 39.95ZM24.2 25.4l1.5-.9v-16q0-.65-.425-1.075Q24.85 7 24.2 7q-.65 0-1.075.425Q22.7 7.85 22.7 8.5v16Z
+    </Geometry>
+    <Geometry x:Key="military_tech_outline_sharp">
+        m18.5 44 2.1-6.7-5.45-4.05h6.75l1.25-4.85L14 23.05V4h20v19.05l-9.2 5.35 1.3 4.85h6.7l-5.45 4.05 2.1 6.7L24 39.95ZM17 7v14.35l5.7 3.15V7Zm14 0h-5.3v17.5l5.3-3.2Zm-6.8 9.2Zm-1.5-.45Zm3 0Z
+    </Geometry>
+    <Geometry x:Key="military_tech_filled_sharp">
+        m18.5 44 2.1-6.7-5.45-4.05h6.75l1.25-4.85L14 23.05V4h20v19.05l-9.2 5.35 1.3 4.85h6.7l-5.45 4.05 2.1 6.7L24 39.95Zm5.7-18.6 1.5-.9V7h-3v17.5Z
+    </Geometry>
+    <Style x:Key="military_tech"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource military_tech_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource military_tech_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource military_tech_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource military_tech_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

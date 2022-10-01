@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="mobile_off_outline_rounded">
+        m41.45 45.55-39-39.7q-.4-.45-.425-1.05Q2 4.2 2.45 3.75 2.9 3.3 3.5 3.3q.6 0 1.05.45l39.05 39.7q.45.45.425 1.05-.025.6-.475 1.05-.45.45-1.05.45-.6 0-1.05-.45ZM10 11.4l3 3.05V38.5h21.65l3.3 3.35V43q.05 1.25-.85 2.125T34.95 46H13q-1.25 0-2.125-.875T10 43Zm3 30.1V43h22v-1.5ZM38 5v28.45l-3-3V9.5H14.4L10 5.1V5q0-1.25.875-2.125T13 2h22q1.25 0 2.125.9T38 5ZM13 6.5h22V5H13Zm0 35V43v-1.5Zm0-35V5Z
+    </Geometry>
+    <Geometry x:Key="mobile_off_filled_rounded">
+        m41.45 45.55-39-39.7q-.4-.45-.425-1.05Q2 4.2 2.45 3.75 2.9 3.3 3.5 3.3q.6 0 1.05.45l39.05 39.7q.45.45.425 1.05-.025.6-.475 1.05-.45.45-1.05.45-.6 0-1.05-.45ZM10 11.4l3 3.05V38.5h21.65l3.3 3.35V43q.05 1.25-.85 2.125T34.95 46H13q-1.25 0-2.125-.875T10 43ZM38 5v28.45l-3-3V9.5H14.4L10 5.1V5q0-1.25.875-2.125T13 2h22q1.25 0 2.125.9T38 5Z
+    </Geometry>
+    <Geometry x:Key="mobile_off_outline_sharp">
+        M42.5 46.6 1.4 4.8l2.1-2.1 41.15 41.8ZM10 11.4l3 3.05V38.5h21.65l3.3 3.35V46H10Zm3 30.1V43h22v-1.5ZM38 2v31.45l-3-3V9.5H14.4L10 5.1V2ZM13 6.5h22V5H13Zm0 35V43v-1.5Zm0-35V5Z
+    </Geometry>
+    <Geometry x:Key="mobile_off_filled_sharp">
+        M42.5 46.6 1.4 4.8l2.1-2.1 41.15 41.8ZM10 11.4l3 3.05V38.5h21.65l3.3 3.35V46H10ZM38 2v31.45l-3-3V9.5H14.4L10 5.1V2Z
+    </Geometry>
+    <Style x:Key="mobile_off"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource mobile_off_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource mobile_off_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource mobile_off_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource mobile_off_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="outbox_outline_rounded">
+        m22.65 17.45-2.9 2.9q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.075t.45-1.075l5.45-5.5q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l5.5 5.5q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45l-2.9-2.85v7.95q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h30v-6.8h-7.3q-1.3 2-3.375 3.075Q26.25 36.35 24 36.35t-4.325-1.075Q17.6 34.2 16.3 32.2H9V39Zm15-5.65q1.75 0 3.225-.875t2.325-2.425q.35-.5.925-.675.575-.175 1.175-.175H39V9H9v20.2h7.35q.6 0 1.175.175.575.175.925.675.85 1.55 2.325 2.425 1.475.875 3.225.875ZM9 39h30Z
+    </Geometry>
+    <Geometry x:Key="outbox_filled_rounded">
+        M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm15-8.65q1.75 0 3.2-.9 1.45-.9 2.35-2.4.3-.55.9-.7.6-.15 1.2-.15H39V9H9v20.2h7.35q.6 0 1.2.15t.9.7q.9 1.5 2.35 2.4 1.45.9 3.2.9Zm-1.35-15.9-2.9 2.9q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.075t.45-1.075l5.45-5.5q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l5.5 5.5q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45l-2.9-2.85v7.95q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075Z
+    </Geometry>
+    <Geometry x:Key="outbox_outline_sharp">
+        M22.65 26.9v-9.45L18.7 21.4l-2.15-2.15 7.6-7.6 7.6 7.6-2.15 2.15-3.95-3.95v9.45ZM6 42V6h36v36Zm3-3h30v-6.8h-7.3q-1.3 2-3.375 3.075Q26.25 36.35 24 36.35t-4.325-1.075Q17.6 34.2 16.3 32.2H9Zm15-5.65q2.05 0 3.7-1.175Q29.35 31 30.5 29.2H39V9H9v20.2h8.5q1.15 1.8 2.8 2.975T24 33.35ZM9 39h30Z
+    </Geometry>
+    <Geometry x:Key="outbox_filled_sharp">
+        M22.65 26.9v-9.45L18.7 21.4l-2.15-2.15 7.6-7.6 7.6 7.6-2.15 2.15-3.95-3.95v9.45ZM6 42V6h36v36Zm3-3h30v-6.8h-7.3q-1.3 2-3.375 3.075Q26.25 36.35 24 36.35t-4.325-1.075Q17.6 34.2 16.3 32.2H9Zm15-5.65q2.05 0 3.7-1.175Q29.35 31 30.5 29.2H39V9H9v20.2h8.5q1.15 1.8 2.8 2.975T24 33.35ZM9 39v-6.8h7.3q1.3 2 3.375 3.075Q21.75 36.35 24 36.35t4.325-1.075Q30.4 34.2 31.7 32.2H39V39Z
+    </Geometry>
+    <Style x:Key="outbox"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource outbox_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource outbox_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource outbox_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource outbox_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

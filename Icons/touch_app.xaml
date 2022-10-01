@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="touch_app_outline_rounded">
+        M23.25 2q4.55 0 7.775 3.175Q34.25 8.35 34.25 12.9q0 2.6-1.125 4.9Q32 20.1 29.95 21.7h-1.7v-2.5q1.45-1.15 2.225-2.8.775-1.65.775-3.5 0-3.3-2.35-5.6T23.25 5q-3.3 0-5.65 2.3-2.35 2.3-2.35 5.6 0 1.85.775 3.5t2.225 2.8v3.6q-2.8-1.45-4.4-4.1-1.6-2.65-1.6-5.8 0-4.55 3.225-7.725T23.25 2Zm-1.9 42q-.85 0-1.6-.325-.75-.325-1.3-.875l-8.25-8.25q-.75-.75-.725-2.05.025-1.3 1.025-2.45 1-1.15 2.025-1.475 1.025-.325 2.225-.075l3.5.8V13q0-2.1 1.45-3.55Q21.15 8 23.25 8q2.1 0 3.55 1.45 1.45 1.45 1.45 3.55v8.6h1.3q.25 0 .45.1t.45.2l7.4 3.6q1.2.55 1.775 1.775.575 1.225.325 2.525l-1.8 10.9q-.25 1.45-1.4 2.375t-2.6.925Zm-.4-3H35l2.15-12.45L28 24h-2.75V13q0-.9-.55-1.45-.55-.55-1.45-.55-.9 0-1.45.55-.55.55-.55 1.45v19.95l-7.7-1.65-1.15 1.15ZM35 41H20.95 35Z
+    </Geometry>
+    <Geometry x:Key="touch_app_filled_rounded">
+        M18.25 17.85q-1.75-1.2-2.775-3.1-1.025-1.9-1.025-4.05 0-3.6 2.6-6.15Q19.65 2 23.25 2t6.2 2.55q2.6 2.55 2.6 6.15 0 2.1-.95 4.025-.95 1.925-2.85 3.125V11.4q0-2.1-1.45-3.5t-3.55-1.4q-2.1 0-3.55 1.4-1.45 1.4-1.45 3.5Zm4 26.15q-.85 0-1.6-.325-.75-.325-1.3-.875l-8.4-8.35q-.55-.55-.575-1.35-.025-.8.325-1.35.4-.6 1.1-.775.7-.175 1.6-.025l6.35 1.1V11.5q0-1.5 1-2.5t2.5-1q1.5 0 2.5 1t1 2.5v11h.5q.65 0 1.4.15.75.15 1.45.5l7.35 3.25q1.4.6 2.025 1.95t.375 2.9l-1.7 9.45q-.25 1.45-1.4 2.375t-2.6.925Z
+    </Geometry>
+    <Geometry x:Key="touch_app_outline_sharp">
+        M23.25 2q4.55 0 7.775 3.175Q34.25 8.35 34.25 12.9q0 2.6-1.125 4.9Q32 20.1 29.95 21.7h-1.7v-2.5q1.45-1.15 2.225-2.8.775-1.65.775-3.5 0-3.3-2.35-5.6T23.25 5q-3.3 0-5.65 2.3-2.35 2.3-2.35 5.6 0 1.85.775 3.5t2.225 2.8v3.6q-2.8-1.45-4.4-4.1-1.6-2.65-1.6-5.8 0-4.55 3.225-7.725T23.25 2Zm-3.6 42L8.15 32.5 12.5 28l5.75 1.3V13q0-2.1 1.45-3.55Q21.15 8 23.25 8q2.1 0 3.55 1.45 1.45 1.45 1.45 3.55v8.6h1.6l10.6 5.15L37.6 44Zm1.3-3H35l2.15-12.45L28 24h-2.75V13q0-.9-.55-1.45-.55-.55-1.45-.55-.9 0-1.45.55-.55.55-.55 1.45v19.95l-8.85-.5Zm0 0H35Z
+    </Geometry>
+    <Geometry x:Key="touch_app_filled_sharp">
+        M18.25 17.85q-1.75-1.2-2.775-3.1-1.025-1.9-1.025-4.05 0-3.6 2.6-6.15Q19.65 2 23.25 2t6.2 2.55q2.6 2.55 2.6 6.15 0 2.1-.95 4.025-.95 1.925-2.85 3.125V11.4q0-2.1-1.45-3.5t-3.55-1.4q-2.1 0-3.55 1.4-1.45 1.4-1.45 3.5ZM20.55 44 9.5 33l2.25-2.35 8 1.4V11.5q0-1.5 1-2.5t2.5-1q1.5 0 2.5 1t1 2.5v11h1.85l11.9 5.25L37.55 44Z
+    </Geometry>
+    <Style x:Key="touch_app"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource touch_app_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource touch_app_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource touch_app_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource touch_app_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

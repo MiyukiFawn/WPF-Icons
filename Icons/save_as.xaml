@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="save_as_outline_rounded">
+        M9 42q-1.25 0-2.125-.875T6 39V9q0-1.25.875-2.125T9 6h23.9q.6 0 1.15.25.55.25.95.65l6.1 6.1q.4.4.65.95.25.55.25 1.15v11.65l-3 3V15.2L32.8 9H9v30h20.8l-3 3Zm15-6.25q2.15 0 3.675-1.525T29.2 30.55q0-2.15-1.525-3.675T24 25.35q-2.15 0-3.675 1.525T18.8 30.55q0 2.15 1.525 3.675T24 35.75ZM13.15 18.8h14.9q.65 0 1.075-.425.425-.425.425-1.075v-4.15q0-.65-.425-1.075-.425-.425-1.075-.425h-14.9q-.65 0-1.075.425-.425.425-.425 1.075v4.15q0 .65.425 1.075.425.425 1.075.425ZM30.25 46q-.3 0-.525-.225-.225-.225-.225-.525V43.8q0-.1.2-.5l11.2-11.2 2.5 2.5-11.2 11.2q-.1.1-.5.2ZM44.7 33.3l-2.5-2.5 1.85-1.85q.25-.25.625-.25t.625.25l1.25 1.25q.25.25.25.625t-.25.625ZM9 39V9v20.75Z
+    </Geometry>
+    <Geometry x:Key="save_as_filled_rounded">
+        M9 42q-1.25 0-2.125-.875T6 39V9q0-1.25.875-2.125T9 6h23.9q.6 0 1.15.25.55.25.95.65l6.1 6.1q.4.4.65.95.25.55.25 1.15v11.65L26.8 42Zm15-6.25q2.15 0 3.675-1.525T29.2 30.55q0-2.15-1.525-3.675T24 25.35q-2.15 0-3.675 1.525T18.8 30.55q0 2.15 1.525 3.675T24 35.75ZM13.15 18.8h14.9q.65 0 1.075-.425.425-.425.425-1.075v-4.15q0-.65-.425-1.075-.425-.425-1.075-.425h-14.9q-.65 0-1.075.425-.425.425-.425 1.075v4.15q0 .65.425 1.075.425.425 1.075.425ZM30.25 46q-.3 0-.525-.225-.225-.225-.225-.525V43.8q0-.1.2-.5l11.2-11.2 2.5 2.5-11.2 11.2q-.1.1-.5.2ZM44.7 33.3l-2.5-2.5 1.95-1.95q.3-.3.525-.3.225 0 .525.3l1.35 1.35q.3.3.3.625t-.3.625Z
+    </Geometry>
+    <Geometry x:Key="save_as_outline_sharp">
+        M6 42V6h28.15L42 13.85v12.9l-3 3V15.2L32.8 9H9v30h20.8l-3 3Zm18-6.25q2.15 0 3.675-1.525T29.2 30.55q0-2.15-1.525-3.675T24 25.35q-2.15 0-3.675 1.525T18.8 30.55q0 2.15 1.525 3.675T24 35.75ZM11.65 18.8h17.9v-7.15h-17.9ZM29.5 46v-2.5l11.4-11.4 2.5 2.5L32 46Zm15.2-12.7-2.5-2.5 2.5-2.5 2.45 2.5ZM9 39V9v20.75Z
+    </Geometry>
+    <Geometry x:Key="save_as_filled_sharp">
+        M6 42V6h28.15L42 13.85v12.9L26.8 42Zm18-6.25q2.15 0 3.675-1.525T29.2 30.55q0-2.15-1.525-3.675T24 25.35q-2.15 0-3.675 1.525T18.8 30.55q0 2.15 1.525 3.675T24 35.75ZM11.65 18.8h17.9v-7.15h-17.9ZM29.5 46v-2.5l11.4-11.4 2.5 2.5L32 46Zm15.2-12.7-2.5-2.5 2.5-2.5 2.45 2.5Z
+    </Geometry>
+    <Style x:Key="save_as"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource save_as_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource save_as_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource save_as_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource save_as_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

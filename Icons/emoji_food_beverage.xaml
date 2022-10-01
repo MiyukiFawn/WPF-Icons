@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="emoji_food_beverage_outline_rounded">
+        M9.5 42q-.65 0-1.075-.425Q8 41.15 8 40.5q0-.65.425-1.075Q8.85 39 9.5 39h28.95q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q39.1 42 38.45 42Zm6.05-6q-3.15 0-5.35-2.175Q8 31.65 8 28.5V9q0-1.25.875-2.125T11 6h30q1.2 0 2.1.9.9.9.9 2.1v8q0 1.2-.9 2.1-.9.9-2.1.9h-4.8v8.5q0 3.15-2.175 5.325Q31.85 36 28.65 36ZM36.2 17H41V9h-4.8ZM15.55 33h13.1q1.8 0 3.175-1.375Q33.2 30.25 33.2 28.5V9H19.85v1.65l3.55 2.9q.05.05.45.9v7.5q0 .5-.35.85t-.9.35h-7.55q-.55 0-.9-.35t-.35-.85v-7.5q0-.25.45-.9l3.6-2.9V9H11v19.5q0 1.75 1.4 3.125T15.55 33Zm2.3-24h2Zm4.25 12Z
+    </Geometry>
+    <Geometry x:Key="emoji_food_beverage_filled_rounded">
+        M9.5 42q-.65 0-1.075-.425Q8 41.15 8 40.5q0-.65.425-1.075Q8.85 39 9.5 39h28.95q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q39.1 42 38.45 42Zm26.7-25H41V9h-4.8ZM15.55 36q-3.15 0-5.35-2.175Q8 31.65 8 28.5V9q0-1.25.875-2.125T11 6h6.85v4.65l-3.6 2.9q-.05.05-.45.9v7.5q0 .5.35.85t.9.35h7.55q.55 0 .9-.35t.35-.85v-7.5q0-.25-.45-.9l-3.55-2.9V6H41q1.2 0 2.1.9.9.9.9 2.1v8q0 1.2-.9 2.1-.9.9-2.1.9h-4.8v8.5q0 3.15-2.175 5.325Q31.85 36 28.65 36Z
+    </Geometry>
+    <Geometry x:Key="emoji_food_beverage_outline_sharp">
+        M8 42v-3h31.95v3Zm0-6V6h33q1.2 0 2.1.9.9.9.9 2.1v8q0 1.2-.9 2.1-.9.9-2.1.9h-4.8v16Zm28.2-19H41V9h-4.8ZM11 33h22.2V9H19.85v1.65l4 3.25v9.25H13.8V13.9l4.05-3.25V9H11Zm6.85-24h2Zm4.25 12Z
+    </Geometry>
+    <Geometry x:Key="emoji_food_beverage_filled_sharp">
+        M8 42v-3h31.95v3Zm28.2-25H41V9h-4.8ZM8 36V6h9.85v4.65L13.8 13.9v9.25h10.05V13.9l-4-3.25V6H41q1.2 0 2.1.9.9.9.9 2.1v8q0 1.2-.9 2.1-.9.9-2.1.9h-4.8v16Z
+    </Geometry>
+    <Style x:Key="emoji_food_beverage"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource emoji_food_beverage_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource emoji_food_beverage_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource emoji_food_beverage_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource emoji_food_beverage_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

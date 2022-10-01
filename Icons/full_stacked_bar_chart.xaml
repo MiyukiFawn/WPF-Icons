@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="full_stacked_bar_chart_outline_rounded">
+        M8 40v-5.5h7V40Zm0-8.5v-7h7v7Zm0-10V8h7v13.5ZM20.5 40V26.5h7V40Zm0-16.5v-7h7v7Zm0-10V8h7v5.5ZM33 40v-3h7v3Zm0-6.5v-7h7v7Zm0-10V8h7v15.5Z
+    </Geometry>
+    <Geometry x:Key="full_stacked_bar_chart_filled_rounded">
+        M8 40v-5.5h7V40Zm0-8.5v-7h7v7Zm0-10V8h7v13.5ZM20.5 40V26.5h7V40Zm0-16.5v-7h7v7Zm0-10V8h7v5.5ZM33 40v-3h7v3Zm0-6.5v-7h7v7Zm0-10V8h7v15.5Z
+    </Geometry>
+    <Geometry x:Key="full_stacked_bar_chart_outline_sharp">
+        M8 40v-5.5h7V40Zm0-8.5v-7h7v7Zm0-10V8h7v13.5ZM20.5 40V26.5h7V40Zm0-16.5v-7h7v7Zm0-10V8h7v5.5ZM33 40v-3h7v3Zm0-6.5v-7h7v7Zm0-10V8h7v15.5Z
+    </Geometry>
+    <Geometry x:Key="full_stacked_bar_chart_filled_sharp">
+        M8 40v-5.5h7V40Zm0-8.5v-7h7v7Zm0-10V8h7v13.5ZM20.5 40V26.5h7V40Zm0-16.5v-7h7v7Zm0-10V8h7v5.5ZM33 40v-3h7v3Zm0-6.5v-7h7v7Zm0-10V8h7v15.5Z
+    </Geometry>
+    <Style x:Key="full_stacked_bar_chart"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource full_stacked_bar_chart_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource full_stacked_bar_chart_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource full_stacked_bar_chart_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource full_stacked_bar_chart_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="queue_play_next_outline_rounded">
+        M38.4 43.85q-.5-.5-.5-1.175t.5-1.175l5-5-5-5q-.5-.5-.5-1.15 0-.65.5-1.15.5-.5 1.15-.5.65 0 1.15.5l6.3 6.25q.25.25.35.5.1.25.1.55 0 .3-.1.55-.1.25-.35.5l-6.3 6.3q-.5.5-1.15.5-.65 0-1.15-.5ZM18 42.05q-.65 0-1.075-.425-.425-.425-.425-1.075V38H7q-1.25 0-2.125-.875T4 35V9.05q0-1.25.875-2.125T7 6.05h34q1.25 0 2.125.875T44 9.05v13.3q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q41 23 41 22.35V9H7v26h25.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q33.45 38 32.8 38h-1.3v2.55q0 .65-.425 1.075-.425.425-1.075.425Zm5.95-12.5q.65 0 1.075-.425.425-.425.425-1.075v-5h5q.65 0 1.075-.425.425-.425.425-1.075 0-.65-.425-1.075-.425-.425-1.075-.425h-5v-5q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425-.425.425-.425 1.075v5h-5q-.65 0-1.075.425-.425.425-.425 1.075 0 .65.425 1.075.425.425 1.075.425h5v5q0 .65.425 1.075.425.425 1.075.425ZM24 22Z
+    </Geometry>
+    <Geometry x:Key="queue_play_next_filled_rounded">
+        M23.95 29.55q.65 0 1.075-.425.425-.425.425-1.075v-5h5q.65 0 1.075-.425.425-.425.425-1.075 0-.65-.425-1.075-.425-.425-1.075-.425h-5v-5q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425-.425.425-.425 1.075v5h-5q-.65 0-1.075.425-.425.425-.425 1.075 0 .65.425 1.075.425.425 1.075.425h5v5q0 .65.425 1.075.425.425 1.075.425Zm14.45 14.3q-.5-.5-.5-1.175t.5-1.175l5-5-5-5q-.25-.25-.375-.55-.125-.3-.125-.6t.125-.6q.125-.3.375-.55.5-.5 1.15-.5.65 0 1.15.5l6.3 6.25q.25.25.35.5.1.25.1.55 0 .3-.1.55-.1.25-.35.5l-6.3 6.3q-.5.5-1.15.5-.65 0-1.15-.5ZM18 42.05q-.65 0-1.075-.425-.425-.425-.425-1.075V38H7q-1.25 0-2.125-.875T4 35V9.05q0-1.25.875-2.125T7 6.05h34q1.25 0 2.125.875T44 9.05v14.8h-6.7q-1.25 0-2.125.875T34.3 26.85V38h-2.8v2.55q0 .65-.425 1.075-.425.425-1.075.425Z
+    </Geometry>
+    <Geometry x:Key="queue_play_next_outline_sharp">
+        m39.55 45-2.35-2.3 6.2-6.2-6.15-6.15 2.3-2.3 8.5 8.45ZM16.5 42.05V38H4V6.05h40v17.8h-3V9H7v26h27.3v3h-2.8v4.05Zm5.95-12.5h3v-6.5h6.5v-3h-6.5v-6.5h-3v6.5h-6.5v3h6.5ZM24 22Z
+    </Geometry>
+    <Geometry x:Key="queue_play_next_filled_sharp">
+        M22.45 29.55h3v-6.5h6.5v-3h-6.5v-6.5h-3v6.5h-6.5v3h6.5ZM39.55 45l-2.35-2.3 6.2-6.2-6.15-6.15 2.3-2.3 8.5 8.45ZM16.5 42.05V38H4V6.05h40v17.8h-9.7V38h-2.8v4.05Z
+    </Geometry>
+    <Style x:Key="queue_play_next"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource queue_play_next_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource queue_play_next_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource queue_play_next_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource queue_play_next_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

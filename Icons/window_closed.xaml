@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="window_closed_outline_rounded">
+        M8 42V6h32v36Zm3-19.5h11v-2h4v2h11V9H11ZM11 39h26V25.5H11Zm0 0h26-26Z
+    </Geometry>
+    <Geometry x:Key="window_closed_filled_rounded">
+        M8 42V6h32v36Zm4.5-19.5H22v-2h4v2h9.5v-12h-23Zm0 15h23v-12h-23ZM11 39h26V9H11Z
+    </Geometry>
+    <Geometry x:Key="window_closed_outline_sharp">
+        M8 42V6h32v36Zm3-19.5h11v-2h4v2h11V9H11ZM11 39h26V25.5H11Zm0 0h26-26Z
+    </Geometry>
+    <Geometry x:Key="window_closed_filled_sharp">
+        M8 42V6h32v36Zm4.5-19.5H22v-2h4v2h9.5v-12h-23Zm0 15h23v-12h-23ZM11 39h26V9H11Z
+    </Geometry>
+    <Style x:Key="window_closed"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource window_closed_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource window_closed_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource window_closed_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource window_closed_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

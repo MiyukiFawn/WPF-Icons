@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="tornado_outline_rounded">
+        M7.2 6h33.6q1.75 0 2.6 1.5.85 1.5 0 3l-16.8 29Q25.75 41 24 41t-2.6-1.5l-16.8-29q-.85-1.5 0-3T7.2 6Zm0 3 4.35 7.5h24.9L40.8 9H7.2Zm6.1 10.5 4.05 7h13.3l4.05-7Zm5.8 10L24 38l4.9-8.5Z
+    </Geometry>
+    <Geometry x:Key="tornado_filled_rounded">
+        m8.1 16.5-3.5-6q-.85-1.5 0-3T7.2 6h33.6q1.75 0 2.6 1.5.85 1.5 0 3l-3.5 6Zm5.75 10-4.05-7h28.4l-4.05 7Zm7.55 13-5.8-10h16.8l-5.8 10Q25.75 41 24 41t-2.6-1.5Z
+    </Geometry>
+    <Geometry x:Key="tornado_outline_sharp">
+        M2 6h44L24 44Zm5.2 3 4.35 7.5h24.9L40.8 9Zm6.1 10.5 4.05 7h13.3l4.05-7Zm5.8 10L24 38l4.9-8.5Z
+    </Geometry>
+    <Geometry x:Key="tornado_filled_sharp">
+        m2 6 6.1 10.5h31.8L46 6Zm7.8 13.5 4.05 7h20.3l4.05-7Zm5.8 10L24 44l8.35-14.5Z
+    </Geometry>
+    <Style x:Key="tornado"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource tornado_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource tornado_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource tornado_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource tornado_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

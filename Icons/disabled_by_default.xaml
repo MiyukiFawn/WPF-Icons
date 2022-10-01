@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="disabled_by_default_outline_rounded">
+        M9 39h30V9H9Zm0 3q-1.25 0-2.125-.875T6 39V9q0-1.25.875-2.125T9 6h30q1.25 0 2.125.875T42 9v30q0 1.25-.875 2.125T39 42Zm6.75-9.75q.45.45 1.05.45.6 0 1.05-.45L24 26.1l6.15 6.15q.45.45 1.05.45.6 0 1.05-.45.45-.45.45-1.05 0-.6-.45-1.05L26.1 24l6.15-6.15q.45-.45.45-1.05 0-.6-.45-1.05-.45-.45-1.05-.45-.6 0-1.05.45L24 21.9l-6.15-6.15q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05L21.9 24l-6.15 6.15q-.45.45-.45 1.05 0 .6.45 1.05ZM9 39V9v30Z
+    </Geometry>
+    <Geometry x:Key="disabled_by_default_filled_rounded">
+        M9 42q-1.25 0-2.125-.875T6 39V9q0-1.25.875-2.125T9 6h30q1.25 0 2.125.875T42 9v30q0 1.25-.875 2.125T39 42Zm6.75-9.75q.45.45 1.05.45.6 0 1.05-.45L24 26.1l6.15 6.15q.45.45 1.05.45.6 0 1.05-.45.45-.45.45-1.05 0-.6-.45-1.05L26.1 24l6.15-6.15q.45-.45.45-1.05 0-.6-.45-1.05-.45-.45-1.05-.45-.6 0-1.05.45L24 21.9l-6.15-6.15q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05L21.9 24l-6.15 6.15q-.45.45-.45 1.05 0 .6.45 1.05Z
+    </Geometry>
+    <Geometry x:Key="disabled_by_default_outline_sharp">
+        M9 39h30V9H9Zm-3 3V6h36v36Zm10.8-8.7 7.2-7.2 7.2 7.2 2.1-2.1-7.2-7.2 7.2-7.2-2.1-2.1-7.2 7.2-7.2-7.2-2.1 2.1 7.2 7.2-7.2 7.2ZM9 39V9v30Z
+    </Geometry>
+    <Geometry x:Key="disabled_by_default_filled_sharp">
+        M6 42V6h36v36Zm10.8-8.7 7.2-7.2 7.2 7.2 2.1-2.1-7.2-7.2 7.2-7.2-2.1-2.1-7.2 7.2-7.2-7.2-2.1 2.1 7.2 7.2-7.2 7.2Z
+    </Geometry>
+    <Style x:Key="disabled_by_default"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource disabled_by_default_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource disabled_by_default_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource disabled_by_default_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource disabled_by_default_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="chrome_reader_mode_outline_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm15.5-3V11H7v26Zm3 0H41V11H25.5Zm3.45-17.8h8.7q.5 0 .85-.35t.35-.9q0-.55-.35-.9t-.9-.35h-8.7q-.5 0-.85.35t-.35.9q0 .55.35.9t.9.35Zm0 5.45h8.7q.5 0 .85-.35t.35-.9q0-.55-.35-.9t-.9-.35h-8.7q-.5 0-.85.35t-.35.9q0 .55.35.9t.9.35Zm0 5.45h8.7q.5 0 .85-.35t.35-.9q0-.55-.35-.9t-.9-.35h-8.7q-.5 0-.85.35t-.35.9q0 .55.35.9t.9.35ZM7 37V11Z
+    </Geometry>
+    <Geometry x:Key="chrome_reader_mode_filled_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm18.5-3H41V11H25.5Zm3.45-17.8h8.7q.5 0 .85-.35t.35-.9q0-.55-.35-.9t-.9-.35h-8.7q-.5 0-.85.35t-.35.9q0 .55.35.9t.9.35Zm0 5.45h8.7q.5 0 .85-.35t.35-.9q0-.55-.35-.9t-.9-.35h-8.7q-.5 0-.85.35t-.35.9q0 .55.35.9t.9.35Zm0 5.45h8.7q.5 0 .85-.35t.35-.9q0-.55-.35-.9t-.9-.35h-8.7q-.5 0-.85.35t-.35.9q0 .55.35.9t.9.35Z
+    </Geometry>
+    <Geometry x:Key="chrome_reader_mode_outline_sharp">
+        M4 40V8h40v32Zm3-3h15.5V11H7Zm18.5 0H41V11H25.5Zm2.2-17.8h11.15v-2.5H27.7Zm0 5.45h11.15v-2.5H27.7Zm0 5.45h11.15v-2.5H27.7ZM7 11v26Z
+    </Geometry>
+    <Geometry x:Key="chrome_reader_mode_filled_sharp">
+        M4 40V8h40v32Zm21.5-3H41V11H25.5Zm2.2-17.8h11.15v-2.5H27.7Zm0 5.45h11.15v-2.5H27.7Zm0 5.45h11.15v-2.5H27.7Z
+    </Geometry>
+    <Style x:Key="chrome_reader_mode"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource chrome_reader_mode_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource chrome_reader_mode_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource chrome_reader_mode_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource chrome_reader_mode_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

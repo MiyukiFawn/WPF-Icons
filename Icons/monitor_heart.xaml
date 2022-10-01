@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="monitor_heart_outline_rounded">
+        M5.5 19.5q-.65 0-1.075-.425Q4 18.65 4 18v-7q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v7q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q41 18.65 41 18v-7H7v7q0 .65-.425 1.075-.425.425-1.075.425ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37v-7q0-.65.425-1.075Q4.85 28.5 5.5 28.5q.65 0 1.075.425Q7 29.35 7 30v7h34v-7q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q44 29.35 44 30v7q0 1.2-.9 2.1-.9.9-2.1.9Zm13-6.5q.4 0 .775-.2t.575-.6L28 19.4l2.65 5.3q.2.4.575.6.375.2.775.2h10.5q.65 0 1.075-.425Q44 24.65 44 24q0-.65-.425-1.075-.425-.425-1.075-.425h-9.55l-3.6-7.15q-.4-.75-1.35-.75-.95 0-1.35.75L20 28.6l-2.65-5.3q-.2-.4-.575-.6-.375-.2-.775-.2H5.5q-.65 0-1.075.425Q4 23.35 4 24q0 .65.425 1.075.425.425 1.075.425h9.55l3.6 7.2q.2.4.575.6.375.2.775.2Zm4-9.5Z
+    </Geometry>
+    <Geometry x:Key="monitor_heart_filled_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V25.5h11.05l3.6 7.2q.2.4.575.6.375.2.775.2t.775-.2q.375-.2.575-.6L28 19.4l2.65 5.3q.2.4.575.6.375.2.775.2h12V37q0 1.2-.9 2.1-.9.9-2.1.9Zm13-11.4-2.65-5.3q-.2-.4-.575-.6-.375-.2-.775-.2H4V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v11.5H32.95l-3.6-7.15q-.2-.4-.575-.575Q28.4 14.6 28 14.6t-.775.175q-.375.175-.575.575Z
+    </Geometry>
+    <Geometry x:Key="monitor_heart_outline_sharp">
+        M4 19.5V8h40v11.5h-3V11H7v8.5ZM4 40V28.5h3V37h34v-8.5h3V40Zm16-6.5q.4 0 .775-.2t.575-.6L28 19.4l2.65 5.3q.2.4.575.6.375.2.775.2h12v-3H32.95l-3.6-7.15q-.4-.75-1.35-.75-.95 0-1.35.75L20 28.6l-2.65-5.3q-.2-.4-.575-.6-.375-.2-.775-.2H4v3h11.05l3.6 7.2q.2.4.575.6.375.2.775.2Zm4-9.5Z
+    </Geometry>
+    <Geometry x:Key="monitor_heart_filled_sharp">
+        M4 40V25.5h11.05l3.6 7.2q.2.4.575.6.375.2.775.2t.775-.2q.375-.2.575-.6L28 19.4l2.65 5.3q.2.4.575.6.375.2.775.2h12V40Zm16-11.4-2.65-5.3q-.15-.4-.525-.6-.375-.2-.825-.2H4V8h40v14.5H32.95l-3.6-7.15q-.2-.4-.575-.575Q28.4 14.6 28 14.6t-.775.175q-.375.175-.575.575Z
+    </Geometry>
+    <Style x:Key="monitor_heart"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource monitor_heart_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource monitor_heart_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource monitor_heart_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource monitor_heart_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="vertical_distribute_outline_rounded">
+        M5.5 7q-.65 0-1.075-.425Q4 6.15 4 5.5q0-.65.425-1.075Q4.85 4 5.5 4h37q.65 0 1.075.425Q44 4.85 44 5.5q0 .65-.425 1.075Q43.15 7 42.5 7Zm11 19.5q-1.05 0-1.775-.725Q14 25.05 14 24q0-1.05.725-1.775.725-.725 1.775-.725h15q1.05 0 1.775.725Q34 22.95 34 24q0 1.05-.725 1.775-.725.725-1.775.725ZM5.5 44q-.65 0-1.075-.425Q4 43.15 4 42.5q0-.65.425-1.075Q4.85 41 5.5 41h37q.65 0 1.075.425Q44 41.85 44 42.5q0 .65-.425 1.075Q43.15 44 42.5 44Z
+    </Geometry>
+    <Geometry x:Key="vertical_distribute_filled_rounded">
+        M5.5 7q-.65 0-1.075-.425Q4 6.15 4 5.5q0-.65.425-1.075Q4.85 4 5.5 4h37q.65 0 1.075.425Q44 4.85 44 5.5q0 .65-.425 1.075Q43.15 7 42.5 7Zm11 19.5q-1.05 0-1.775-.725Q14 25.05 14 24q0-1.05.725-1.775.725-.725 1.775-.725h15q1.05 0 1.775.725Q34 22.95 34 24q0 1.05-.725 1.775-.725.725-1.775.725ZM5.5 44q-.65 0-1.075-.425Q4 43.15 4 42.5q0-.65.425-1.075Q4.85 41 5.5 41h37q.65 0 1.075.425Q44 41.85 44 42.5q0 .65-.425 1.075Q43.15 44 42.5 44Z
+    </Geometry>
+    <Geometry x:Key="vertical_distribute_outline_sharp">
+        M4 44v-3h40v3Zm10-17.5v-5h20v5ZM4 7V4h40v3Z
+    </Geometry>
+    <Geometry x:Key="vertical_distribute_filled_sharp">
+        M4 44v-3h40v3Zm10-17.5v-5h20v5ZM4 7V4h40v3Z
+    </Geometry>
+    <Style x:Key="vertical_distribute"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource vertical_distribute_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource vertical_distribute_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource vertical_distribute_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource vertical_distribute_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

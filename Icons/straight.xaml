@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="straight_outline_rounded">
+        M24 42q-.65 0-1.075-.425-.425-.425-.425-1.075V11.7l-3.45 3.45q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05l6-6q.25-.25.5-.325.25-.075.55-.075.3 0 .55.075.25.075.5.325l6 6q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45L25.5 11.7v28.8q0 .65-.425 1.075Q24.65 42 24 42Z
+    </Geometry>
+    <Geometry x:Key="straight_filled_rounded">
+        M24 42q-.65 0-1.075-.425-.425-.425-.425-1.075V11.7l-3.45 3.45q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05l6-6q.25-.25.5-.325.25-.075.55-.075.3 0 .55.075.25.075.5.325l6 6q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45L25.5 11.7v28.8q0 .65-.425 1.075Q24.65 42 24 42Z
+    </Geometry>
+    <Geometry x:Key="straight_outline_sharp">
+        M22.5 42V11.7L18 16.2l-2.1-2.1L24 6l8.1 8.1-2.1 2.1-4.5-4.5V42Z
+    </Geometry>
+    <Geometry x:Key="straight_filled_sharp">
+        M22.5 42V11.7L18 16.2l-2.1-2.1L24 6l8.1 8.1-2.1 2.1-4.5-4.5V42Z
+    </Geometry>
+    <Style x:Key="straight"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource straight_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource straight_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource straight_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource straight_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

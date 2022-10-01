@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="electric_bolt_outline_rounded">
+        M16.45 43.55q-.4-.4-.45-1-.05-.6.3-1.05L26 28 9.8 26.45q-1.3-.1-1.725-1.35-.425-1.25.575-2.1L29.4 4.4q.45-.45 1.075-.425.625.025 1.075.475.4.4.45 1 .05.6-.3 1.05L22 20l16.2 1.55q1.3.1 1.725 1.35.425 1.25-.575 2.1L18.6 43.6q-.45.45-1.075.425Q16.9 44 16.45 43.55Z
+    </Geometry>
+    <Geometry x:Key="electric_bolt_filled_rounded">
+        M16.45 43.55q-.4-.4-.45-1-.05-.6.3-1.05L26 28 9.8 26.45q-1.3-.1-1.725-1.35-.425-1.25.575-2.1L29.4 4.4q.45-.45 1.075-.425.625.025 1.075.475.4.4.45 1 .05.6-.3 1.05L22 20l16.2 1.55q1.3.1 1.725 1.35.425 1.25-.575 2.1L18.6 43.6q-.45.45-1.075.425Q16.9 44 16.45 43.55Z
+    </Geometry>
+    <Geometry x:Key="electric_bolt_outline_sharp">
+        M16.45 43.55q-.4-.4-.45-1-.05-.6.3-1.05L26 28 9.8 26.45q-1.3-.1-1.725-1.35-.425-1.25.575-2.1L29.4 4.4q.45-.45 1.075-.425.625.025 1.075.475.4.4.45 1 .05.6-.3 1.05L22 20l16.2 1.55q1.3.1 1.725 1.35.425 1.25-.575 2.1L18.6 43.6q-.45.45-1.075.425Q16.9 44 16.45 43.55Z
+    </Geometry>
+    <Geometry x:Key="electric_bolt_filled_sharp">
+        M16.45 43.55q-.4-.4-.45-1-.05-.6.3-1.05L26 28 9.8 26.45q-1.3-.1-1.725-1.35-.425-1.25.575-2.1L29.4 4.4q.45-.45 1.075-.425.625.025 1.075.475.4.4.45 1 .05.6-.3 1.05L22 20l16.2 1.55q1.3.1 1.725 1.35.425 1.25-.575 2.1L18.6 43.6q-.45.45-1.075.425Q16.9 44 16.45 43.55Z
+    </Geometry>
+    <Style x:Key="electric_bolt"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource electric_bolt_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource electric_bolt_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource electric_bolt_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource electric_bolt_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

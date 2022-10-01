@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="flash_on_outline_rounded">
+        M21.4 43.6q-.3.5-.85.35-.55-.15-.55-.7V28h-4.5q-.65 0-1.075-.425Q14 27.15 14 26.5v-21q0-.65.425-1.075Q14.85 4 15.5 4h16.2q.85 0 1.275.675.425.675.075 1.425L26 22h5.4q.85 0 1.3.75.45.75 0 1.5Z
+    </Geometry>
+    <Geometry x:Key="flash_on_filled_rounded">
+        M21.4 43.6q-.3.5-.85.35-.55-.15-.55-.7V28h-4.5q-.65 0-1.075-.425Q14 27.15 14 26.5v-21q0-.65.425-1.075Q14.85 4 15.5 4h16.2q.85 0 1.275.675.425.675.075 1.425L26 22h5.4q.85 0 1.3.75.45.75 0 1.5Z
+    </Geometry>
+    <Geometry x:Key="flash_on_outline_sharp">
+        M20 46V28h-6V4h20l-8 18h8Z
+    </Geometry>
+    <Geometry x:Key="flash_on_filled_sharp">
+        M20 46V28h-6V4h20l-8 18h8Z
+    </Geometry>
+    <Style x:Key="flash_on"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource flash_on_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource flash_on_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource flash_on_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource flash_on_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

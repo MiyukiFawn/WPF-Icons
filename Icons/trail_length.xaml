@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="trail_length_outline_rounded">
+        M13.5 34v-3h13.35q-1.05-1.05-1.8-2.55-.75-1.5-.95-2.95h-6.6v-3h6.6q.2-1.4.925-2.875Q25.75 18.15 26.85 17H6v-3h28q4.15 0 7.075 2.925T44 24q0 4.15-2.925 7.075T34 34ZM34 31q2.9 0 4.95-2.05Q41 26.9 41 24q0-2.9-2.05-4.95Q36.9 17 34 17q-2.9 0-4.95 2.05Q27 21.1 27 24q0 2.9 2.05 4.95Q31.1 31 34 31ZM4 25.5v-3h12v3ZM6 34v-3h6v3Zm28-10Z
+    </Geometry>
+    <Geometry x:Key="trail_length_filled_rounded">
+        M13.5 34v-3h13.35q-1.05-1.05-1.8-2.55-.75-1.5-.95-2.95h-6.6v-3h6.6q.2-1.4.925-2.875Q25.75 18.15 26.85 17H6v-3h28q4.15 0 7.075 2.925T44 24q0 4.15-2.925 7.075T34 34ZM4 25.5v-3h12v3ZM6 34v-3h6v3Z
+    </Geometry>
+    <Geometry x:Key="trail_length_outline_sharp">
+        M13.5 34v-3h13.35q-1.05-1.05-1.8-2.55-.75-1.5-.95-2.95h-6.6v-3h6.6q.2-1.4.925-2.875Q25.75 18.15 26.85 17H6v-3h28q4.15 0 7.075 2.925T44 24q0 4.15-2.925 7.075T34 34ZM34 31q2.9 0 4.95-2.05Q41 26.9 41 24q0-2.9-2.05-4.95Q36.9 17 34 17q-2.9 0-4.95 2.05Q27 21.1 27 24q0 2.9 2.05 4.95Q31.1 31 34 31ZM4 25.5v-3h12v3ZM6 34v-3h6v3Zm28-10Z
+    </Geometry>
+    <Geometry x:Key="trail_length_filled_sharp">
+        M13.5 34v-3h13.35q-1.05-1.05-1.8-2.55-.75-1.5-.95-2.95h-6.6v-3h6.6q.2-1.4.925-2.875Q25.75 18.15 26.85 17H6v-3h28q4.15 0 7.075 2.925T44 24q0 4.15-2.925 7.075T34 34ZM4 25.5v-3h12v3ZM6 34v-3h6v3Z
+    </Geometry>
+    <Style x:Key="trail_length"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource trail_length_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource trail_length_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource trail_length_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource trail_length_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

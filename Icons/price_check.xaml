@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="price_check_outline_rounded">
+        M15 29.9q-.65 0-1.075-.425-.425-.425-.425-1.075v-.75h-4q-.65 0-1.075-.425Q8 26.8 8 26.15q0-.65.425-1.075.425-.425 1.075-.425H19V19.4H9.55q-.6 0-1.075-.45T8 17.85v-8.2q0-.65.45-1.075.45-.425 1.05-.425h4V7.4q0-.65.425-1.075Q14.35 5.9 15 5.9q.65 0 1.075.425.425.425.425 1.075v.75h4q.65 0 1.075.425Q22 9 22 9.65q0 .65-.425 1.075-.425.425-1.075.425H11v5.25h9.45q.65 0 1.1.425.45.425.45 1.125v8.2q0 .6-.425 1.05-.425.45-1.075.45h-4v.75q0 .65-.425 1.075-.425.425-1.075.425Zm12.9 11.4q-.3 0-.55-.1-.25-.1-.5-.35l-6.4-6.4Q20 34 20 33.4q0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l5.35 5.35 10.95-10.95q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-12 12q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="price_check_filled_rounded">
+        M15 29.9q-.65 0-1.075-.425-.425-.425-.425-1.075v-.75h-4q-.65 0-1.075-.425Q8 26.8 8 26.15q0-.65.425-1.075.425-.425 1.075-.425H19V19.4H9.55q-.6 0-1.075-.45T8 17.85v-8.2q0-.65.45-1.075.45-.425 1.05-.425h4V7.4q0-.65.425-1.075Q14.35 5.9 15 5.9q.65 0 1.075.425.425.425.425 1.075v.75h4q.65 0 1.075.425Q22 9 22 9.65q0 .65-.425 1.075-.425.425-1.075.425H11v5.25h9.45q.65 0 1.1.425.45.425.45 1.125v8.2q0 .6-.425 1.05-.425.45-1.075.45h-4v.75q0 .65-.425 1.075-.425.425-1.075.425Zm12.9 11.4q-.3 0-.55-.1-.25-.1-.5-.35l-6.4-6.4Q20 34 20 33.4q0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l5.35 5.35 10.95-10.95q.45-.45 1.05-.45.6 0 1.05.45.45.45.45 1.05 0 .6-.45 1.05l-12 12q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="price_check_outline_sharp">
+        M13.5 29.9v-2.25H8v-3h11V19.4H8V8.15h5.5V5.9h3v2.25H22v3H11v5.25h11v11.25h-5.5v2.25Zm14.4 12-8.5-8.5 2.1-2.1 6.4 6.4 12-12 2.1 2.1Z
+    </Geometry>
+    <Geometry x:Key="price_check_filled_sharp">
+        M13.5 29.9v-2.25H8v-3h11V19.4H8V8.15h5.5V5.9h3v2.25H22v3H11v5.25h11v11.25h-5.5v2.25Zm14.4 12-8.5-8.5 2.1-2.1 6.4 6.4 12-12 2.1 2.1Z
+    </Geometry>
+    <Style x:Key="price_check"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource price_check_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource price_check_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource price_check_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource price_check_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="badge_critical_battery_outline_rounded">
+        M8.7 34q-.65 0-1.075-.425Q7.2 33.15 7.2 32.5V28H4v-8h3.2v-4.5q0-.65.425-1.075Q8.05 14 8.7 14h33.8q.65 0 1.075.425Q44 14.85 44 15.5v17q0 .65-.425 1.075Q43.15 34 42.5 34Zm1.5-3H39V17H10.2Z
+    </Geometry>
+    <Geometry x:Key="badge_critical_battery_filled_rounded">
+        M8.7 34q-.65 0-1.075-.425Q7.2 33.15 7.2 32.5V28H4v-8h3.2v-4.5q0-.65.425-1.075Q8.05 14 8.7 14h33.8q.65 0 1.075.425Q44 14.85 44 15.5v17q0 .65-.425 1.075Q43.15 34 42.5 34Zm1.5-3H39V17H10.2Z
+    </Geometry>
+    <Geometry x:Key="badge_critical_battery_outline_sharp">
+        M8.7 34q-.65 0-1.075-.425Q7.2 33.15 7.2 32.5V28H4v-8h3.2v-4.5q0-.65.425-1.075Q8.05 14 8.7 14h33.8q.65 0 1.075.425Q44 14.85 44 15.5v17q0 .65-.425 1.075Q43.15 34 42.5 34Zm1.5-3H39V17H10.2Z
+    </Geometry>
+    <Geometry x:Key="badge_critical_battery_filled_sharp">
+        M8.7 34q-.65 0-1.075-.425Q7.2 33.15 7.2 32.5V28H4v-8h3.2v-4.5q0-.65.425-1.075Q8.05 14 8.7 14h33.8q.65 0 1.075.425Q44 14.85 44 15.5v17q0 .65-.425 1.075Q43.15 34 42.5 34Zm1.5-3H39V17H10.2Z
+    </Geometry>
+    <Style x:Key="badge_critical_battery"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource badge_critical_battery_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource badge_critical_battery_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource badge_critical_battery_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource badge_critical_battery_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

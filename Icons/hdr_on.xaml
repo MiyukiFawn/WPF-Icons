@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="hdr_on_outline_rounded">
+        M33 30q-.5 0-.85-.35t-.35-.85v-9.3q0-.65.425-1.075Q32.65 18 33.3 18h6.25q1.15 0 1.8.65.65.65.65 1.8v3.05q0 .85-.55 1.45t-1.4.7l1.15 2.9q.25.6-.025 1.025Q40.9 30 40.2 30q-.4 0-.725-.225-.325-.225-.425-.575l-1.25-3.25h-3.6v2.85q0 .5-.35.85T33 30Zm1.2-6.45h5.4V20.4h-5.4ZM7.2 30q-.5 0-.85-.35T6 28.8v-9.6q0-.5.35-.85T7.2 18q.5 0 .85.35t.35.85v3.25h5.4V19.2q0-.5.35-.85T15 18q.5 0 .85.35t.35.85v9.6q0 .5-.35.85T15 30q-.5 0-.85-.35t-.35-.85v-3.95H8.4v3.95q0 .5-.35.85T7.2 30Zm12.45 0q-.3 0-.525-.225-.225-.225-.225-.525v-10.5q0-.3.225-.525.225-.225.525-.225h7q1.15 0 1.8.65.65.65.65 1.8v7.1q0 1.15-.65 1.8-.65.65-1.8.65Zm1.65-2.4h5.4v-7.2h-5.4Z
+    </Geometry>
+    <Geometry x:Key="hdr_on_filled_rounded">
+        M33 30q-.5 0-.85-.35t-.35-.85v-9.3q0-.65.425-1.075Q32.65 18 33.3 18h6.25q1.15 0 1.8.65.65.65.65 1.8v3.05q0 .85-.55 1.45t-1.4.7l1.15 2.9q.25.6-.025 1.025Q40.9 30 40.2 30q-.4 0-.725-.225-.325-.225-.425-.575l-1.25-3.25h-3.6v2.85q0 .5-.35.85T33 30Zm1.2-6.45h5.4V20.4h-5.4ZM7.2 30q-.5 0-.85-.35T6 28.8v-9.6q0-.5.35-.85T7.2 18q.5 0 .85.35t.35.85v3.25h5.4V19.2q0-.5.35-.85T15 18q.5 0 .85.35t.35.85v9.6q0 .5-.35.85T15 30q-.5 0-.85-.35t-.35-.85v-3.95H8.4v3.95q0 .5-.35.85T7.2 30Zm12.45 0q-.3 0-.525-.225-.225-.225-.225-.525v-10.5q0-.3.225-.525.225-.225.525-.225h7q1.15 0 1.8.65.65.65.65 1.8v7.1q0 1.15-.65 1.8-.65.65-1.8.65Zm1.65-2.4h5.4v-7.2h-5.4Z
+    </Geometry>
+    <Geometry x:Key="hdr_on_outline_sharp">
+        M31.8 30V18H42v7.65h-1.95L41.8 30h-2.45l-1.55-4.05h-3.6V30Zm2.4-6.45h5.4V20.4h-5.4ZM6 30V18h2.4v4.45h5.4V18h2.4v12h-2.4v-5.15H8.4V30Zm12.9 0V18h7.75q1.15 0 1.8.65.65.65.65 1.8v7.1q0 1.15-.65 1.8-.65.65-1.8.65Zm2.4-2.4h5.4v-7.2h-5.4Z
+    </Geometry>
+    <Geometry x:Key="hdr_on_filled_sharp">
+        M31.8 30V18H42v7.65h-1.95L41.8 30h-2.45l-1.55-4.05h-3.6V30Zm2.4-6.45h5.4V20.4h-5.4ZM6 30V18h2.4v4.45h5.4V18h2.4v12h-2.4v-5.15H8.4V30Zm12.9 0V18h7.75q1.15 0 1.8.65.65.65.65 1.8v7.1q0 1.15-.65 1.8-.65.65-1.8.65Zm2.4-2.4h5.4v-7.2h-5.4Z
+    </Geometry>
+    <Style x:Key="hdr_on"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource hdr_on_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource hdr_on_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource hdr_on_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource hdr_on_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

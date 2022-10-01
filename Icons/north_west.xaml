@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="north_west_outline_rounded">
+        M36.85 38.95 13 15.1v13.2q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q10 28.95 10 28.3V11.5q0-.65.425-1.075Q10.85 10 11.5 10h16.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.95 13 28.3 13H15.1l23.85 23.85q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="north_west_filled_rounded">
+        M36.85 38.95 13 15.1v13.2q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q10 28.95 10 28.3V11.5q0-.65.425-1.075Q10.85 10 11.5 10h16.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.95 13 28.3 13H15.1l23.85 23.85q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="north_west_outline_sharp">
+        M37.9 40 13 15.1v14.7h-3V10h19.8v3H15.1L40 37.9Z
+    </Geometry>
+    <Geometry x:Key="north_west_filled_sharp">
+        M37.9 40 13 15.1v14.7h-3V10h19.8v3H15.1L40 37.9Z
+    </Geometry>
+    <Style x:Key="north_west"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource north_west_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource north_west_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource north_west_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource north_west_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="brunch_dining_outline_rounded">
+        M5.5 44q-.65 0-1.075-.425Q4 43.15 4 42.5V40h28.5v2.5q0 .65-.425 1.075Q31.65 44 31 44ZM4 36.8v-2.5q0-.65.425-1.075Q4.85 32.8 5.5 32.8h9.1v-2.15q0-.65.425-1.075.425-.425 1.075-.425h4.3q.65 0 1.075.425.425.425.425 1.075v2.15H31q.65 0 1.075.425.425.425.425 1.075v2.5ZM38.7 44q-.65 0-1.075-.425-.425-.425-.425-1.075V30.8q-1.55-1.3-2.675-3.45Q33.4 25.2 33.4 22.5v-17q0-.65.425-1.075Q34.25 4 34.9 4h7.6q.65 0 1.075.425Q44 4.85 44 5.5v17q0 2.7-1.125 4.85Q41.75 29.5 40.2 30.8V41h2.3q.65 0 1.075.425Q44 41.85 44 42.5q0 .65-.425 1.075Q43.15 44 42.5 44Zm-2.3-28.05H41V7h-4.6Zm2.3 12.2q1.15-1 1.725-2.525Q41 24.1 41 22.5v-3.55h-4.6v3.55q0 1.6.575 3.125T38.7 28.15Zm0 0Z
+    </Geometry>
+    <Geometry x:Key="brunch_dining_filled_rounded">
+        M5.5 44q-.65 0-1.075-.425Q4 43.15 4 42.5V40h28.5v2.5q0 .65-.425 1.075Q31.65 44 31 44ZM4 36.8v-2.5q0-.65.425-1.075Q4.85 32.8 5.5 32.8h9.1v-2.15q0-.65.425-1.075.425-.425 1.075-.425h4.3q.65 0 1.075.425.425.425.425 1.075v2.15H31q.65 0 1.075.425.425.425.425 1.075v2.5ZM38.7 44q-.65 0-1.075-.425-.425-.425-.425-1.075V30.8q-1.55-1.3-2.675-3.45Q33.4 25.2 33.4 22.5v-17q0-.65.425-1.075Q34.25 4 34.9 4h7.6q.65 0 1.075.425Q44 4.85 44 5.5v17q0 2.7-1.125 4.85Q41.75 29.5 40.2 30.8V41h2.3q.65 0 1.075.425Q44 41.85 44 42.5q0 .65-.425 1.075Q43.15 44 42.5 44Zm-2.3-28.05H41V7h-4.6Z
+    </Geometry>
+    <Geometry x:Key="brunch_dining_outline_sharp">
+        M4 44v-4h28.5v4Zm0-7.2v-4h10.6v-3.65h7.3v3.65h10.6v4ZM37.2 44V30.8q-1.55-1.3-2.675-3.45Q33.4 25.2 33.4 22.5V4H44v18.5q0 2.7-1.125 4.85Q41.75 29.5 40.2 30.8V41H44v3Zm-.8-28.05H41V7h-4.6Zm2.3 12.2q1.15-1 1.725-2.525Q41 24.1 41 22.5v-3.55h-4.6v3.55q0 1.6.575 3.125T38.7 28.15Zm0 0Z
+    </Geometry>
+    <Geometry x:Key="brunch_dining_filled_sharp">
+        M4 44v-4h28.5v4Zm0-7.2v-4h10.6v-3.65h7.3v3.65h10.6v4ZM37.2 44V30.8q-1.55-1.3-2.675-3.45Q33.4 25.2 33.4 22.5V4H44v18.5q0 2.7-1.125 4.85Q41.75 29.5 40.2 30.8V41H44v3Zm-.8-28.05H41V7h-4.6Z
+    </Geometry>
+    <Style x:Key="brunch_dining"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource brunch_dining_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource brunch_dining_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource brunch_dining_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource brunch_dining_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

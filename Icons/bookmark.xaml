@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="bookmark_outline_rounded">
+        m13 37.45 11-4.65 11 4.65V8.75H13Zm-.9 3.65q-.75.35-1.425-.1Q10 40.55 10 39.75v-31q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v31q0 .8-.675 1.25-.675.45-1.425.1L24 36ZM13 8.75h22-11Z
+    </Geometry>
+    <Geometry x:Key="bookmark_filled_rounded">
+        M12.1 41.1q-.75.35-1.425-.1Q10 40.55 10 39.75v-31q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v31q0 .8-.675 1.25-.675.45-1.425.1L24 36Z
+    </Geometry>
+    <Geometry x:Key="bookmark_outline_sharp">
+        m13 37.45 11-4.65 11 4.65V8.75H13ZM10 42V5.75h28V42l-14-6Zm3-33.25h22-11Z
+    </Geometry>
+    <Geometry x:Key="bookmark_filled_sharp">
+        M10 42V5.75h28V42l-14-6Z
+    </Geometry>
+    <Style x:Key="bookmark"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource bookmark_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource bookmark_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource bookmark_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource bookmark_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="tablet_outline_rounded">
+        M5 40q-1.25 0-2.125-.875T2 37V11q0-1.25.875-2.125T5 8h38q1.25 0 2.125.875T46 11v26q0 1.25-.875 2.125T43 40Zm1.5-29H5v26h1.5Zm3 26h29V11h-29Zm32-26v26H43V11Zm0 0H43h-1.5Zm-35 0H5Z
+    </Geometry>
+    <Geometry x:Key="tablet_filled_rounded">
+        M5 40q-1.25 0-2.125-.875T2 37V11q0-1.25.875-2.125T5 8h38q1.25 0 2.125.875T46 11v26q0 1.25-.875 2.125T43 40Zm4.5-3h29V11h-29Z
+    </Geometry>
+    <Geometry x:Key="tablet_outline_sharp">
+        M2 40V8h44v32Zm7.5-3h29V11h-29ZM5 37h1.5V11H5Zm36.5 0H43V11h-1.5ZM5 11h1.5Zm36.5 0H43Z
+    </Geometry>
+    <Geometry x:Key="tablet_filled_sharp">
+        M2 40V8h44v32Zm7.5-3h29V11h-29Z
+    </Geometry>
+    <Style x:Key="tablet"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource tablet_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource tablet_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource tablet_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource tablet_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

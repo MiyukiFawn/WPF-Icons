@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="density_medium_outline_rounded">
+        M7.5 9q-.65 0-1.075-.425Q6 8.15 6 7.5q0-.65.425-1.075Q6.85 6 7.5 6h33q.65 0 1.075.425Q42 6.85 42 7.5q0 .65-.425 1.075Q41.15 9 40.5 9Zm0 33q-.65 0-1.075-.425Q6 41.15 6 40.5q0-.65.425-1.075Q6.85 39 7.5 39h33q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Zm0-16.5q-.65 0-1.075-.425Q6 24.65 6 24q0-.65.425-1.075Q6.85 22.5 7.5 22.5h33q.65 0 1.075.425Q42 23.35 42 24q0 .65-.425 1.075-.425.425-1.075.425Z
+    </Geometry>
+    <Geometry x:Key="density_medium_filled_rounded">
+        M7.5 9q-.65 0-1.075-.425Q6 8.15 6 7.5q0-.65.425-1.075Q6.85 6 7.5 6h33q.65 0 1.075.425Q42 6.85 42 7.5q0 .65-.425 1.075Q41.15 9 40.5 9Zm0 33q-.65 0-1.075-.425Q6 41.15 6 40.5q0-.65.425-1.075Q6.85 39 7.5 39h33q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Zm0-16.5q-.65 0-1.075-.425Q6 24.65 6 24q0-.65.425-1.075Q6.85 22.5 7.5 22.5h33q.65 0 1.075.425Q42 23.35 42 24q0 .65-.425 1.075-.425.425-1.075.425Z
+    </Geometry>
+    <Geometry x:Key="density_medium_outline_sharp">
+        M6 42v-3h36v3Zm0-16.5v-3h36v3ZM6 9V6h36v3Z
+    </Geometry>
+    <Geometry x:Key="density_medium_filled_sharp">
+        M6 42v-3h36v3Zm0-16.5v-3h36v3ZM6 9V6h36v3Z
+    </Geometry>
+    <Style x:Key="density_medium"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource density_medium_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource density_medium_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource density_medium_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource density_medium_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

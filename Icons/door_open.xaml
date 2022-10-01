@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="door_open_outline_rounded">
+        M22.05 25.5q.6 0 1.025-.45.425-.45.425-1.1 0-.6-.425-1.025Q22.65 22.5 22 22.5q-.6 0-1.05.425-.45.425-.45 1.075 0 .6.45 1.05.45.45 1.1.45ZM13 42v-3l14-2.45v-23.3q0-.7-.375-1.225-.375-.525-1.025-.625L13 9.45V6.5l13.3 2.3q1.6.25 2.65 1.525Q30 11.6 30 13.2v23.3q0 1.1-.7 1.925t-1.8 1.025Zm0-3h22V9.5l-22-.05Zm-5.5 3q-.65 0-1.075-.425Q6 41.15 6 40.5q0-.65.425-1.075Q6.85 39 7.5 39H10V9.5q0-1.3.875-2.15Q11.75 6.5 13 6.5h22q1.3 0 2.15.85.85.85.85 2.15V39h2.5q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Z
+    </Geometry>
+    <Geometry x:Key="door_open_filled_rounded">
+        M7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5q0-.65.425-1.075Q6.85 39 7.5 39H10V9.5q0-1.25.875-2.125T13 6.5h22q1.25 0 2.125.875T38 9.5V39h2.5q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42ZM35 39V9.5h-8.7v-.7q1.6.25 2.65 1.525Q30 11.6 30 13.2v23.3q0 1.1-.7 1.925t-1.8 1.025V39ZM22.05 25.5q.6 0 1.025-.45.425-.45.425-1.1 0-.6-.425-1.025Q22.65 22.5 22 22.5q-.6 0-1.05.425-.45.425-.45 1.075 0 .6.45 1.05.45.45 1.1.45Z
+    </Geometry>
+    <Geometry x:Key="door_open_outline_sharp">
+        M22 25.5q.65 0 1.075-.45.425-.45.425-1.05 0-.65-.425-1.075Q22.65 22.5 22 22.5q-.6 0-1.05.425-.45.425-.45 1.075 0 .6.45 1.05.45.45 1.05.45ZM13 42v-3l14-2.45V11.6L13 9.45V6.5l17 2.95V39Zm0-3h22V9.5l-22-.05Zm-7 3v-3h4V6.5h28V39h4v3Z
+    </Geometry>
+    <Geometry x:Key="door_open_filled_sharp">
+        M6 42v-3h4V6.5h28V39h4v3Zm24-3h5V9.5h-5Zm-7.95-13.5q.6 0 1.025-.45.425-.45.425-1.1 0-.6-.425-1.025Q22.65 22.5 22 22.5q-.6 0-1.05.425-.45.425-.45 1.075 0 .6.45 1.05.45.45 1.1.45Z
+    </Geometry>
+    <Style x:Key="door_open"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource door_open_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource door_open_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource door_open_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource door_open_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="arrow_outward_outline_rounded">
+        M33 15.1 13.45 34.65q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.075t.45-1.075L30.9 13H13.5q-.65 0-1.075-.425Q12 12.15 12 11.5q0-.65.425-1.075Q12.85 10 13.5 10h21q.65 0 1.075.425Q36 10.85 36 11.5v21q0 .65-.425 1.075Q35.15 34 34.5 34q-.65 0-1.075-.425Q33 33.15 33 32.5Z
+    </Geometry>
+    <Geometry x:Key="arrow_outward_filled_rounded">
+        M33.4 15.1 13.85 34.65q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.075t.45-1.075L31.3 13H13.9q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q13.25 10 13.9 10h21q.65 0 1.075.425.425.425.425 1.075v21q0 .65-.425 1.075Q35.55 34 34.9 34q-.65 0-1.075-.425-.425-.425-.425-1.075Z
+    </Geometry>
+    <Geometry x:Key="arrow_outward_outline_sharp">
+        m12.4 35.7-2.1-2.1L30.9 13H12v-3h24v24h-3V15.1Z
+    </Geometry>
+    <Geometry x:Key="arrow_outward_filled_sharp">
+        m12.4 35.7-2.1-2.1L30.9 13H12v-3h24v24h-3V15.1Z
+    </Geometry>
+    <Style x:Key="arrow_outward"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource arrow_outward_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource arrow_outward_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource arrow_outward_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource arrow_outward_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

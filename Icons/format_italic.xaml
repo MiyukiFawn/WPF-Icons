@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="format_italic_outline_rounded">
+        M12.5 40q-1.05 0-1.775-.725Q10 38.55 10 37.5q0-1.05.725-1.775Q11.45 35 12.5 35h4.35l8.9-22H20.5q-1.05 0-1.775-.725Q18 11.55 18 10.5q0-1.05.725-1.775Q19.45 8 20.5 8h15q1.05 0 1.775.725Q38 9.45 38 10.5q0 1.05-.725 1.775Q36.55 13 35.5 13h-4.35l-8.9 22h5.25q1.05 0 1.775.725Q30 36.45 30 37.5q0 1.05-.725 1.775Q28.55 40 27.5 40Z
+    </Geometry>
+    <Geometry x:Key="format_italic_filled_rounded">
+        M12.5 40q-1.05 0-1.775-.725Q10 38.55 10 37.5q0-1.05.725-1.775Q11.45 35 12.5 35h4.35l8.9-22H20.5q-1.05 0-1.775-.725Q18 11.55 18 10.5q0-1.05.725-1.775Q19.45 8 20.5 8h15q1.05 0 1.775.725Q38 9.45 38 10.5q0 1.05-.725 1.775Q36.55 13 35.5 13h-4.35l-8.9 22h5.25q1.05 0 1.775.725Q30 36.45 30 37.5q0 1.05-.725 1.775Q28.55 40 27.5 40Z
+    </Geometry>
+    <Geometry x:Key="format_italic_outline_sharp">
+        M10 40v-5h6.85l8.9-22H18V8h20v5h-6.85l-8.9 22H30v5Z
+    </Geometry>
+    <Geometry x:Key="format_italic_filled_sharp">
+        M10 40v-5h6.85l8.9-22H18V8h20v5h-6.85l-8.9 22H30v5Z
+    </Geometry>
+    <Style x:Key="format_italic"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource format_italic_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource format_italic_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource format_italic_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource format_italic_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="place_item_outline_rounded">
+        M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V17q0-1.2.9-2.1.9-.9 2.1-.9h10.5v3H9v22h30V17H28.5v-3H39q1.2 0 2.1.9.9.9.9 2.1v22q0 1.2-.9 2.1-.9.9-2.1.9Zm15-10.15-8.1-8.1 2.15-2.15 4.45 4.45V0h3v26.05l4.45-4.45 2.15 2.15Z
+    </Geometry>
+    <Geometry x:Key="place_item_filled_rounded">
+        M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V17q0-1.2.9-2.1.9-.9 2.1-.9h10.5v3H9v22h30V17H28.5v-3H39q1.2 0 2.1.9.9.9.9 2.1v22q0 1.2-.9 2.1-.9.9-2.1.9Zm15-10.15-8.1-8.1 2.15-2.15 4.45 4.45V0h3v26.05l4.45-4.45 2.15 2.15Z
+    </Geometry>
+    <Geometry x:Key="place_item_outline_sharp">
+        M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V17q0-1.2.9-2.1.9-.9 2.1-.9h10.5v3H9v22h30V17H28.5v-3H39q1.2 0 2.1.9.9.9.9 2.1v22q0 1.2-.9 2.1-.9.9-2.1.9Zm15-10.15-8.1-8.1 2.15-2.15 4.45 4.45V0h3v26.05l4.45-4.45 2.15 2.15Z
+    </Geometry>
+    <Geometry x:Key="place_item_filled_sharp">
+        M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V17q0-1.2.9-2.1.9-.9 2.1-.9h10.5v3H9v22h30V17H28.5v-3H39q1.2 0 2.1.9.9.9.9 2.1v22q0 1.2-.9 2.1-.9.9-2.1.9Zm15-10.15-8.1-8.1 2.15-2.15 4.45 4.45V0h3v26.05l4.45-4.45 2.15 2.15Z
+    </Geometry>
+    <Style x:Key="place_item"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource place_item_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource place_item_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource place_item_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource place_item_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

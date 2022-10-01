@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="pentagon_outline_rounded">
+        M14.2 39h19.6l6.65-19.85L24 7.7 7.55 19.15Zm-.05 3q-.95 0-1.75-.55t-1.1-1.5L4.7 20.1q-.3-.95 0-1.9t1.15-1.5L22.3 5.2q.4-.25.825-.4.425-.15.875-.15t.875.15q.425.15.825.4l16.45 11.5q.85.55 1.15 1.5.3.95 0 1.9l-6.6 19.85q-.3.95-1.075 1.5-.775.55-1.775.55ZM24 23.35Z
+    </Geometry>
+    <Geometry x:Key="pentagon_filled_rounded">
+        M14.15 42q-.95 0-1.75-.55t-1.1-1.5L4.7 20.1q-.3-.95 0-1.9t1.15-1.5L22.3 5.2q.4-.25.825-.4.425-.15.875-.15t.875.15q.425.15.825.4l16.45 11.5q.85.55 1.15 1.5.3.95 0 1.9l-6.6 19.85q-.3.95-1.075 1.5-.775.55-1.775.55Z
+    </Geometry>
+    <Geometry x:Key="pentagon_outline_sharp">
+        M14.2 39h19.6l6.65-19.85L24 7.7 7.55 19.15ZM12 42 4 18 24 4l20 14-8 24Zm12-18.65Z
+    </Geometry>
+    <Geometry x:Key="pentagon_filled_sharp">
+        M12 42 4 18 24 4l20 14-8 24Z
+    </Geometry>
+    <Style x:Key="pentagon"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource pentagon_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource pentagon_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource pentagon_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource pentagon_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="detector_offline_outline_rounded">
+        m18.8 42-2.1-2.1 5.2-5.2-5.2-5.2 2.1-2.1 5.2 5.2 5.2-5.2 2.1 2.1-5.2 5.2 5.2 5.2-2.1 2.1-5.2-5.2ZM9 12h30V9H9v3Zm6.95 6h16.1l.9-3h-17.9l.9 3Zm0 3q-.95 0-1.75-.575T13.1 18.9L11.85 15H9q-1.25 0-2.125-.875T6 12V6h36v6q0 1.25-.875 2.125T39 15h-2.85l-1.5 4.05q-.35.85-1.125 1.4-.775.55-1.725.55ZM9 12V9v3Z
+    </Geometry>
+    <Geometry x:Key="detector_offline_filled_rounded">
+        m18.8 42-2.1-2.1 5.2-5.2-5.2-5.2 2.1-2.1 5.2 5.2 5.2-5.2 2.1 2.1-5.2 5.2 5.2 5.2-2.1 2.1-5.2-5.2Zm-2.85-24h16.1l.9-3h-17.9l.9 3Zm0 3q-.95 0-1.75-.575T13.1 18.9L11.85 15H9q-1.25 0-2.125-.875T6 12V6h36v6q0 1.25-.875 2.125T39 15h-2.85l-1.5 4.05q-.35.85-1.125 1.4-.775.55-1.725.55Z
+    </Geometry>
+    <Geometry x:Key="detector_offline_outline_sharp">
+        m18.8 42-2.1-2.1 5.2-5.2-5.2-5.2 2.1-2.1 5.2 5.2 5.2-5.2 2.1 2.1-5.2 5.2 5.2 5.2-2.1 2.1-5.2-5.2ZM9 12h30V9H9v3Zm6.95 6h16.1l.9-3h-17.9l.9 3Zm0 3q-.95 0-1.75-.575T13.1 18.9L11.85 15H9q-1.25 0-2.125-.875T6 12V6h36v6q0 1.25-.875 2.125T39 15h-2.85l-1.5 4.05q-.35.85-1.125 1.4-.775.55-1.725.55ZM9 12V9v3Z
+    </Geometry>
+    <Geometry x:Key="detector_offline_filled_sharp">
+        m18.8 42-2.1-2.1 5.2-5.2-5.2-5.2 2.1-2.1 5.2 5.2 5.2-5.2 2.1 2.1-5.2 5.2 5.2 5.2-2.1 2.1-5.2-5.2Zm-2.85-24h16.1l.9-3h-17.9l.9 3Zm0 3q-.95 0-1.75-.575T13.1 18.9L11.85 15H9q-1.25 0-2.125-.875T6 12V6h36v6q0 1.25-.875 2.125T39 15h-2.85l-1.5 4.05q-.35.85-1.125 1.4-.775.55-1.725.55Z
+    </Geometry>
+    <Style x:Key="detector_offline"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource detector_offline_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource detector_offline_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource detector_offline_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource detector_offline_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

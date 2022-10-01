@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="card_travel_outline_rounded">
+        M7 34.15V39h34v-4.85ZM14.65 12V7q0-1.25.875-2.125T17.65 4H30.3q1.25 0 2.125.875T33.3 7v5H41q1.25 0 2.125.875T44 15v24q0 1.25-.875 2.125T41 42H7q-1.25 0-2.125-.875T4 39V15q0-1.25.875-2.125T7 12ZM7 28.75h34V15h-7.7v2.3q0 .6-.425 1.025-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075V15H17.65v2.3q0 .6-.425 1.025-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075V15H7ZM17.65 12H30.3V7H17.65ZM7 39V15v24Z
+    </Geometry>
+    <Geometry x:Key="card_travel_filled_rounded">
+        M7 42q-1.25 0-2.125-.875T4 39V15q0-1.25.875-2.125T7 12h7.65V7q0-1.25.875-2.125T17.65 4H30.3q1.25 0 2.125.875T33.3 7v5H41q1.25 0 2.125.875T44 15v24q0 1.25-.875 2.125T41 42Zm0-7.85h34v-5.4H7ZM17.65 12H30.3V7H17.65Z
+    </Geometry>
+    <Geometry x:Key="card_travel_outline_sharp">
+        M7 34.15V39h34v-4.85ZM14.65 12V4H33.3v8H44v30H4V12ZM7 28.75h34V15h-7.7v3.75h-3V15H17.65v3.75h-3V15H7ZM17.65 12H30.3V7H17.65ZM7 39V15v3.75V15v3.75V15v24Z
+    </Geometry>
+    <Geometry x:Key="card_travel_filled_sharp">
+        M4 42V12h10.65V4H33.3v8H44v30Zm13.65-30H30.3V7H17.65ZM7 34.15h34v-5.4H7Z
+    </Geometry>
+    <Style x:Key="card_travel"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource card_travel_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource card_travel_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource card_travel_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource card_travel_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

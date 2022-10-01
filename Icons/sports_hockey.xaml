@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="sports_hockey_outline_rounded">
+        M5.5 40q-.65 0-1.075-.425Q4 39.15 4 38.5v-2.75q0-.9.55-1.45.55-.55 1.45-.55h1V40Zm3.7 0v-6.25h8.75l2.15-4.7 2.45 4.85-2.3 5.05q-.25.55-.725.8T18.45 40ZM41 40v-6.25h1q.9 0 1.45.55.55.55.55 1.45v2.75q0 .65-.425 1.075Q43.15 40 42.5 40Zm-11.45 0q-.6 0-1.075-.25t-.725-.8L15 11q-.55-1.25.025-2.125Q15.6 8 17 8q.55 0 1.075.35.525.35.775.85L24 20.5l5.15-11.3q.25-.5.8-.85t1.1-.35q1.35 0 1.925.875T33 11l-6.65 14.65 3.7 8.1h8.75V40Z
+    </Geometry>
+    <Geometry x:Key="sports_hockey_filled_rounded">
+        M5.5 40q-.65 0-1.075-.425Q4 39.15 4 38.5v-2.75q0-.9.55-1.45.55-.55 1.45-.55h1V40Zm3.7 0v-6.25h8.75l2.15-4.7 2.45 4.85-2.3 5.05q-.25.55-.725.8T18.45 40ZM41 40v-6.25h1q.9 0 1.45.55.55.55.55 1.45v2.75q0 .65-.425 1.075Q43.15 40 42.5 40Zm-11.45 0q-.6 0-1.075-.25t-.725-.8L15 11q-.55-1.25.025-2.125Q15.6 8 17 8q.55 0 1.075.35.525.35.775.85L24 20.5l5.15-11.3q.25-.5.8-.85t1.1-.35q1.35 0 1.925.875T33 11l-6.65 14.65 3.7 8.1h8.75V40Z
+    </Geometry>
+    <Geometry x:Key="sports_hockey_outline_sharp">
+        M4 40v-4.25q0-.9.55-1.45.55-.55 1.45-.55h1V40Zm5.2 0v-6.25h8.75l2.15-4.7 2.45 4.85-2.3 5.05q-.25.55-.725.8T18.45 40ZM41 40v-6.25h1q.9 0 1.45.55.55.55.55 1.45V40Zm-2.2 0h-9.25q-.6 0-1.075-.25t-.725-.8L13.65 8h4.65L24 20.5 29.7 8h4.65l-8 17.65 3.7 8.1h8.75Z
+    </Geometry>
+    <Geometry x:Key="sports_hockey_filled_sharp">
+        M4 40v-4.25q0-.9.55-1.45.55-.55 1.45-.55h1V40Zm5.2 0v-6.25h8.75l2.15-4.7 2.45 4.85-2.3 5.05q-.25.55-.725.8T18.45 40ZM41 40v-6.25h1q.9 0 1.45.55.55.55.55 1.45V40Zm-2.2 0h-9.25q-.6 0-1.075-.25t-.725-.8L13.65 8h4.65L24 20.5 29.7 8h4.65l-8 17.65 3.7 8.1h8.75Z
+    </Geometry>
+    <Style x:Key="sports_hockey"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource sports_hockey_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource sports_hockey_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource sports_hockey_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource sports_hockey_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="heat_pump_balance_outline_rounded">
+        M5 43.2q-1.25 0-2.125-.875T2 40.2V24.95q0-.65.425-1.075.425-.425 1.075-.425h41q.65 0 1.075.425Q46 24.3 46 24.95V40.2q0 1.25-.875 2.125T43 43.2Zm0-3h38V26.45H5V40.2Zm38-13.75H5ZM13.65 36.7q-2.35 0-4-1.65t-1.65-4V14.7q0-.65.425-1.075Q8.85 13.2 9.5 13.2q.65 0 1.075.425Q11 14.05 11 14.7v16.35q0 1.1.775 1.875.775.775 1.875.775t1.85-.775q.75-.775.75-1.875v-12.2q0-2.35 1.65-4t4-1.65q2.35 0 3.975 1.65t1.625 4v12.2q0 1.1.775 1.875.775.775 1.875.775t1.85-.775q.75-.775.75-1.875V16.7q0-2.3 1.6-3.9t3.9-1.6h4l-1.8-1.8Q40 8.95 40 8.325t.45-1.075q.45-.45 1.05-.45.6 0 1.05.45l4.35 4.35q.45.45.45 1.075t-.45 1.075l-4.35 4.35q-.4.4-1.025.4-.625 0-1.025-.4-.4-.45-.4-1.075T40.5 16l1.8-1.8h-4.05q-1.05 0-1.775.725-.725.725-.725 1.775v14.35q0 2.35-1.625 4T30.15 36.7q-2.35 0-4-1.65t-1.65-4v-12.2q0-1.1-.75-1.875Q23 16.2 21.9 16.2t-1.875.775q-.775.775-.775 1.875v12.2q0 2.35-1.625 4T13.65 36.7Z
+    </Geometry>
+    <Geometry x:Key="heat_pump_balance_filled_rounded">
+        M5 43.2q-1.25 0-2.125-.875T2 40.2V24.95q0-.65.425-1.075.425-.425 1.075-.425h41q.65 0 1.075.425Q46 24.3 46 24.95V40.2q0 1.25-.875 2.125T43 43.2Zm8.65-6.5q2.35 0 3.975-1.65t1.625-4v-12.2q0-1.1.775-1.875.775-.775 1.875-.775t1.85.775q.75.775.75 1.875v12.2q0 2.35 1.65 4t4 1.65q2.35 0 3.975-1.65t1.625-4V16.7q0-1.05.725-1.775.725-.725 1.775-.725h4.05L40.5 16q-.4.4-.4 1.05t.4 1.05q.4.4 1.025.4.625 0 1.025-.4l4.35-4.35q.45-.45.45-1.075T46.9 11.6l-4.35-4.35q-.45-.45-1.05-.45-.6 0-1.05.45Q40 7.7 40 8.325t.45 1.075l1.8 1.8h-4q-2.3 0-3.9 1.6t-1.6 3.9v14.35q0 1.1-.75 1.875-.75.775-1.85.775t-1.875-.775q-.775-.775-.775-1.875v-12.2q0-2.35-1.625-4T21.9 13.2q-2.35 0-4 1.65t-1.65 4v12.2q0 1.1-.75 1.875-.75.775-1.85.775t-1.875-.775Q11 32.15 11 31.05V14.7q0-.65-.425-1.075Q10.15 13.2 9.5 13.2q-.65 0-1.075.425Q8 14.05 8 14.7v16.35q0 2.35 1.65 4t4 1.65Z
+    </Geometry>
+    <Geometry x:Key="heat_pump_balance_outline_sharp">
+        M19.25 36.7H8V13.2h3v20.5h5.25V13.2H27.5v20.5h5.25V13.2h9.5l-2.85-2.85 2.1-2.15 6.5 6.5-6.5 6.45L39.4 19l2.9-2.8h-6.55v20.5H24.5V16.2h-5.25ZM2 43.2V23.45h44V43.2Zm3-3h38V26.45H5Zm38-13.75H5Z
+    </Geometry>
+    <Geometry x:Key="heat_pump_balance_filled_sharp">
+        M8 36.7h11.25V16.2h5.25v20.5h11.25V16.2h6.55L39.4 19l2.1 2.15L48 14.7l-6.5-6.5-2.1 2.15 2.85 2.85h-9.5v20.5H27.5V13.2H16.25v20.5H11V13.2H8Zm-6 6.5V23.45h44V43.2Z
+    </Geometry>
+    <Style x:Key="heat_pump_balance"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource heat_pump_balance_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource heat_pump_balance_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource heat_pump_balance_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource heat_pump_balance_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

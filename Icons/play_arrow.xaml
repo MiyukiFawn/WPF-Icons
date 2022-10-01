@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="play_arrow_outline_rounded">
+        M18.3 36.4q-.75.5-1.525.05Q16 36 16 35.1V12.6q0-.9.775-1.35.775-.45 1.525.05L36 22.6q.7.45.7 1.25T36 25.1Zm.7-12.55Zm0 8.55 13.45-8.55L19 15.3Z
+    </Geometry>
+    <Geometry x:Key="play_arrow_filled_rounded">
+        M18.3 36.4q-.75.5-1.525.05Q16 36 16 35.1V12.6q0-.9.775-1.35.775-.45 1.525.05L36 22.6q.7.45.7 1.25T36 25.1Z
+    </Geometry>
+    <Geometry x:Key="play_arrow_outline_sharp">
+        M16 37.85v-28l22 14Zm3-14Zm0 8.55 13.45-8.55L19 15.3Z
+    </Geometry>
+    <Geometry x:Key="play_arrow_filled_sharp">
+        M16 37.85v-28l22 14Z
+    </Geometry>
+    <Style x:Key="play_arrow"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource play_arrow_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource play_arrow_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource play_arrow_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource play_arrow_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

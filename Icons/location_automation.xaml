@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="location_automation_outline_rounded">
+        M8 38V14L24 2l16 12v8.5h-3v-7L24 5.75 11 15.5V35h13.5v3Zm29 4.8-2.4-5.4-5.4-2.4 5.4-2.4 2.4-5.4 2.4 5.4 5.4 2.4-5.4 2.4Z
+    </Geometry>
+    <Geometry x:Key="location_automation_filled_rounded">
+        M8 38V14L24 2l16 12v8.5h-3v-7L24 5.75 11 15.5V35h13.5v3Zm29 4.8-2.4-5.4-5.4-2.4 5.4-2.4 2.4-5.4 2.4 5.4 5.4 2.4-5.4 2.4Z
+    </Geometry>
+    <Geometry x:Key="location_automation_outline_sharp">
+        M8 38V14L24 2l16 12v8.5h-3v-7L24 5.75 11 15.5V35h13.5v3Zm29 4.8-2.4-5.4-5.4-2.4 5.4-2.4 2.4-5.4 2.4 5.4 5.4 2.4-5.4 2.4Z
+    </Geometry>
+    <Geometry x:Key="location_automation_filled_sharp">
+        M8 38V14L24 2l16 12v8.5h-3v-7L24 5.75 11 15.5V35h13.5v3Zm29 4.8-2.4-5.4-5.4-2.4 5.4-2.4 2.4-5.4 2.4 5.4 5.4 2.4-5.4 2.4Z
+    </Geometry>
+    <Style x:Key="location_automation"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource location_automation_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource location_automation_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource location_automation_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource location_automation_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

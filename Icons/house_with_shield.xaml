@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="house_with_shield_outline_rounded">
+        M17 25.7q0 2.95 1.725 5.625T23.3 35q.2.1.35.125.15.025.35.025.2 0 .35-.025.15-.025.35-.125 2.9-.95 4.6-3.625Q31 28.7 31 25.7v-3.05q0-.65-.35-1.175t-.9-.825L25 18.25q-.5-.25-1-.25t-1 .25l-4.75 2.4q-.55.3-.9.825Q17 22 17 22.65ZM11 42q-1.25 0-2.125-.875T8 39V19.5q0-.7.325-1.35.325-.65.875-1.05l13-9.75q.8-.6 1.8-.6t1.8.6l13 9.75q.55.4.875 1.05.325.65.325 1.35V39q0 1.25-.875 2.125T37 42Zm.5-3.5h25V19.75L24 10.35l-12.5 9.4V38.5ZM24 24.4Z
+    </Geometry>
+    <Geometry x:Key="house_with_shield_filled_rounded">
+        M17 25.7q0 2.95 1.725 5.625T23.3 35q.2.1.35.125.15.025.35.025.2 0 .35-.025.15-.025.35-.125 2.9-.95 4.6-3.625Q31 28.7 31 25.7v-3.05q0-.65-.35-1.175t-.9-.825L25 18.25q-.5-.25-1-.25t-1 .25l-4.75 2.4q-.55.3-.9.825Q17 22 17 22.65ZM11 42q-1.25 0-2.125-.875T8 39V19.5q0-.7.325-1.35.325-.65.875-1.05l13-9.75q.8-.6 1.8-.6t1.8.6l13 9.75q.55.4.875 1.05.325.65.325 1.35V39q0 1.25-.875 2.125T37 42Z
+    </Geometry>
+    <Geometry x:Key="house_with_shield_outline_sharp">
+        M24 35.25q3.05-.75 5.025-3.5Q31 29 31 25.7v-4.45l-7-3.5-7 3.5v4.45q0 3.3 2 6.05t5 3.5ZM8 42V18L24 6l16 12v24Zm3.5-3.5h25V19.75L24 10.35l-12.5 9.4ZM24 24.4Z
+    </Geometry>
+    <Geometry x:Key="house_with_shield_filled_sharp">
+        M24 35.25q3.05-.75 5.025-3.5Q31 29 31 25.7v-4.45l-7-3.5-7 3.5v4.45q0 3.3 2 6.05t5 3.5ZM8 42V18L24 6l16 12v24Z
+    </Geometry>
+    <Style x:Key="house_with_shield"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource house_with_shield_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource house_with_shield_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource house_with_shield_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource house_with_shield_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

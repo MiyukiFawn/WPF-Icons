@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="keyboard_option_key_outline_rounded">
+        M32 13q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q31.35 10 32 10h8.5q.65 0 1.075.425Q42 10.85 42 11.5q0 .65-.425 1.075Q41.15 13 40.5 13Zm-.4 25q-.85 0-1.525-.425Q29.4 37.15 29 36.45L16 13H7.5q-.65 0-1.075-.425Q6 12.15 6 11.5q0-.65.425-1.075Q6.85 10 7.5 10h8.45q.85 0 1.525.425.675.425 1.075 1.125l13 23.45h8.95q.65 0 1.075.425Q42 35.85 42 36.5q0 .65-.425 1.075Q41.15 38 40.5 38Z
+    </Geometry>
+    <Geometry x:Key="keyboard_option_key_filled_rounded">
+        M32 13q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q31.35 10 32 10h8.5q.65 0 1.075.425Q42 10.85 42 11.5q0 .65-.425 1.075Q41.15 13 40.5 13Zm-.4 25q-.85 0-1.525-.425Q29.4 37.15 29 36.45L16 13H7.5q-.65 0-1.075-.425Q6 12.15 6 11.5q0-.65.425-1.075Q6.85 10 7.5 10h8.45q.85 0 1.525.425.675.425 1.075 1.125l13 23.45h8.95q.65 0 1.075.425Q42 35.85 42 36.5q0 .65-.425 1.075Q41.15 38 40.5 38Z
+    </Geometry>
+    <Geometry x:Key="keyboard_option_key_outline_sharp">
+        M29.85 38 16 13H6v-3h11.7l13.85 25H42v3Zm.65-25v-3H42v3Z
+    </Geometry>
+    <Geometry x:Key="keyboard_option_key_filled_sharp">
+        M29.85 38 16 13H6v-3h11.7l13.85 25H42v3Zm.65-25v-3H42v3Z
+    </Geometry>
+    <Style x:Key="keyboard_option_key"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource keyboard_option_key_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource keyboard_option_key_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource keyboard_option_key_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource keyboard_option_key_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

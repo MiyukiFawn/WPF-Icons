@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="floor_lamp_outline_rounded">
+        M24.05 38q-.65 0-1.075-.425-.425-.425-.425-1.075V22H11.4q-.75 0-1.225-.625-.475-.625-.225-1.325l4.3-13.95q.3-.95 1.1-1.525T17.15 4h13.8q1 0 1.8.575t1.1 1.525l4.3 13.95q.25.7-.225 1.325T36.7 22H25.55v14.5q0 .65-.425 1.075Q24.7 38 24.05 38ZM13.4 19h21.3L31 7H17.1Zm4.65 25q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q17.4 41 18.05 41h12q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q30.7 44 30.05 44Zm6-31Z
+    </Geometry>
+    <Geometry x:Key="floor_lamp_filled_rounded">
+        M24.05 38q-.65 0-1.075-.425-.425-.425-.425-1.075V22H11.4q-.75 0-1.225-.625-.475-.625-.225-1.325l4.3-13.95q.3-.95 1.1-1.525T17.15 4h13.8q1 0 1.8.575t1.1 1.525l4.3 13.95q.25.7-.225 1.325T36.7 22H25.55v14.5q0 .65-.425 1.075Q24.7 38 24.05 38Zm-6 6q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q17.4 41 18.05 41h12q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q30.7 44 30.05 44Z
+    </Geometry>
+    <Geometry x:Key="floor_lamp_outline_sharp">
+        M22.55 38V22H9.35L14.9 4h18.3l5.55 18h-13.2v16ZM13.4 19h21.3L31 7H17.1Zm3.15 25v-3h15v3Zm7.5-31Z
+    </Geometry>
+    <Geometry x:Key="floor_lamp_filled_sharp">
+        M22.55 38V22H9.35L14.9 4h18.3l5.55 18h-13.2v16Zm-6 6v-3h15v3Z
+    </Geometry>
+    <Style x:Key="floor_lamp"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource floor_lamp_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource floor_lamp_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource floor_lamp_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource floor_lamp_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

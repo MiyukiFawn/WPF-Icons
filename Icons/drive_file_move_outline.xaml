@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="drive_file_move_outline_outline_rounded">
+        m26.3 27.5-2.7 2.7q-.45.45-.45 1.05 0 .6.45 1.05.45.45 1.05.45.6 0 1.05-.45l5.25-5.25q.45-.45.45-1.05 0-.6-.45-1.05L25.7 19.7q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05l2.7 2.7h-8.8q-.65 0-1.075.425Q16 25.35 16 26q0 .65.425 1.075.425.425 1.075.425ZM7.05 40q-1.2 0-2.1-.925-.9-.925-.9-2.075V11q0-1.15.9-2.075Q5.85 8 7.05 8H19.8q.6 0 1.175.25.575.25.975.65l2.1 2.1h17q1.15 0 2.075.925.925.925.925 2.075v23q0 1.15-.925 2.075Q42.2 40 41.05 40Zm0-29v26h34V14H22.8l-3-3H7.05Zm0 0v26Z
+    </Geometry>
+    <Geometry x:Key="drive_file_move_outline_filled_rounded">
+        m26.3 27.5-2.7 2.7q-.45.45-.45 1.05 0 .6.45 1.05.45.45 1.05.45.6 0 1.05-.45l5.25-5.25q.45-.45.45-1.05 0-.6-.45-1.05L25.7 19.7q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.05 0 .6.45 1.05l2.7 2.7h-8.8q-.65 0-1.075.425Q16 25.35 16 26q0 .65.425 1.075.425.425 1.075.425ZM7.05 40q-1.2 0-2.1-.925-.9-.925-.9-2.075V11q0-1.15.9-2.075Q5.85 8 7.05 8H19.8q.6 0 1.15.225.55.225 1 .675l2.1 2.1h17q1.15 0 2.075.925.925.925.925 2.075v23q0 1.15-.925 2.075Q42.2 40 41.05 40Z
+    </Geometry>
+    <Geometry x:Key="drive_file_move_outline_outline_sharp">
+        M24.65 33.35 32 26l-7.35-7.35-2.1 2.1 3.75 3.75H16v3h10.3l-3.75 3.75ZM4.05 40V8h17l3 3h20v29Zm3-3h34V14H22.8l-3-3H7.05Zm0 0V11v3Z
+    </Geometry>
+    <Geometry x:Key="drive_file_move_outline_filled_sharp">
+        M24.65 33.35 32 26l-7.35-7.35-2.1 2.1 3.75 3.75H16v3h10.3l-3.75 3.75ZM4.05 40V8h17l3 3h20v29Z
+    </Geometry>
+    <Style x:Key="drive_file_move_outline"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource drive_file_move_outline_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource drive_file_move_outline_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource drive_file_move_outline_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource drive_file_move_outline_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

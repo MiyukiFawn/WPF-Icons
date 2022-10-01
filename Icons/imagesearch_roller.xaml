@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="imagesearch_roller_outline_rounded">
+        M29.15 46H22q-.7 0-1.2-.5t-.5-1.2V31.8q0-.7.5-1.2t1.2-.5h2.05v-6.65H7q-1.25 0-2.125-.875T4 20.45V10.8q0-1.25.875-2.125T7 7.8h4.15V5.7q0-.7.5-1.2t1.2-.5H38.3q.7 0 1.2.5t.5 1.2v7.6q0 .7-.5 1.2t-1.2.5H12.85q-.7 0-1.2-.5t-.5-1.2v-2.5H7v9.65h17.05q1.25 0 2.125.875t.875 2.125v6.65h2.1q.7 0 1.2.5t.5 1.2v12.5q0 .7-.5 1.2t-1.2.5Zm-15-39v5Zm9.15 36h4.55v-9.9H23.3Zm-9.15-31H37V7H14.15Zm9.15 31h4.55-4.55Z
+    </Geometry>
+    <Geometry x:Key="imagesearch_roller_filled_rounded">
+        M29.15 46H22q-.7 0-1.2-.5t-.5-1.2V31.8q0-.7.5-1.2t1.2-.5h2.05v-6.65H7q-1.25 0-2.125-.875T4 20.45V10.8q0-1.25.875-2.125T7 7.8h4.15V5.7q0-.7.5-1.2t1.2-.5H38.3q.7 0 1.2.5t.5 1.2v7.6q0 .7-.5 1.2t-1.2.5H12.85q-.7 0-1.2-.5t-.5-1.2v-2.5H7v9.65h17.05q1.25 0 2.125.875t.875 2.125v6.65h2.1q.7 0 1.2.5t.5 1.2v12.5q0 .7-.5 1.2t-1.2.5Z
+    </Geometry>
+    <Geometry x:Key="imagesearch_roller_outline_sharp">
+        M20.3 46V30.1h3.75v-6.65H4V7.8h7.15V4H40v11H11.15v-4.2H7v9.65h20.05v9.65h3.8V46ZM14.15 7v5Zm9.15 36h4.55-4.55Zm0 0h4.55v-9.9H23.3Zm-9.15-31H37V7H14.15Z
+    </Geometry>
+    <Geometry x:Key="imagesearch_roller_filled_sharp">
+        M20.3 46V30.1h3.75v-6.65H4V7.8h7.15V4H40v11H11.15v-4.2H7v9.65h20.05v9.65h3.8V46Z
+    </Geometry>
+    <Style x:Key="imagesearch_roller"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource imagesearch_roller_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource imagesearch_roller_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource imagesearch_roller_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource imagesearch_roller_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

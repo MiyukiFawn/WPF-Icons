@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="flash_off_outline_rounded">
+        m31.15 26.9-4.9-4.9h5.15q.85 0 1.3.75.45.75 0 1.5Zm-5.1-5.1L14 9.8V5.5q0-.65.425-1.075Q14.85 4 15.5 4h16.2q.85 0 1.275.675.425.675.075 1.425Zm13.2 21.65L28.05 32.3 21.4 43.6q-.3.5-.85.35-.55-.15-.55-.7V28h-4.5q-.65 0-1.075-.425Q14 27.15 14 26.5v-8.25l-9.5-9.5q-.45-.45-.425-1.05.025-.6.475-1.05Q5 6.2 5.6 6.2q.6 0 1.05.45l34.7 34.7q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="flash_off_filled_rounded">
+        m31.25 27.05-4-4H31q.85 0 1.3.775.45.775 0 1.525ZM26.2 22 13.75 9.55v-2.2q0-.65.425-1.075.425-.425 1.075-.425h16.1q.85 0 1.275.7.425.7.075 1.45Zm12.85 21.35-11-10.95-6.9 11.3q-.3.5-.85.35-.55-.15-.55-.7V28.8h-4.5q-.65 0-1.075-.425-.425-.425-.425-1.075v-9.2L4.65 9q-.45-.45-.45-1.075t.45-1.075q.45-.45 1.075-.45t1.075.45l34.4 34.4q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45Z
+    </Geometry>
+    <Geometry x:Key="flash_off_outline_sharp">
+        m31.15 26.9-4.9-4.9H34Zm-5.1-5.1L14 9.8V4h20ZM20 46V28h-6v-9.75L3.45 7.7 5.6 5.6l36.8 36.8-2.1 2.1-12.25-12.2Z
+    </Geometry>
+    <Geometry x:Key="flash_off_filled_sharp">
+        m31.25 27.05-4-4h6.45ZM26.2 22 13.75 9.55v-3.7H33.7Zm-6.45 24V28.8h-6V18.1L3.6 7.95 5.75 5.8l36.5 36.5-2.15 2.15L28.05 32.4Z
+    </Geometry>
+    <Style x:Key="flash_off"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource flash_off_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource flash_off_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource flash_off_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource flash_off_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

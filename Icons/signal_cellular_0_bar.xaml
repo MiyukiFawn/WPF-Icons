@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="signal_cellular_0_bar_outline_rounded">
+        M11.15 41h29.8V11.2Zm-3.6 3q-1 0-1.375-.925T6.5 41.45l34.9-34.9q.7-.7 1.625-.325.925.375.925 1.375v34.9q0 .65-.425 1.075Q43.1 44 42.45 44Z
+    </Geometry>
+    <Geometry x:Key="signal_cellular_0_bar_filled_rounded">
+        M11.15 41h29.8V11.2Zm-3.6 3q-1 0-1.375-.925T6.5 41.45l34.9-34.9q.7-.7 1.625-.325.925.375.925 1.375v34.9q0 .65-.425 1.075Q43.1 44 42.45 44Z
+    </Geometry>
+    <Geometry x:Key="signal_cellular_0_bar_outline_sharp">
+        m3.95 44 40-40v40Zm7.2-3h29.8V11.2Z
+    </Geometry>
+    <Geometry x:Key="signal_cellular_0_bar_filled_sharp">
+        m3.95 44 40-40v40Zm7.2-3h29.8V11.2Z
+    </Geometry>
+    <Style x:Key="signal_cellular_0_bar"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource signal_cellular_0_bar_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource signal_cellular_0_bar_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource signal_cellular_0_bar_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource signal_cellular_0_bar_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="chair_outline_rounded">
+        M9.65 42q-.6 0-1.05-.45-.45-.45-.45-1.05v-2.1H7.5q-2.3 0-3.9-1.6T2 32.9V20.7q0-2.55 1.55-3.875Q5.1 15.5 7.2 15.5v-4.3q0-2.3 1.45-3.75Q10.1 6 12.4 6h23.25q2.3 0 3.725 1.45Q40.8 8.9 40.8 11.2v4.3q2.1 0 3.65 1.325Q46 18.15 46 20.7v12.2q0 2.3-1.6 3.9t-3.9 1.6h-.65v2.1q0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05v-2.1h-25.7v2.1q0 .6-.45 1.05-.45.45-1.05.45ZM7.5 35.4h33q1 0 1.75-.75T43 32.9V20.7q0-1-.6-1.6-.6-.6-1.6-.6t-1.6.6q-.6.6-.6 1.6v8.8H9.4v-8.8q0-1-.6-1.6-.6-.6-1.6-.6t-1.6.6q-.6.6-.6 1.6v12.2q0 1 .75 1.75t1.75.75Zm4.9-8.9h23.2v-5.8q0-1.55.7-2.575.7-1.025 1.5-1.625v-5.3q0-1-.6-1.6-.6-.6-1.6-.6H12.4q-1 0-1.6.6-.6.6-.6 1.6v5.3q.8.6 1.5 1.625t.7 2.575Zm11.6 0Zm0 8.9Zm0-5.9Z
+    </Geometry>
+    <Geometry x:Key="chair_filled_rounded">
+        M12.4 26.5v-5.8q0-2.55-1.225-4.2Q9.95 14.85 7.2 13.85V11.2q0-2.3 1.45-3.75Q10.1 6 12.4 6h23.25q2.3 0 3.725 1.45Q40.8 8.9 40.8 11.2v2.65q-2.7.8-3.95 2.55-1.25 1.75-1.25 4.3v5.8ZM9.65 42q-.6 0-1.05-.45-.45-.45-.45-1.05v-2.1H7.5q-2.3 0-3.9-1.6T2 32.9V20.7q0-1.8.95-2.75T5.7 17q1.8 0 2.75.95t.95 2.75v8.8h29.2v-8.8q0-1.8.95-2.75T42.3 17q1.8 0 2.75.95T46 20.7v12.2q0 2.3-1.6 3.9t-3.9 1.6h-.65v2.1q0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05v-2.1h-25.7v2.1q0 .6-.45 1.05-.45.45-1.05.45Z
+    </Geometry>
+    <Geometry x:Key="chair_outline_sharp">
+        M8.15 42v-3.6H2V15.5h5.2V6h33.6v9.5H46v22.9h-6.15V42h-3v-3.6h-25.7V42ZM5 35.4h38V18.5h-4.4v11H9.4v-11H5Zm7.4-8.9h23.2v-11h2.2V9H10.2v6.5h2.2Zm11.6 3Zm0-3Zm0 3Z
+    </Geometry>
+    <Geometry x:Key="chair_filled_sharp">
+        M8.15 42v-3.6H2V18.5h7.4v11h29.2v-11H46v19.9h-6.15V42h-3v-3.6h-25.7V42Zm4.25-15.5v-11H7.2V6h33.6v9.5h-5.2v11Z
+    </Geometry>
+    <Style x:Key="chair"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource chair_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource chair_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource chair_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource chair_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

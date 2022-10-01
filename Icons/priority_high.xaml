@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="priority_high_outline_rounded">
+        M24 42q-1.45 0-2.475-1.025Q20.5 39.95 20.5 38.5q0-1.45 1.025-2.475Q22.55 35 24 35q1.45 0 2.475 1.025Q27.5 37.05 27.5 38.5q0 1.45-1.025 2.475Q25.45 42 24 42Zm0-12q-1.45 0-2.475-1.025Q20.5 27.95 20.5 26.5v-17q0-1.45 1.025-2.475Q22.55 6 24 6q1.45 0 2.475 1.025Q27.5 8.05 27.5 9.5v17q0 1.45-1.025 2.475Q25.45 30 24 30Z
+    </Geometry>
+    <Geometry x:Key="priority_high_filled_rounded">
+        M24 42q-1.45 0-2.475-1.025Q20.5 39.95 20.5 38.5q0-1.45 1.025-2.475Q22.55 35 24 35q1.45 0 2.475 1.025Q27.5 37.05 27.5 38.5q0 1.45-1.025 2.475Q25.45 42 24 42Zm0-12q-1.45 0-2.475-1.025Q20.5 27.95 20.5 26.5v-17q0-1.45 1.025-2.475Q22.55 6 24 6q1.45 0 2.475 1.025Q27.5 8.05 27.5 9.5v17q0 1.45-1.025 2.475Q25.45 30 24 30Z
+    </Geometry>
+    <Geometry x:Key="priority_high_outline_sharp">
+        M24 42q-1.45 0-2.475-1.025Q20.5 39.95 20.5 38.5q0-1.45 1.025-2.475Q22.55 35 24 35q1.45 0 2.475 1.025Q27.5 37.05 27.5 38.5q0 1.45-1.025 2.475Q25.45 42 24 42Zm-3.5-12V6h7v24Z
+    </Geometry>
+    <Geometry x:Key="priority_high_filled_sharp">
+        M24 42q-1.45 0-2.475-1.025Q20.5 39.95 20.5 38.5q0-1.45 1.025-2.475Q22.55 35 24 35q1.45 0 2.475 1.025Q27.5 37.05 27.5 38.5q0 1.45-1.025 2.475Q25.45 42 24 42Zm-3.5-12V6h7v24Z
+    </Geometry>
+    <Style x:Key="priority_high"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource priority_high_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource priority_high_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource priority_high_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource priority_high_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="screen_rotation_alt_outline_rounded">
+        M25.05 43.5 8.85 27.35q-.45-.45-.45-1.075t.45-1.075q.45-.45 1.075-.45T11 25.2l16.2 16.2 12.3-12.3h-5.4q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075.425-.425 1.075-.425h9q.65 0 1.075.425.425.425.425 1.075v9q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075v-5.4L29.3 43.5q-.85.85-2.125.85t-2.125-.85ZM13.9 21.9h-9q-.65 0-1.075-.425Q3.4 21.05 3.4 20.4v-9q0-.65.425-1.075Q4.25 9.9 4.9 9.9q.65 0 1.075.425.425.425.425 1.075v5.4L18.7 4.5q.85-.85 2.125-.85t2.125.85l16.2 16.15q.45.45.45 1.075t-.45 1.075q-.45.45-1.075.45T37 22.8L20.8 6.6 8.5 18.9h5.4q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Z
+    </Geometry>
+    <Geometry x:Key="screen_rotation_alt_filled_rounded">
+        M25.05 43.5 8.85 27.35q-.45-.45-.45-1.075t.45-1.075q.45-.45 1.075-.45T11 25.2l16.2 16.2 12.3-12.3h-5.4q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075.425-.425 1.075-.425h9q.65 0 1.075.425.425.425.425 1.075v9q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075v-5.4L29.3 43.5q-.85.85-2.125.85t-2.125-.85ZM13.9 21.9h-9q-.65 0-1.075-.425Q3.4 21.05 3.4 20.4v-9q0-.65.425-1.075Q4.25 9.9 4.9 9.9q.65 0 1.075.425.425.425.425 1.075v5.4L18.7 4.5q.85-.85 2.125-.85t2.125.85l16.2 16.15q.45.45.45 1.075t-.45 1.075q-.45.45-1.075.45T37 22.8L20.8 6.6 8.5 18.9h5.4q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Z
+    </Geometry>
+    <Geometry x:Key="screen_rotation_alt_outline_sharp">
+        M27.2 45.6 6.4 24.9h4.3l16.5 16.5 12.3-12.3h-6.9v-3h12v12h-3v-6.9ZM3.4 21.9v-12h3v6.9L20.8 2.4l20.8 20.7h-4.3L20.8 6.6 8.5 18.9h6.9v3Z
+    </Geometry>
+    <Geometry x:Key="screen_rotation_alt_filled_sharp">
+        M27.2 45.6 6.4 24.9h4.3l16.5 16.5 12.3-12.3h-6.9v-3h12v12h-3v-6.9ZM3.4 21.9v-12h3v6.9L20.8 2.4l20.8 20.7h-4.3L20.8 6.6 8.5 18.9h6.9v3Z
+    </Geometry>
+    <Style x:Key="screen_rotation_alt"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource screen_rotation_alt_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource screen_rotation_alt_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource screen_rotation_alt_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource screen_rotation_alt_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

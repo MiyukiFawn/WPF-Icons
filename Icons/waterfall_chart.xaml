@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="waterfall_chart_outline_rounded">
+        M39.5 40q-1.05 0-1.775-.725Q37 38.55 37 37.5v-27q0-1.05.725-1.775Q38.45 8 39.5 8q1.05 0 1.775.725Q42 9.45 42 10.5v27q0 1.05-.725 1.775Q40.55 40 39.5 40Zm-31 0q-1.05 0-1.775-.725Q6 38.55 6 37.5v-9q0-1.05.725-1.775Q7.45 26 8.5 26q1.05 0 1.775.725Q11 27.45 11 28.5v9q0 1.05-.725 1.775Q9.55 40 8.5 40Zm23.25-26q-1.05 0-1.775-.725-.725-.725-.725-1.775v-1q0-1.05.725-1.775Q30.7 8 31.75 8q1.05 0 1.775.725.725.725.725 1.775v1q0 1.05-.725 1.775Q32.8 14 31.75 14ZM24 18q-1.05 0-1.775-.725-.725-.725-.725-1.775v-3q0-1.05.725-1.775Q22.95 10 24 10q1.05 0 1.775.725.725.725.725 1.775v3q0 1.05-.725 1.775Q25.05 18 24 18Zm-7.75 10q-1.05 0-1.775-.725-.725-.725-.725-1.775v-3q0-1.05.725-1.775Q15.2 20 16.25 20q1.05 0 1.775.725.725.725.725 1.775v3q0 1.05-.725 1.775Q17.3 28 16.25 28Z
+    </Geometry>
+    <Geometry x:Key="waterfall_chart_filled_rounded">
+        M39.5 40q-1.05 0-1.775-.725Q37 38.55 37 37.5v-27q0-1.05.725-1.775Q38.45 8 39.5 8q1.05 0 1.775.725Q42 9.45 42 10.5v27q0 1.05-.725 1.775Q40.55 40 39.5 40Zm-31 0q-1.05 0-1.775-.725Q6 38.55 6 37.5v-9q0-1.05.725-1.775Q7.45 26 8.5 26q1.05 0 1.775.725Q11 27.45 11 28.5v9q0 1.05-.725 1.775Q9.55 40 8.5 40Zm23.25-26q-1.05 0-1.775-.725-.725-.725-.725-1.775v-1q0-1.05.725-1.775Q30.7 8 31.75 8q1.05 0 1.775.725.725.725.725 1.775v1q0 1.05-.725 1.775Q32.8 14 31.75 14ZM24 18q-1.05 0-1.775-.725-.725-.725-.725-1.775v-3q0-1.05.725-1.775Q22.95 10 24 10q1.05 0 1.775.725.725.725.725 1.775v3q0 1.05-.725 1.775Q25.05 18 24 18Zm-7.75 10q-1.05 0-1.775-.725-.725-.725-.725-1.775v-3q0-1.05.725-1.775Q15.2 20 16.25 20q1.05 0 1.775.725.725.725.725 1.775v3q0 1.05-.725 1.775Q17.3 28 16.25 28Z
+    </Geometry>
+    <Geometry x:Key="waterfall_chart_outline_sharp">
+        M6 40V26h5v14Zm7.75-12v-8h5v8Zm7.75-10v-8h5v8Zm7.75-4V8h5v6ZM37 40V8h5v32Z
+    </Geometry>
+    <Geometry x:Key="waterfall_chart_filled_sharp">
+        M6 40V26h5v14Zm7.75-12v-8h5v8Zm7.75-10v-8h5v8Zm7.75-4V8h5v6ZM37 40V8h5v32Z
+    </Geometry>
+    <Style x:Key="waterfall_chart"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource waterfall_chart_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource waterfall_chart_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource waterfall_chart_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource waterfall_chart_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

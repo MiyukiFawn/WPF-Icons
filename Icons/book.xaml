@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="book_outline_rounded">
+        M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h26q1.2 0 2.1.9.9.9.9 2.1v34q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h26V7h-3v12q0 .45-.35.675-.35.225-.75-.025l-3.75-2.15-3.75 2.15q-.4.25-.75.025T24.3 19V7H11v34ZM24.3 7H34ZM11 7h26Z
+    </Geometry>
+    <Geometry x:Key="book_filled_rounded">
+        M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h26q1.2 0 2.1.9.9.9.9 2.1v34q0 1.2-.9 2.1-.9.9-2.1.9Zm14.4-24.35 3.75-2.15 3.75 2.15q.35.25.725.025T34 19V7h-9.7v12q0 .45.375.675.375.225.725-.025Z
+    </Geometry>
+    <Geometry x:Key="book_outline_sharp">
+        M8 44V4h32v40Zm3-3h26V7h-3v13.3l-4.85-2.8-4.85 2.8V7H11ZM24.3 7H34ZM11 7h26-26Z
+    </Geometry>
+    <Geometry x:Key="book_filled_sharp">
+        M8 44V4h32v40ZM24.3 7v13.3l4.85-2.8L34 20.3V7Z
+    </Geometry>
+    <Style x:Key="book"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource book_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource book_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource book_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource book_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

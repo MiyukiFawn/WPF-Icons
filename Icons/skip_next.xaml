@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="skip_next_outline_rounded">
+        M35.5 36q-.65 0-1.075-.425Q34 35.15 34 34.5v-21q0-.65.425-1.075Q34.85 12 35.5 12q.65 0 1.075.425Q37 12.85 37 13.5v21q0 .65-.425 1.075Q36.15 36 35.5 36Zm-22.15-1.65q-.75.55-1.55.1-.8-.45-.8-1.3v-18.3q0-.9.8-1.325.8-.425 1.55.125l13.15 9.1q.65.45.65 1.25t-.65 1.25ZM14 24Zm0 6.25L23.05 24 14 17.75Z
+    </Geometry>
+    <Geometry x:Key="skip_next_filled_rounded">
+        M35.5 36q-.65 0-1.075-.425Q34 35.15 34 34.5v-21q0-.65.425-1.075Q34.85 12 35.5 12q.65 0 1.075.425Q37 12.85 37 13.5v21q0 .65-.425 1.075Q36.15 36 35.5 36Zm-22.15-1.65q-.75.55-1.55.1-.8-.45-.8-1.3v-18.3q0-.9.8-1.325.8-.425 1.55.125l13.15 9.1q.7.45.7 1.25t-.7 1.25Z
+    </Geometry>
+    <Geometry x:Key="skip_next_outline_sharp">
+        M34 36V12h3v24Zm-23 0V12l17.3 12Zm3-12Zm0 6.25L23.05 24 14 17.75Z
+    </Geometry>
+    <Geometry x:Key="skip_next_filled_sharp">
+        M34 36V12h3v24Zm-23 0V12l17.3 12Z
+    </Geometry>
+    <Style x:Key="skip_next"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource skip_next_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource skip_next_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource skip_next_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource skip_next_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="flashlight_on_outline_rounded">
+        M19.5 44q-1.25 0-2.125-.875T16.5 41V21.85l-4.5-6.6V7q0-1.25.875-2.125T15 4h18q1.25 0 2.125.875T36 7v8.25l-4.5 6.6V41q0 1.25-.875 2.125T28.5 44ZM24 31.7q-1.05 0-1.8-.75t-.75-1.8q0-1.05.75-1.8t1.8-.75q1.05 0 1.8.75t.75 1.8q0 1.05-.75 1.8t-1.8.75ZM15 9.8h18V7H15Zm18 3H15v1.75l4.5 6.55V41h9V21.1l4.5-6.55Zm-9 11.85Z
+    </Geometry>
+    <Geometry x:Key="flashlight_on_filled_rounded">
+        M19.5 44q-1.25 0-2.125-.875T16.5 41V21.85l-4.5-6.6V12.8h24v2.45l-4.5 6.6V41q0 1.25-.875 2.125T28.5 44ZM24 31.7q1.05 0 1.8-.75t.75-1.8q0-1.05-.75-1.8T24 26.6q-1.05 0-1.8.75t-.75 1.8q0 1.05.75 1.8t1.8.75ZM12 9.8V7q0-1.25.875-2.125T15 4h18q1.25 0 2.125.875T36 7v2.8Z
+    </Geometry>
+    <Geometry x:Key="flashlight_on_outline_sharp">
+        M16.5 44V21.85l-4.5-6.6V4h24v11.25l-4.5 6.6V44ZM24 31.7q-1.05 0-1.8-.75t-.75-1.8q0-1.05.75-1.8t1.8-.75q1.05 0 1.8.75t.75 1.8q0 1.05-.75 1.8t-1.8.75ZM15 9.8h18V7H15Zm18 3H15v1.75l4.5 6.55V41h9V21.1l4.5-6.55Zm-9 11.85Z
+    </Geometry>
+    <Geometry x:Key="flashlight_on_filled_sharp">
+        M12 9.8V4h24v5.8Zm12 21.9q1.05 0 1.8-.75t.75-1.8q0-1.05-.75-1.8T24 26.6q-1.05 0-1.8.75t-.75 1.8q0 1.05.75 1.8t1.8.75ZM16.5 44V21.85l-4.5-6.6V12.8h24v2.45l-4.5 6.6V44Z
+    </Geometry>
+    <Style x:Key="flashlight_on"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource flashlight_on_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource flashlight_on_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource flashlight_on_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource flashlight_on_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

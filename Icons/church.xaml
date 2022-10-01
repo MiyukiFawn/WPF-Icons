@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="church_outline_rounded">
+        M7 44q-1.25 0-2.125-.875T4 41V30.5q0-.9.475-1.625T5.8 27.75l6.45-2.85v-4.7q0-.85.45-1.575t1.2-1.125l8.6-4.4V9H20q-.65 0-1.075-.425Q18.5 8.15 18.5 7.5q0-.65.425-1.075Q19.35 6 20 6h2.5V3.5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075V6H28q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.65 9 28 9h-2.5v4.1l8.6 4.4q.75.4 1.2 1.125.45.725.45 1.575v4.7l6.45 2.85q.85.4 1.325 1.125T44 30.5V41q0 1.25-.875 2.125T41 44H26.5v-8q0-1.05-.725-1.775Q25.05 33.5 24 33.5q-1.05 0-1.775.725Q21.5 34.95 21.5 36v8Zm0-3h11.5v-5.1q0-2.3 1.6-3.95 1.6-1.65 3.9-1.65t3.9 1.65q1.6 1.65 1.6 3.95V41H41V30.3l-8.25-3.65V20L24 15.45 15.25 20v6.65L7 30.3Zm17-14.25q1.15 0 1.95-.8t.8-1.95q0-1.15-.8-1.95t-1.95-.8q-1.15 0-1.95.8t-.8 1.95q0 1.15.8 1.95t1.95.8Zm0 1.45Z
+    </Geometry>
+    <Geometry x:Key="church_filled_rounded">
+        M7 44q-1.25 0-2.125-.875T4 41V30.5q0-.9.475-1.625T5.8 27.75l6.45-2.85v-4.7q0-.85.45-1.575t1.2-1.125l8.6-4.4V9H20q-.65 0-1.075-.425Q18.5 8.15 18.5 7.5q0-.65.425-1.075Q19.35 6 20 6h2.5V3.5q0-.65.425-1.075Q23.35 2 24 2q.65 0 1.075.425.425.425.425 1.075V6H28q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q28.65 9 28 9h-2.5v4.1l8.6 4.4q.75.4 1.2 1.125.45.725.45 1.575v4.7l6.45 2.85q.85.4 1.325 1.125T44 30.5V41q0 1.25-.875 2.125T41 44H28v-6.5q0-1.6-1.2-2.8-1.2-1.2-2.8-1.2-1.6 0-2.8 1.2-1.2 1.2-1.2 2.8V44Zm17-17.25q1.15 0 1.95-.8t.8-1.95q0-1.15-.8-1.95t-1.95-.8q-1.15 0-1.95.8t-.8 1.95q0 1.15.8 1.95t1.95.8Z
+    </Geometry>
+    <Geometry x:Key="church_outline_sharp">
+        M4 44V28.55l8.25-3.65v-6.55L22.5 13.1V9h-4V6h4V2h3v4h4v3h-4v4.1l10.25 5.25v6.55L44 28.55V44H26.5V33.5h-5V44Zm3-3h11.5V30.3h11V41H41V30.3l-8.25-3.65V20L24 15.45 15.25 20v6.65L7 30.3Zm17-14.25q1.15 0 1.95-.8t.8-1.95q0-1.15-.8-1.95t-1.95-.8q-1.15 0-1.95.8t-.8 1.95q0 1.15.8 1.95t1.95.8Zm0 1.45Z
+    </Geometry>
+    <Geometry x:Key="church_filled_sharp">
+        M4 44V28.55l8.25-3.65v-6.55L22.5 13.1V9h-4V6h4V2h3v4h4v3h-4v4.1l10.25 5.25v6.55L44 28.55V44H28V33.5h-8V44Zm20-17.25q1.15 0 1.95-.8t.8-1.95q0-1.15-.8-1.95t-1.95-.8q-1.15 0-1.95.8t-.8 1.95q0 1.15.8 1.95t1.95.8Z
+    </Geometry>
+    <Style x:Key="church"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource church_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource church_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource church_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource church_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

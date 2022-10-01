@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="shuffle_on_outline_rounded">
+        M5 46q-1.2 0-2.1-.9Q2 44.2 2 43V4.95q0-1.15.9-2.075.9-.925 2.1-.925h38.05q1.15 0 2.075.925.925.925.925 2.075V43q0 1.2-.925 2.1-.925.9-2.075.9Zm14.8-24.2 2.15-2.15L10.75 8.5q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.425 1.075.025.625.425 1.075Zm10.8 18.7h8.45q.65 0 1.075-.425.425-.425.425-1.075v-8.45q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425-.425.425-.425 1.075v4.85l-9.3-9.2-2.1 2.15 9.2 9.15H30.6q-.65 0-1.075.425Q29.1 38.35 29.1 39q0 .65.425 1.075.425.425 1.075.425Zm-22-1.1q.45.4 1.05.45.6.05 1.05-.4L37.55 12.6v4.8q0 .65.425 1.075.425.425 1.075.425.65 0 1.075-.425.425-.425.425-1.075V8.95q0-.65-.425-1.075-.425-.425-1.075-.425H30.6q-.65 0-1.075.425Q29.1 8.3 29.1 8.95q0 .65.425 1.075.425.425 1.075.425h4.85L8.6 37.3q-.45.45-.45 1.05 0 .6.45 1.05Z
+    </Geometry>
+    <Geometry x:Key="shuffle_on_filled_rounded">
+        M5 46q-1.2 0-2.1-.9Q2 44.2 2 43V4.95q0-1.15.9-2.075.9-.925 2.1-.925h38.05q1.15 0 2.075.925.925.925.925 2.075V43q0 1.2-.925 2.1-.925.9-2.075.9Zm14.8-24.2 2.15-2.15L10.75 8.5q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.425 1.075.025.625.425 1.075Zm10.8 18.7h8.45q.65 0 1.075-.425.425-.425.425-1.075v-8.45q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425-.425.425-.425 1.075v4.85l-9.3-9.2-2.1 2.15 9.2 9.15H30.6q-.65 0-1.075.425Q29.1 38.35 29.1 39q0 .65.425 1.075.425.425 1.075.425Zm-22-1.1q.45.4 1.05.45.6.05 1.05-.4L37.55 12.6v4.8q0 .65.425 1.075.425.425 1.075.425.65 0 1.075-.425.425-.425.425-1.075V8.95q0-.65-.425-1.075-.425-.425-1.075-.425H30.6q-.65 0-1.075.425Q29.1 8.3 29.1 8.95q0 .65.425 1.075.425.425 1.075.425h4.85L8.6 37.3q-.45.45-.45 1.05 0 .6.45 1.05Z
+    </Geometry>
+    <Geometry x:Key="shuffle_on_outline_sharp">
+        M2 46V1.95h44.05V46Zm17.8-24.2 2.15-2.15L9.7 7.45 7.55 9.6Zm9.3 18.7h11.45V29.05h-3v6.35l-9.3-9.2-2.1 2.15 9.2 9.15H29.1Zm-19.45 0 27.9-27.9v6.3h3V7.45H29.1v3h6.35l-27.9 27.9Z
+    </Geometry>
+    <Geometry x:Key="shuffle_on_filled_sharp">
+        M2 46V1.95h44.05V46Zm17.8-24.2 2.15-2.15L9.7 7.45 7.55 9.6Zm9.3 18.7h11.45V29.05h-3v6.35l-9.3-9.2-2.1 2.15 9.2 9.15H29.1Zm-19.45 0 27.9-27.9v6.3h3V7.45H29.1v3h6.35l-27.9 27.9Z
+    </Geometry>
+    <Style x:Key="shuffle_on"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource shuffle_on_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource shuffle_on_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource shuffle_on_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource shuffle_on_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

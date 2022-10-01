@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="corporate_fare_outline_rounded">
+        M7 42q-1.25 0-2.125-.875T4 39V9q0-1.25.875-2.125T7 6h13.5q1.25 0 2.125.875T23.5 9v5.25H41q1.25 0 2.125.875T44 17.25V39q0 1.25-.875 2.125T41 42Zm0-3h13.5v-5.25H7Zm0-8.25h13.5V25.5H7Zm0-8.25h13.5v-5.25H7Zm0-8.25h13.5V9H7ZM23.5 39H41V17.25H23.5Zm4-13.5v-3h8.25v3Zm0 8.25v-3h8.25v3Z
+    </Geometry>
+    <Geometry x:Key="corporate_fare_filled_rounded">
+        M7 42q-1.25 0-2.125-.875T4 39V9q0-1.25.875-2.125T7 6h13.5q1.25 0 2.125.875T23.5 9v5.25H41q1.25 0 2.125.875T44 17.25V39q0 1.25-.875 2.125T41 42Zm0-3h13.5v-5.25H7Zm0-8.25h13.5V25.5H7Zm0-8.25h13.5v-5.25H7Zm0-8.25h13.5V9H7ZM23.5 39H41V17.25H23.5Zm4-13.5v-3h8.25v3Zm0 8.25v-3h8.25v3Z
+    </Geometry>
+    <Geometry x:Key="corporate_fare_outline_sharp">
+        M4 42V6h19.5v8.25H44V42Zm3-3h13.5v-5.25H7Zm0-8.25h13.5V25.5H7Zm0-8.25h13.5v-5.25H7Zm0-8.25h13.5V9H7ZM23.5 39H41V17.25H23.5Zm4-13.5v-3h8.25v3Zm0 8.25v-3h8.25v3Z
+    </Geometry>
+    <Geometry x:Key="corporate_fare_filled_sharp">
+        M4 42V6h19.5v8.25H44V42Zm3-3h13.5v-5.25H7Zm0-8.25h13.5V25.5H7Zm0-8.25h13.5v-5.25H7Zm0-8.25h13.5V9H7ZM23.5 39H41V17.25H23.5Zm4-13.5v-3h8.25v3Zm0 8.25v-3h8.25v3Z
+    </Geometry>
+    <Style x:Key="corporate_fare"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource corporate_fare_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource corporate_fare_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource corporate_fare_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource corporate_fare_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

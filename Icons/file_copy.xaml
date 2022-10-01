@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="file_copy_outline_rounded">
+        M39 40H13q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h16.15q.6 0 1.175.25.575.25.975.65l9.8 9.8q.4.4.65.975T42 14.85V37q0 1.2-.9 2.1-.9.9-2.1.9ZM28.9 5H13v32h26V14.9h-8.6q-.65 0-1.075-.425-.425-.425-.425-1.075ZM7 46q-1.2 0-2.1-.9Q4 44.2 4 43V13.55q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q7 12.9 7 13.55V43h23.4q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q31.05 46 30.4 46Zm6-41v9.9V5v32V5Z
+    </Geometry>
+    <Geometry x:Key="file_copy_filled_rounded">
+        M39 40H13q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h16.15q.6 0 1.15.225.55.225 1 .675l9.8 9.8q.45.45.675 1 .225.55.225 1.15V37q0 1.2-.9 2.1-.9.9-2.1.9ZM7 46q-1.2 0-2.1-.9Q4 44.2 4 43V13.55q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q7 12.9 7 13.55V43h23.4q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q31.05 46 30.4 46Zm23.4-31.1H39L28.9 5v8.4q0 .65.425 1.075.425.425 1.075.425Z
+    </Geometry>
+    <Geometry x:Key="file_copy_outline_sharp">
+        M10 40V2h20.4L42 13.6V40Zm18.9-25.1V5H13v32h26V14.9ZM4 46V12.05h3V43h24.9v3Zm9-9V5v9.9V5v32Z
+    </Geometry>
+    <Geometry x:Key="file_copy_filled_sharp">
+        M10 40V2h20.4L42 13.6V40Zm-6 6V12.05h3V43h24.9v3Zm24.9-31.1H39L28.9 5Z
+    </Geometry>
+    <Style x:Key="file_copy"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource file_copy_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource file_copy_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource file_copy_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource file_copy_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

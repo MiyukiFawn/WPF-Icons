@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="drafts_outline_rounded">
+        M7 42q-1.2 0-2.1-.9Q4 40.2 4 39V15.85q0-.75.325-1.525.325-.775 1.125-1.225l17-10.2q.35-.25.75-.325.4-.075.8-.075t.8.075q.4.075.75.325l17 10.2q.85.45 1.15 1.225.3.775.3 1.525V39q0 1.2-.9 2.1-.9.9-2.1.9Zm17-16.95q.2 0 .375-.05t.375-.15l16.05-9.4L24.75 5.8q-.2-.1-.375-.15Q24.2 5.6 24 5.6t-.375.05q-.175.05-.375.15L7.2 15.45l16.05 9.4q.2.1.375.15.175.05.375.05ZM7 39h34V18.65l-15.5 9.1q-.35.25-.725.325-.375.075-.775.075t-.775-.1q-.375-.1-.725-.3L7 18.65V39Zm0 0h34Z
+    </Geometry>
+    <Geometry x:Key="drafts_filled_rounded">
+        M7 42q-1.2 0-2.1-.9Q4 40.2 4 39V15.85q0-.75.325-1.525.325-.775 1.125-1.225l17-10.2q.35-.25.75-.325.4-.075.8-.075t.8.075q.4.075.75.325l17 10.2q.85.45 1.15 1.225.3.775.3 1.525V39q0 1.2-.9 2.1-.9.9-2.1.9Zm17-16.95q.2 0 .375-.05t.375-.15l16.05-9.4L24.75 5.8q-.2-.1-.375-.15Q24.2 5.6 24 5.6t-.375.05q-.175.05-.375.15L7.2 15.45l16.05 9.4q.2.1.375.15.175.05.375.05Z
+    </Geometry>
+    <Geometry x:Key="drafts_outline_sharp">
+        M4 42V13.95L24 2l20 11.95V42Zm20-16.7 16.8-9.85L24 5.35 7.2 15.45ZM7 39h34V18.65l-17 10-17-10Zm0 0h34Z
+    </Geometry>
+    <Geometry x:Key="drafts_filled_sharp">
+        M4 42V13.95L24 2l20 11.95V42Zm20-16.7 16.8-9.85L24 5.35 7.2 15.45Z
+    </Geometry>
+    <Style x:Key="drafts"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource drafts_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource drafts_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource drafts_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource drafts_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

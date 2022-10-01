@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="crop_7_5_outline_rounded">
+        M9 38q-1.2 0-2.1-.9Q6 36.2 6 35V13q0-1.15.9-2.075Q7.8 10 9 10h30q1.2 0 2.1.925.9.925.9 2.075v22q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h30V13H9v22Zm0 0V13v22Z
+    </Geometry>
+    <Geometry x:Key="crop_7_5_filled_rounded">
+        M9 38q-1.2 0-2.1-.9Q6 36.2 6 35V13q0-1.15.9-2.075Q7.8 10 9 10h30q1.2 0 2.1.925.9.925.9 2.075v22q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="crop_7_5_outline_sharp">
+        M6 38V10h36v28Zm3-3h30V13H9Zm0 0V13v22Z
+    </Geometry>
+    <Geometry x:Key="crop_7_5_filled_sharp">
+        M6 38V10h36v28Z
+    </Geometry>
+    <Style x:Key="crop_7_5"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource crop_7_5_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource crop_7_5_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource crop_7_5_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource crop_7_5_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

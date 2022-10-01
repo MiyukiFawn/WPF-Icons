@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="monitoring_outline_rounded">
+        M6 42v-3.8l3-3V42Zm8.25 0V30.2l3-3V42Zm8.25 0V27.2l3 3.05V42Zm8.25 0V30.25l3-3V42ZM39 42V22.2l3-3V42ZM6 30.2v-4.25l14-13.9 8 8L42 6v4.25L28 24.3l-8-8Z
+    </Geometry>
+    <Geometry x:Key="monitoring_filled_rounded">
+        M6 42v-3.8l3-3V42Zm8.25 0V30.2l3-3V42Zm8.25 0V27.2l3 3.05V42Zm8.25 0V30.25l3-3V42ZM39 42V22.2l3-3V42ZM6 30.2v-4.25l14-13.9 8 8L42 6v4.25L28 24.3l-8-8Z
+    </Geometry>
+    <Geometry x:Key="monitoring_outline_sharp">
+        M6 42v-3.8l3-3V42Zm8.25 0V30.2l3-3V42Zm8.25 0V27.2l3 3.05V42Zm8.25 0V30.25l3-3V42ZM39 42V22.2l3-3V42ZM6 30.2v-4.25l14-13.9 8 8L42 6v4.25L28 24.3l-8-8Z
+    </Geometry>
+    <Geometry x:Key="monitoring_filled_sharp">
+        M6 42v-3.8l3-3V42Zm8.25 0V30.2l3-3V42Zm8.25 0V27.2l3 3.05V42Zm8.25 0V30.25l3-3V42ZM39 42V22.2l3-3V42ZM6 30.2v-4.25l14-13.9 8 8L42 6v4.25L28 24.3l-8-8Z
+    </Geometry>
+    <Style x:Key="monitoring"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource monitoring_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource monitoring_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource monitoring_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource monitoring_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

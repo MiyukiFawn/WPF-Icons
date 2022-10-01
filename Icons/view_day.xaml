@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="view_day_outline_rounded">
+        M7.45 40q-.6 0-1.025-.45Q6 39.1 6 38.45q0-.6.425-1.025Q6.85 37 7.5 37h33.05q.6 0 1.025.45.425.45.425 1.05 0 .65-.425 1.075Q41.15 40 40.5 40Zm0-29q-.6 0-1.025-.45Q6 10.1 6 9.45q0-.6.425-1.025Q6.85 8 7.5 8h33.05q.6 0 1.025.45Q42 8.9 42 9.5q0 .65-.425 1.075Q41.15 11 40.5 11ZM9 31.45q-1.25 0-2.125-.875T6 28.45v-8.9q0-1.25.875-2.125T9 16.55h30q1.25 0 2.125.875T42 19.55v8.9q0 1.25-.875 2.125T39 31.45Zm0-3h30v-8.9H9v8.9Zm0-8.9v8.9-8.9Z
+    </Geometry>
+    <Geometry x:Key="view_day_filled_rounded">
+        M7.45 40q-.6 0-1.025-.45Q6 39.1 6 38.5q0-.65.425-1.075Q6.85 37 7.5 37h33.05q.6 0 1.025.45.425.45.425 1.05 0 .65-.425 1.075Q41.15 40 40.5 40ZM9 31.45q-1.25 0-2.125-.875T6 28.45v-8.9q0-1.25.875-2.125T9 16.55h30q1.25 0 2.125.875T42 19.55v8.9q0 1.25-.875 2.125T39 31.45ZM7.45 11q-.6 0-1.025-.45Q6 10.1 6 9.5q0-.65.425-1.075Q6.85 8 7.5 8h33.05q.6 0 1.025.45Q42 8.9 42 9.5q0 .65-.425 1.075Q41.15 11 40.5 11Z
+    </Geometry>
+    <Geometry x:Key="view_day_outline_sharp">
+        M6 40v-3h36v3Zm0-8.55v-14.9h36v14.9Zm3-3h30v-8.9H9ZM6 11V8h36v3Zm3 17.45v-8.9 8.9Z
+    </Geometry>
+    <Geometry x:Key="view_day_filled_sharp">
+        M6 40v-3h36v3Zm0-8.55v-14.9h36v14.9ZM6 11V8h36v3Z
+    </Geometry>
+    <Style x:Key="view_day"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource view_day_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource view_day_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource view_day_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource view_day_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

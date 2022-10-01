@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="location_city_outline_rounded">
+        M9 42q-1.25 0-2.125-.875T6 39V17.1q0-1.25.875-2.125T9 14.1h9.35v-3.35q0-.3.05-.6t.175-.575q.125-.275.3-.525t.375-.45l3.7-3.6q.45-.4 1.05-.4.6 0 1.05.4l3.7 3.6q.45.4.675.975.225.575.225 1.175V22.4H39q1.25 0 2.125.875T42 25.4V39q0 1.25-.875 2.125T39 42Zm0-3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9ZM21.35 39h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3V8.8h-5.3ZM33.7 39H39v-5.3h-5.3Zm0-8.3H39v-5.3h-5.3Z
+    </Geometry>
+    <Geometry x:Key="location_city_filled_rounded">
+        M9 42q-1.25 0-2.125-.875T6 39V17.1q0-1.25.875-2.125T9 14.1h9.35v-3.35q0-.3.05-.6t.175-.575q.125-.275.3-.525t.375-.45l3.7-3.6q.45-.4 1.05-.4.6 0 1.05.4l3.7 3.6q.45.4.675.975.225.575.225 1.175V22.4H39q1.25 0 2.125.875T42 25.4V39q0 1.25-.875 2.125T39 42Zm0-3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9ZM21.35 39h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3V8.8h-5.3ZM33.7 39H39v-5.3h-5.3Zm0-8.3H39v-5.3h-5.3Z
+    </Geometry>
+    <Geometry x:Key="location_city_outline_sharp">
+        M6 42V14.1h12.35V9.5L24 4l5.65 5.5v12.9H42V42Zm3-3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9ZM21.35 39h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3V8.8h-5.3ZM33.7 39H39v-5.3h-5.3Zm0-8.3H39v-5.3h-5.3Z
+    </Geometry>
+    <Geometry x:Key="location_city_filled_sharp">
+        M6 42V14.1h12.35V9.5L24 4l5.65 5.5v12.9H42V42Zm3-3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9Zm0-8.3h5.3v-5.3H9ZM21.35 39h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3v-5.3h-5.3Zm0-8.3h5.3V8.8h-5.3ZM33.7 39H39v-5.3h-5.3Zm0-8.3H39v-5.3h-5.3Z
+    </Geometry>
+    <Style x:Key="location_city"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource location_city_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource location_city_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource location_city_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource location_city_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

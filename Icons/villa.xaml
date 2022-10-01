@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="villa_outline_rounded">
+        M7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5V16.95q0-.45.25-.85.25-.4.7-.55L29.7 6.8q.75-.3 1.4.15.65.45.65 1.25V24H36q0-1.25.875-2.125T39 21q1.25 0 2.125.875T42 24v16.5q0 .65-.425 1.075Q41.15 42 40.5 42ZM9 39h9.5V25.5q0-.65.425-1.075Q19.35 24 20 24h8.75V10.35L9 17.95Zm12.5 0h7.25v-4q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425.425.425.425 1.075v4H39V27H21.5Zm-6-18Zm14.75 18Zm0-1.25Z
+    </Geometry>
+    <Geometry x:Key="villa_filled_rounded">
+        M7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5V16.95q0-.45.25-.85.25-.4.7-.55L29.7 6.8q.75-.3 1.4.15.65.45.65 1.25V21H17q-.65 0-1.075.425-.425.425-.425 1.075V42ZM20 42q-.6 0-1.05-.425-.45-.425-.45-1.075v-15q0-.65.425-1.075Q19.35 24 20 24h16q0-1.25.875-2.125T39 21q1.25 0 2.125.875T42 24v16.5q0 .65-.425 1.075Q41.15 42 40.5 42h-8.75v-7q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425-.425.425-.425 1.075v7Z
+    </Geometry>
+    <Geometry x:Key="villa_outline_sharp">
+        M6 42V15.9L31.75 6v18H36q0-1.25.875-2.125T39 21q1.25 0 2.125.875T42 24v18Zm3-3h9.5V24h10.25V10.35L9 17.95Zm12.5 0h7.25v-5.5h3V39H39V27H21.5Zm-6-18Zm14.75 18Zm0-1.25Z
+    </Geometry>
+    <Geometry x:Key="villa_filled_sharp">
+        M18.5 42V24H36q0-1.25.875-2.125T39 21q1.25 0 2.125.875T42 24v18H31.75v-8.5h-3V42ZM6 42V15.9L31.75 6v15H15.5v21Z
+    </Geometry>
+    <Style x:Key="villa"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource villa_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource villa_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource villa_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource villa_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

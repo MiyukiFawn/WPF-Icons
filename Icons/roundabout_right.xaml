@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="roundabout_right_outline_rounded">
+        M16 42q-.65 0-1.075-.425-.425-.425-.425-1.075V29.9q-4.55-.55-7.525-3.975Q4 22.5 4 18q0-5 3.5-8.5T16 6q4.5 0 7.925 2.975T27.9 16.5h10.4l-3.45-3.45q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l6 6q.25.25.35.5.1.25.1.55 0 .3-.1.55-.1.25-.35.5l-6 6q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05l3.45-3.45H27.95q-1 0-1.925-.725T24.95 17.05q-.4-3.45-2.95-5.75Q19.45 9 16 9q-3.75 0-6.375 2.625T7 18q0 3.45 2.275 5.975Q11.55 26.5 15 26.9q1.15.15 1.825 1t.675 2v10.6q0 .65-.425 1.075Q16.65 42 16 42Z
+    </Geometry>
+    <Geometry x:Key="roundabout_right_filled_rounded">
+        M16 42q-.65 0-1.075-.425-.425-.425-.425-1.075V29.9q-4.55-.55-7.525-3.975Q4 22.5 4 18q0-5 3.5-8.5T16 6q4.5 0 7.925 2.975T27.9 16.5h10.4l-3.45-3.45q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l6 6q.25.25.35.5.1.25.1.55 0 .3-.1.55-.1.25-.35.5l-6 6q-.45.45-1.05.45-.6 0-1.05-.45-.45-.45-.45-1.05 0-.6.45-1.05l3.45-3.45H27.95q-1 0-1.925-.725T24.95 17.05q-.4-3.45-2.95-5.75Q19.45 9 16 9q-3.75 0-6.375 2.625T7 18q0 3.45 2.275 5.975Q11.55 26.5 15 26.9q1.15.15 1.825 1t.675 2v10.6q0 .65-.425 1.075Q16.65 42 16 42Z
+    </Geometry>
+    <Geometry x:Key="roundabout_right_outline_sharp">
+        M14.5 42V29.9q-4.55-.55-7.525-3.975Q4 22.5 4 18q0-5 3.5-8.5T16 6q4.5 0 7.925 2.975T27.9 16.5h10.4L33.8 12l2.1-2.1L44 18l-8.1 8.1-2.1-2.1 4.5-4.5H25V18q0-3.75-2.625-6.375T16 9q-3.75 0-6.375 2.625T7 18q0 3.75 2.65 6.375T16 27h1.5v15Z
+    </Geometry>
+    <Geometry x:Key="roundabout_right_filled_sharp">
+        M14.5 42V29.9q-4.55-.55-7.525-3.975Q4 22.5 4 18q0-5 3.5-8.5T16 6q4.5 0 7.925 2.975T27.9 16.5h10.4L33.8 12l2.1-2.1L44 18l-8.1 8.1-2.1-2.1 4.5-4.5H25V18q0-3.75-2.625-6.375T16 9q-3.75 0-6.375 2.625T7 18q0 3.75 2.65 6.375T16 27h1.5v15Z
+    </Geometry>
+    <Style x:Key="roundabout_right"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource roundabout_right_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource roundabout_right_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource roundabout_right_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource roundabout_right_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

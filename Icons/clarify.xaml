@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="clarify_outline_rounded">
+        M13 33h13v-3H13Zm19 0h3V15h-3Zm-19-7.5h13v-3H13Zm0-7.5h13v-3H13ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34.8V9H6.6v30Zm0 0V9v30Z
+    </Geometry>
+    <Geometry x:Key="clarify_filled_rounded">
+        M13 33h13v-3H13Zm19 0h3V15h-3Zm-19-7.5h13v-3H13Zm0-7.5h13v-3H13ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="clarify_outline_sharp">
+        M13 33h13v-3H13Zm19 0h3V15h-3Zm-19-7.5h13v-3H13Zm0-7.5h13v-3H13ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34.8V9H6.6v30Zm0 0V9v30Z
+    </Geometry>
+    <Geometry x:Key="clarify_filled_sharp">
+        M13 33h13v-3H13Zm19 0h3V15h-3Zm-19-7.5h13v-3H13Zm0-7.5h13v-3H13ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Style x:Key="clarify"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource clarify_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource clarify_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource clarify_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource clarify_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

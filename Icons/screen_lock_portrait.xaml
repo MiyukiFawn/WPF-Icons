@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="screen_lock_portrait_outline_rounded">
+        M19.5 32q-.65 0-1.075-.425Q18 31.15 18 30.5v-7q0-.65.425-1.075Q18.85 22 19.5 22h.5v-2q0-1.65 1.175-2.825Q22.35 16 24 16q1.65 0 2.825 1.175Q28 18.35 28 20v2h.5q.65 0 1.075.425Q30 22.85 30 23.5v7.05q0 .6-.45 1.025Q29.1 32 28.5 32Zm2-10h5v-2q0-1-.75-1.675T24 17.65q-1 0-1.75.675T21.5 20ZM13 46q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v38q0 1.2-.9 2.1-.9.9-2.1.9Zm0-4.5V43h22v-1.5Zm0-3h22v-29H13Zm0-32h22V5H13Zm0 0V5v1.5Zm0 35V43Z
+    </Geometry>
+    <Geometry x:Key="screen_lock_portrait_filled_rounded">
+        M19.5 32q-.65 0-1.075-.425Q18 31.15 18 30.5v-7q0-.65.425-1.075Q18.85 22 19.5 22h.5v-2q0-1.65 1.175-2.825Q22.35 16 24 16q1.65 0 2.825 1.175Q28 18.35 28 20v2h.5q.65 0 1.075.425Q30 22.85 30 23.5v7.05q0 .6-.45 1.025Q29.1 32 28.5 32Zm2-10h5v-2q0-1-.75-1.675T24 17.65q-1 0-1.75.675T21.5 20ZM13 46q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v38q0 1.2-.9 2.1-.9.9-2.1.9Zm0-7.5h22v-29H13Z
+    </Geometry>
+    <Geometry x:Key="screen_lock_portrait_outline_sharp">
+        M18 32V22h2v-2q0-1.65 1.175-2.825Q22.35 16 24 16q1.65 0 2.825 1.175Q28 18.35 28 20v2h2v10Zm3.5-10h5v-2q0-1-.75-1.675T24 17.65q-1 0-1.75.675T21.5 20ZM10 46V2h28v44Zm3-7.5h22v-29H13Zm0 4.5h22v-1.5H13Zm0-36.5h22V5H13Zm0 0V5v1.5ZM13 43v-1.5V43Z
+    </Geometry>
+    <Geometry x:Key="screen_lock_portrait_filled_sharp">
+        M18 32V22h2v-2q0-1.65 1.175-2.825Q22.35 16 24 16q1.65 0 2.825 1.175Q28 18.35 28 20v2h2v10Zm3.5-10h5v-2q0-1-.75-1.675T24 17.65q-1 0-1.75.675T21.5 20ZM10 46V2h28v44Zm3-7.5h22v-29H13Z
+    </Geometry>
+    <Style x:Key="screen_lock_portrait"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource screen_lock_portrait_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource screen_lock_portrait_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource screen_lock_portrait_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource screen_lock_portrait_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

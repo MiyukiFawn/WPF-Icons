@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="music_off_outline_rounded">
+        M39.25 44.1 3.9 8.8q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.075-.45t1.075.45L41.4 42q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45ZM27.3 23.65l-3-3V9q0-1.25.875-2.125T27.3 6h5.35q1.4 0 2.375.975Q36 7.95 36 9.35t-.975 2.4q-.975 1-2.375 1H27.3ZM19.8 42q-3.15 0-5.325-2.175Q12.3 37.65 12.3 34.5q0-3.15 2.175-5.325Q16.65 27 19.8 27q1.4 0 2.525.4t1.975 1.1v-3.6l3 3v6.6q0 3.15-2.175 5.325Q22.95 42 19.8 42Z
+    </Geometry>
+    <Geometry x:Key="music_off_filled_rounded">
+        M39.25 44.1 3.9 8.8q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.075-.45t1.075.45L41.4 42q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45ZM27.3 23.65l-3-3V9q0-1.25.875-2.125T27.3 6h5.35q1.4 0 2.375.975Q36 7.95 36 9.35t-.975 2.4q-.975 1-2.375 1H27.3ZM19.8 42q-3.15 0-5.325-2.175Q12.3 37.65 12.3 34.5q0-3.15 2.175-5.325Q16.65 27 19.8 27q1.4 0 2.525.4t1.975 1.1v-3.6l3 3v6.6q0 3.15-2.175 5.325Q22.95 42 19.8 42Z
+    </Geometry>
+    <Geometry x:Key="music_off_outline_sharp">
+        M40.3 45.2 2.85 7.75 5 5.6l37.45 37.45Zm-13-21.55-3-3V6H36v6.75h-8.7ZM19.8 42q-3.15 0-5.325-2.175Q12.3 37.65 12.3 34.5q0-3.15 2.175-5.325Q16.65 27 19.8 27q1.4 0 2.525.4t1.975 1.1v-3.6l3 3v6.6q0 3.15-2.175 5.325Q22.95 42 19.8 42Z
+    </Geometry>
+    <Geometry x:Key="music_off_filled_sharp">
+        M40.3 45.2 2.85 7.75 5 5.6l37.45 37.45Zm-13-21.55-3-3V6H36v6.75h-8.7ZM19.8 42q-3.15 0-5.325-2.175Q12.3 37.65 12.3 34.5q0-3.15 2.175-5.325Q16.65 27 19.8 27q1.4 0 2.525.4t1.975 1.1v-3.6l3 3v6.6q0 3.15-2.175 5.325Q22.95 42 19.8 42Z
+    </Geometry>
+    <Style x:Key="music_off"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource music_off_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource music_off_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource music_off_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource music_off_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

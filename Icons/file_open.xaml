@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="file_open_outline_rounded">
+        M11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h15.75q.6 0 1.175.25.575.25.975.65l10.2 10.2q.4.4.65.975T40 17.25V29.5h-3V18h-9.5q-.65 0-1.075-.425Q26 17.15 26 16.5V7H11v34h20.5v3Zm31.8-1.05-5.3-5.3v4.75q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075V34q0-.65.425-1.075Q35.35 32.5 36 32.5h8.4q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425h-4.8l5.35 5.35q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45ZM11 41V7v34Z
+    </Geometry>
+    <Geometry x:Key="file_open_filled_rounded">
+        m42.8 42.95-5.3-5.3v4.75q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425-.425-.425-.425-1.075V34q0-.65.425-1.075Q35.35 32.5 36 32.5h8.4q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425h-4.8l5.35 5.35q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.075.45t-1.075-.45ZM27.5 18H37L26 7v9.5q0 .65.425 1.075Q26.85 18 27.5 18ZM11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h15.75q.6 0 1.175.25.575.25.975.65l10.2 10.2q.4.4.65.975T40 17.25V29.5h-5.5q-1.25 0-2.125.875T31.5 32.5V44Z
+    </Geometry>
+    <Geometry x:Key="file_open_outline_sharp">
+        M8 44V4h20l12 12v13.5h-3V18H26V7H11v34h20.5v3Zm35.9.05-6.4-6.4v6.25h-3V32.5h11.4v3h-6.3l6.4 6.4ZM11 41V7v34Z
+    </Geometry>
+    <Geometry x:Key="file_open_filled_sharp">
+        m43.9 44.05-6.4-6.4v6.25h-3V32.5h11.4v3h-6.3l6.4 6.4ZM26 18h11L26 7ZM8 44V4h20l12 12v13.5h-8.5V44Z
+    </Geometry>
+    <Style x:Key="file_open"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource file_open_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource file_open_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource file_open_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource file_open_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

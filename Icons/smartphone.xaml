@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="smartphone_outline_rounded">
+        M13 46q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v38q0 1.2-.9 2.1-.9.9-2.1.9Zm0-4.5V43h22v-1.5Zm0-3h22v-29H13Zm0-32h22V5H13Zm0 0V5v1.5Zm0 35V43Z
+    </Geometry>
+    <Geometry x:Key="smartphone_filled_rounded">
+        M13 46q-1.2 0-2.1-.9-.9-.9-.9-2.1V5q0-1.2.9-2.1.9-.9 2.1-.9h22q1.2 0 2.1.9.9.9.9 2.1v38q0 1.2-.9 2.1-.9.9-2.1.9Zm0-7.5h22v-29H13Z
+    </Geometry>
+    <Geometry x:Key="smartphone_outline_sharp">
+        M10 46V2h28v44Zm3-7.5h22v-29H13Zm0 4.5h22v-1.5H13Zm0-36.5h22V5H13Zm0 0V5v1.5ZM13 43v-1.5V43Z
+    </Geometry>
+    <Geometry x:Key="smartphone_filled_sharp">
+        M10 46V2h28v44Zm3-7.5h22v-29H13Z
+    </Geometry>
+    <Style x:Key="smartphone"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource smartphone_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource smartphone_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource smartphone_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource smartphone_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

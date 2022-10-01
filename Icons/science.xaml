@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="science_outline_rounded">
+        M8.6 42q-2.1 0-2.975-1.95T6.2 36.5l12.4-14V9H16q-.65 0-1.075-.425Q14.5 8.15 14.5 7.5q0-.65.425-1.075Q15.35 6 16 6h16q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q32.65 9 32 9h-2.6v13.5l12.4 14q1.45 1.6.575 3.55Q41.5 42 39.4 42ZM8 39h32L26.4 23.6V9h-4.8v14.6Zm15.9-15Z
+    </Geometry>
+    <Geometry x:Key="science_filled_rounded">
+        M8.6 42q-2.1 0-2.975-1.95T6.2 36.5l12.4-14V9H16q-.65 0-1.075-.425Q14.5 8.15 14.5 7.5q0-.65.425-1.075Q15.35 6 16 6h16q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q32.65 9 32 9h-2.6v13.5l12.4 14q1.45 1.6.575 3.55Q41.5 42 39.4 42Z
+    </Geometry>
+    <Geometry x:Key="science_outline_sharp">
+        M8.6 42q-2.05 0-2.8-2.1t.4-3.4l12.4-14V9h-4.1V6h19v3h-4.1v13.5l12.4 14q1.2 1.35.425 3.425Q41.45 42 39.4 42ZM8 39h32L26.4 23.6V9h-4.8v14.6Zm15.9-15Z
+    </Geometry>
+    <Geometry x:Key="science_filled_sharp">
+        M8.6 42q-2.05 0-2.8-2.1t.4-3.4l12.4-14V9h-4.1V6h19v3h-4.1v13.5l12.4 14q1.2 1.35.425 3.425Q41.45 42 39.4 42Z
+    </Geometry>
+    <Style x:Key="science"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource science_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource science_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource science_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource science_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

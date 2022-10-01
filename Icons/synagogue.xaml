@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="synagogue_outline_rounded">
+        M5 42q-1.25 0-2.125-.875T2 39V14q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6T13 14v1.55l9.05-7.85q.4-.4.925-.575Q23.5 6.95 24 6.95q.55 0 1.05.175t.9.575L35 15.55V14q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6T46 14v25q0 1.25-.875 2.125T43 42H26.5V32q0-1.05-.725-1.775Q25.05 29.5 24 29.5q-1.05 0-1.775.725Q21.5 30.95 21.5 32v10Zm33-25.5h5V14q0-1.05-.725-1.775-.725-.725-1.775-.725-1.05 0-1.775.725Q38 12.95 38 14Zm-33 0h5V14q0-1.05-.725-1.775Q8.55 11.5 7.5 11.5q-1.05 0-1.775.725Q5 12.95 5 14ZM5 39h5V19.5H5V39Zm8 0h5.5v-7q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9v7H35V19.5L24 9.95v-.025.025L13 19.5Zm25 0h5V19.5h-5ZM24 22.75q-1.15 0-1.95-.8t-.8-1.95q0-1.15.8-1.95t1.95-.8q1.15 0 1.95.8t.8 1.95q0 1.15-.8 1.95t-1.95.8Z
+    </Geometry>
+    <Geometry x:Key="synagogue_filled_rounded">
+        M37.5 16.5V14q0-1.8 1.225-3.025Q39.95 9.75 41.75 9.75q1.8 0 3.025 1.225Q46 12.2 46 14v2.5ZM2 16.5V14q0-1.8 1.225-3.025Q4.45 9.75 6.25 9.75q1.8 0 3.025 1.225Q10.5 12.2 10.5 14v2.5ZM5 42q-1.25 0-2.125-.875T2 39V18h8.5v24Zm7 0V17.4q0-.7.275-1.3.275-.6.825-1l9-7.5q.4-.35.875-.525Q23.45 6.9 24 6.9q.55 0 1.025.175.475.175.875.525l9 7.5q.55.4.825 1 .275.6.275 1.3V42h-8V32q0-1.75-1.125-2.875T24 28q-1.75 0-2.875 1.125T20 32v10Zm25.5 0V18H46v21q0 1.25-.875 2.125T43 42ZM24 22.75q1.15 0 1.95-.8t.8-1.95q0-1.15-.8-1.95t-1.95-.8q-1.15 0-1.95.8t-.8 1.95q0 1.15.8 1.95t1.95.8Z
+    </Geometry>
+    <Geometry x:Key="synagogue_outline_sharp">
+        M2 42V14q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6T13 14v1.55L24 6l11 9.55V14q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6T46 14v28H26.5V29.5h-5V42Zm36-25.5h5V14q0-1.05-.725-1.775-.725-.725-1.775-.725-1.05 0-1.775.725Q38 12.95 38 14Zm-33 0h5V14q0-1.05-.725-1.775Q8.55 11.5 7.5 11.5q-1.05 0-1.775.725Q5 12.95 5 14ZM5 39h5V19.5H5Zm8 0h5.5V26.5h11V39H35V19.5L24 9.95 13 19.5Zm25 0h5V19.5h-5ZM24 22.75q-1.15 0-1.95-.8t-.8-1.95q0-1.15.8-1.95t1.95-.8q1.15 0 1.95.8t.8 1.95q0 1.15-.8 1.95t-1.95.8Z
+    </Geometry>
+    <Geometry x:Key="synagogue_filled_sharp">
+        M37.5 16.5V14q0-1.8 1.225-3.025Q39.95 9.75 41.75 9.75q1.8 0 3.025 1.225Q46 12.2 46 14v2.5ZM2 16.5V14q0-1.8 1.225-3.025Q4.45 9.75 6.25 9.75q1.8 0 3.025 1.225Q10.5 12.2 10.5 14v2.5ZM2 42V18h8.5v24Zm10 0V16L24 6l12 10v26h-8V28h-8v14Zm25.5 0V18H46v24ZM24 22.75q1.15 0 1.95-.8t.8-1.95q0-1.15-.8-1.95t-1.95-.8q-1.15 0-1.95.8t-.8 1.95q0 1.15.8 1.95t1.95.8Z
+    </Geometry>
+    <Style x:Key="synagogue"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource synagogue_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource synagogue_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource synagogue_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource synagogue_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

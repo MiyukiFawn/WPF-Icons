@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="near_me_outline_rounded">
+        M20.65 27.35 7 22.05q-.45-.15-.725-.575Q6 21.05 6 20.55t.275-.875Q6.55 19.3 7 19.15l31.9-12q.45-.2.875-.075t.725.425q.3.3.425.725t-.075.875l-12 31.9q-.15.5-.575.75-.425.25-.875.25t-.875-.25q-.425-.25-.575-.75Zm6.6 8.95 9.6-25.15-25.1 9.6 11.2 4.3Zm-4.3-11.25Z
+    </Geometry>
+    <Geometry x:Key="near_me_filled_rounded">
+        M20.65 27.35 7 22.05q-.45-.15-.725-.575Q6 21.05 6 20.55t.275-.875Q6.55 19.3 7 19.15l31.9-12q.45-.2.875-.075t.725.425q.3.3.425.725t-.075.875l-12 31.9q-.15.5-.575.75-.425.25-.875.25t-.875-.25q-.425-.25-.575-.75Z
+    </Geometry>
+    <Geometry x:Key="near_me_outline_sharp">
+        m26.35 42-5.7-14.65L6 21.65V19.5L42 6 28.5 42Zm.9-5.7 9.6-25.15-25.1 9.6 11.2 4.3Zm-4.3-11.25Z
+    </Geometry>
+    <Geometry x:Key="near_me_filled_sharp">
+        m26.35 42-5.7-14.65L6 21.65V19.5L42 6 28.5 42Z
+    </Geometry>
+    <Style x:Key="near_me"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource near_me_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource near_me_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource near_me_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource near_me_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

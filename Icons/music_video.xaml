@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="music_video_outline_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.25 0 2.125.9T44 11v26q0 1.2-.875 2.1-.875.9-2.125.9Zm0-3V11v26Zm0 0h34V11H7v26Zm14.5-3.5q1.9 0 3.2-1.325Q26 30.85 26 29V18.1h3.6q.75 0 1.275-.525.525-.525.525-1.275 0-.75-.525-1.275-.525-.525-1.275-.525h-3.9q-.65 0-1.075.425Q24.2 15.35 24.2 16v9.3q-.5-.35-1.275-.575-.775-.225-1.425-.225-1.9 0-3.2 1.325Q17 27.15 17 29q0 1.85 1.3 3.175 1.3 1.325 3.2 1.325Z
+    </Geometry>
+    <Geometry x:Key="music_video_filled_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.25 0 2.125.9T44 11v26q0 1.2-.875 2.1-.875.9-2.125.9Zm14.5-6.5q1.9 0 3.2-1.325Q26 30.85 26 29V18.1h3.6q.75 0 1.275-.525.525-.525.525-1.275 0-.75-.525-1.275-.525-.525-1.275-.525h-3.9q-.65 0-1.075.425Q24.2 15.35 24.2 16v9.3q-.5-.35-1.275-.575-.775-.225-1.425-.225-1.9 0-3.2 1.325Q17 27.15 17 29q0 1.85 1.3 3.175 1.3 1.325 3.2 1.325Z
+    </Geometry>
+    <Geometry x:Key="music_video_outline_sharp">
+        M4 40V8h40v32Zm3-3V11Zm0-26v26h34V11Zm14.5 22.5q1.9 0 3.2-1.325Q26 30.85 26 29V18.1h5.4v-3.6h-7.2v10.8q-.5-.35-1.275-.575-.775-.225-1.425-.225-1.9 0-3.2 1.325Q17 27.15 17 29q0 1.85 1.3 3.175 1.3 1.325 3.2 1.325Z
+    </Geometry>
+    <Geometry x:Key="music_video_filled_sharp">
+        M4 40V8h40v32Zm17.5-6.5q1.9 0 3.2-1.325Q26 30.85 26 29V18.1h5.4v-3.6h-7.2v10.8q-.5-.35-1.275-.575-.775-.225-1.425-.225-1.9 0-3.2 1.325Q17 27.15 17 29q0 1.85 1.3 3.175 1.3 1.325 3.2 1.325Z
+    </Geometry>
+    <Style x:Key="music_video"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource music_video_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource music_video_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource music_video_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource music_video_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

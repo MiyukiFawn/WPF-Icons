@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="expand_outline_rounded">
+        M9.6 44q-.65 0-1.075-.425Q8.1 43.15 8.1 42.5q0-.65.425-1.075Q8.95 41 9.6 41h28.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q39.05 44 38.4 44Zm0-37q-.65 0-1.075-.425Q8.1 6.15 8.1 5.5q0-.65.425-1.075Q8.95 4 9.6 4h28.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q39.05 7 38.4 7Zm14.5 31.9q-.3 0-.55-.1-.25-.1-.5-.35l-5.5-5.5q-.4-.4-.4-1.05t.45-1.1q.45-.45 1.075-.45t1.075.45l2.85 2.9V14.3l-2.9 2.9q-.4.4-1.025.4-.625 0-1.075-.45-.45-.45-.45-1.075T17.6 15l5.45-5.45q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l5.5 5.5q.4.4.425 1.025.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45l-2.9-2.85v19.4l2.9-2.9q.4-.4 1.05-.425.65-.025 1.1.425.45.45.45 1.075t-.45 1.075l-5.5 5.5q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="expand_filled_rounded">
+        M9.6 44q-.65 0-1.075-.425Q8.1 43.15 8.1 42.5q0-.65.425-1.075Q8.95 41 9.6 41h28.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q39.05 44 38.4 44Zm0-37q-.65 0-1.075-.425Q8.1 6.15 8.1 5.5q0-.65.425-1.075Q8.95 4 9.6 4h28.8q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q39.05 7 38.4 7Zm14.5 31.9q-.3 0-.55-.1-.25-.1-.5-.35l-5.5-5.5q-.4-.4-.4-1.05t.45-1.1q.45-.45 1.075-.45t1.075.45l2.85 2.9V14.3l-2.9 2.9q-.4.4-1.025.4-.625 0-1.075-.45-.45-.45-.45-1.075T17.6 15l5.45-5.45q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l5.5 5.5q.4.4.425 1.025.025.625-.425 1.075-.45.45-1.075.45t-1.075-.45l-2.9-2.85v19.4l2.9-2.9q.4-.4 1.05-.425.65-.025 1.1.425.45.45.45 1.075t-.45 1.075l-5.5 5.5q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="expand_outline_sharp">
+        M8.1 44v-3h31.8v3Zm16-4.5-7.6-7.6 2.15-2.15 3.95 3.95V14.3l-3.95 3.95-2.15-2.15 7.6-7.6 7.6 7.6-2.15 2.15-3.95-3.95v19.4l3.95-3.95 2.15 2.15ZM8.1 7V4h31.8v3Z
+    </Geometry>
+    <Geometry x:Key="expand_filled_sharp">
+        M8.1 44v-3h31.8v3Zm16-4.5-7.6-7.6 2.15-2.15 3.95 3.95V14.3l-3.95 3.95-2.15-2.15 7.6-7.6 7.6 7.6-2.15 2.15-3.95-3.95v19.4l3.95-3.95 2.15 2.15ZM8.1 7V4h31.8v3Z
+    </Geometry>
+    <Style x:Key="expand"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource expand_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource expand_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource expand_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource expand_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="view_list_outline_rounded">
+        M6 35V13q0-1.25.875-2.125T9 10h30q1.25 0 2.125.875T42 13v22q0 1.25-.875 2.125T39 38H9q-1.25 0-2.125-.875T6 35Zm3-16.65h5.3V13H9v5.35Zm8.3 0H39V13H17.3v5.35Zm0 8.3H39v-5.3H17.3v5.3Zm0 8.35H39v-5.35H17.3V35ZM9 35h5.3v-5.35H9V35Zm0-8.35h5.3v-5.3H9v5.3Z
+    </Geometry>
+    <Geometry x:Key="view_list_filled_rounded">
+        M7.5 18.35q-.65 0-1.075-.425Q6 17.5 6 16.85V11.5q0-.65.425-1.075Q6.85 10 7.5 10h5.3q.65 0 1.075.425.425.425.425 1.075v5.35q0 .65-.425 1.075-.425.425-1.075.425Zm9.8 0q-.65 0-1.075-.425-.425-.425-.425-1.075V11.5q0-.65.425-1.075Q16.65 10 17.3 10h23.2q.65 0 1.075.425Q42 10.85 42 11.5v5.35q0 .65-.425 1.075-.425.425-1.075.425Zm0 9.8q-.65 0-1.075-.425-.425-.425-.425-1.075v-5.3q0-.65.425-1.075.425-.425 1.075-.425h23.2q.65 0 1.075.425Q42 20.7 42 21.35v5.3q0 .65-.425 1.075-.425.425-1.075.425Zm-9.8 0q-.65 0-1.075-.425Q6 27.3 6 26.65v-5.3q0-.65.425-1.075.425-.425 1.075-.425h5.3q.65 0 1.075.425.425.425.425 1.075v5.3q0 .65-.425 1.075-.425.425-1.075.425ZM17.3 38q-.65 0-1.075-.425-.425-.425-.425-1.075v-5.35q0-.65.425-1.075.425-.425 1.075-.425h23.2q.65 0 1.075.425Q42 30.5 42 31.15v5.35q0 .65-.425 1.075Q41.15 38 40.5 38Zm-9.8 0q-.65 0-1.075-.425Q6 37.15 6 36.5v-5.35q0-.65.425-1.075.425-.425 1.075-.425h5.3q.65 0 1.075.425.425.425.425 1.075v5.35q0 .65-.425 1.075Q13.45 38 12.8 38Z
+    </Geometry>
+    <Geometry x:Key="view_list_outline_sharp">
+        M6 38V10h36v28Zm3-19.65h5.3V13H9Zm8.3 0H39V13H17.3Zm0 8.3H39v-5.3H17.3Zm0 8.35H39v-5.35H17.3ZM9 35h5.3v-5.35H9Zm0-8.35h5.3v-5.3H9Z
+    </Geometry>
+    <Geometry x:Key="view_list_filled_sharp">
+        M6 18.35V10h8.3v8.35Zm9.8 0V10H42v8.35Zm0 9.8v-8.3H42v8.3Zm0 9.85v-8.35H42V38ZM6 38v-8.35h8.3V38Zm0-9.85v-8.3h8.3v8.3Z
+    </Geometry>
+    <Style x:Key="view_list"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource view_list_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource view_list_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource view_list_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource view_list_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

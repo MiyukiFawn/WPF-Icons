@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="backpack_outline_rounded">
+        M11 44q-1.25 0-2.125-.875T8 41V15.5q0-2.75 1.7-4.775Q11.4 8.7 14 8.2V6.5q0-1.05.725-1.775Q15.45 4 16.5 4q1.05 0 1.775.725Q19 5.45 19 6.5V8h10V6.5q0-1.05.725-1.775Q30.45 4 31.5 4q1.05 0 1.775.725Q34 5.45 34 6.5v1.7q2.6.5 4.3 2.525Q40 12.75 40 15.5V41q0 1.25-.875 2.125T37 44Zm0-3h26V15.5q0-1.9-1.3-3.2-1.3-1.3-3.2-1.3h-17q-1.85 0-3.175 1.3Q11 13.6 11 15.5V41Zm21.5-9.5q.65 0 1.075-.425Q34 30.65 34 30v-4q0-.65-.425-1.075-.425-.425-1.075-.425h-17q-.65 0-1.075.425Q14 25.35 14 26q0 .65.425 1.075.425.425 1.075.425H31V30q0 .65.425 1.075.425.425 1.075.425ZM24 26Z
+    </Geometry>
+    <Geometry x:Key="backpack_filled_rounded">
+        M11 44q-1.25 0-2.125-.875T8 41V15.5q0-2.75 1.7-4.775Q11.4 8.7 14 8.2V6.5q0-1.05.725-1.775Q15.45 4 16.5 4q1.05 0 1.775.725Q19 5.45 19 6.5V8h10V6.5q0-1.05.725-1.775Q30.45 4 31.5 4q1.05 0 1.775.725Q34 5.45 34 6.5v1.7q2.6.5 4.3 2.525Q40 12.75 40 15.5V41q0 1.25-.875 2.125T37 44Zm21.5-12.5q.65 0 1.075-.425Q34 30.65 34 30v-4q0-.65-.425-1.075-.425-.425-1.075-.425h-17q-.65 0-1.075.425Q14 25.35 14 26q0 .65.425 1.075.425.425 1.075.425H31V30q0 .65.425 1.075.425.425 1.075.425Z
+    </Geometry>
+    <Geometry x:Key="backpack_outline_sharp">
+        M8 44V15.5q0-2.75 1.7-4.775Q11.4 8.7 14 8.2V4h5v4h10V4h5v4.2q2.6.5 4.3 2.525Q40 12.75 40 15.5V44Zm3-3h26V15.5q0-1.9-1.3-3.2-1.3-1.3-3.2-1.3h-17q-1.85 0-3.175 1.3Q11 13.6 11 15.5Zm20-9.5h3v-7H14v3h17ZM24 26Z
+    </Geometry>
+    <Geometry x:Key="backpack_filled_sharp">
+        M8 44V15.5q0-2.75 1.7-4.775Q11.4 8.7 14 8.2V4h5v4h10V4h5v4.2q2.6.5 4.3 2.525Q40 12.75 40 15.5V44Zm23-12.5h3v-7H14v3h17Z
+    </Geometry>
+    <Style x:Key="backpack"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource backpack_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource backpack_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource backpack_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource backpack_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="insert_page_break_outline_rounded">
+        M11 44q-1.25 0-2.125-.875T8 41v-8.5h3V41h26v-8.5h3V41q0 1.25-.875 2.125T37 44ZM8 23.5V7q0-1.25.875-2.125T11 4h16.8q.6 0 1.175.25.575.25.975.65l9.15 9.15q.4.4.65.975T40 16.2v7.3h-3v-7.2h-7.95q-.65 0-1.075-.425-.425-.425-.425-1.075V7H11v16.5Zm11 6q-.65 0-1.075-.425Q17.5 28.65 17.5 28q0-.65.425-1.075Q18.35 26.5 19 26.5h10q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm16 0q-.65 0-1.075-.425Q33.5 28.65 33.5 28q0-.65.425-1.075Q34.35 26.5 35 26.5h9.5q.65 0 1.075.425Q46 27.35 46 28q0 .65-.425 1.075-.425.425-1.075.425Zm-31.5 0q-.65 0-1.075-.425Q2 28.65 2 28q0-.65.425-1.075Q2.85 26.5 3.5 26.5H13q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm20.5-6Zm0 9Z
+    </Geometry>
+    <Geometry x:Key="insert_page_break_filled_rounded">
+        M11 44q-1.25 0-2.125-.875T8 41v-8.5h32V41q0 1.25-.875 2.125T37 44Zm18.05-27.7H37L27.55 7v7.8q0 .65.425 1.075.425.425 1.075.425ZM19 29.5q-.65 0-1.075-.425Q17.5 28.65 17.5 28q0-.65.425-1.075Q18.35 26.5 19 26.5h10q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm16 0q-.65 0-1.075-.425Q33.5 28.65 33.5 28q0-.65.425-1.075Q34.35 26.5 35 26.5h9.5q.65 0 1.075.425Q46 27.35 46 28q0 .65-.425 1.075-.425.425-1.075.425Zm-31.5 0q-.65 0-1.075-.425Q2 28.65 2 28q0-.65.425-1.075Q2.85 26.5 3.5 26.5H13q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm4.5-6V7q0-1.25.875-2.125T11 4h16.8q.6 0 1.175.25.575.25.975.65l9.15 9.15q.4.4.65.975T40 16.2v7.3Z
+    </Geometry>
+    <Geometry x:Key="insert_page_break_outline_sharp">
+        M8 44V32.5h3V41h26v-8.5h3V44Zm0-20.5V4h21.05L40 14.95v8.55h-3v-7.2h-9.45V7H11v16.5Zm9.5 6v-3h13v3Zm16 0v-3H46v3ZM2 29.5v-3h12.5v3Zm22-6Zm0 9Z
+    </Geometry>
+    <Geometry x:Key="insert_page_break_filled_sharp">
+        M8 44V32.5h32V44Zm19.55-27.7H37L27.55 7ZM17.5 29.5v-3h13v3Zm16 0v-3H46v3ZM2 29.5v-3h12.5v3Zm6-6V4h21.05L40 14.95v8.55Z
+    </Geometry>
+    <Style x:Key="insert_page_break"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource insert_page_break_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource insert_page_break_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource insert_page_break_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource insert_page_break_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

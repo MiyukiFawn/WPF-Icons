@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="flight_land_outline_rounded">
+        M7.45 42q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q6.8 39 7.45 39H40.5q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Zm30.9-10.55L7.1 22.75q-.5-.15-.8-.55-.3-.4-.3-.9v-7.8q0-.6.425-.9.425-.3 1.025-.1.2.1.35.25.15.15.25.35l1.45 4.35 10.95 3.05V6.1q0-.85.625-1.35.625-.5 1.475-.25.35.1.65.375.3.275.4.625l5.5 17.4 10.75 3.05q.95.25 1.55 1.025.6.775.6 1.775 0 1.4-1.125 2.25-1.125.85-2.525.45Z
+    </Geometry>
+    <Geometry x:Key="flight_land_filled_rounded">
+        M7.45 42q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075Q6.8 39 7.45 39H40.5q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Zm30.9-10.55L7.1 22.75q-.5-.15-.8-.55-.3-.4-.3-.9v-7.8q0-.6.425-.9.425-.3 1.025-.1.2.1.35.25.15.15.25.35l1.45 4.35 10.95 3.05V6.1q0-.85.625-1.35.625-.5 1.475-.25.35.1.65.375.3.275.4.625l5.5 17.4 10.75 3.05q.95.25 1.55 1.025.6.775.6 1.775 0 1.4-1.125 2.25-1.125.85-2.525.45Z
+    </Geometry>
+    <Geometry x:Key="flight_land_outline_sharp">
+        M5.95 42v-3H42v3Zm32.4-10.55L6 22.45V12l1.9.65 1.6 4.8 10.95 3.05V4l2.9.7 5.75 18.2 10.75 3.05q.95.25 1.55 1.025.6.775.6 1.775 0 1.4-1.125 2.25-1.125.85-2.525.45Z
+    </Geometry>
+    <Geometry x:Key="flight_land_filled_sharp">
+        M5.95 42v-3H42v3Zm32.4-10.55L6 22.45V12l1.9.65 1.6 4.8 10.95 3.05V4l2.9.7 5.75 18.2 10.75 3.05q.95.25 1.55 1.025.6.775.6 1.775 0 1.4-1.125 2.25-1.125.85-2.525.45Z
+    </Geometry>
+    <Style x:Key="flight_land"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource flight_land_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource flight_land_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource flight_land_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource flight_land_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

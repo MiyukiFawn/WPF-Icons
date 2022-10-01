@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="playlist_add_check_outline_rounded">
+        M7.5 14.95q-.65 0-1.075-.425Q6 14.1 6 13.45q0-.65.425-1.075.425-.425 1.075-.425h20.65q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm0 8.25q-.65 0-1.075-.425Q6 22.35 6 21.7q0-.65.425-1.075Q6.85 20.2 7.5 20.2h20.65q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm0 8.25q-.65 0-1.075-.425Q6 30.6 6 29.95q0-.65.425-1.075.425-.425 1.075-.425h12.3q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425ZM31.65 37l-4.8-4.8q-.45-.45-.45-1.075t.45-1.025q.45-.4 1.05-.425.6-.025 1.05.375l3.65 3.6 8.2-8.2q.45-.45 1.075-.45t1.075.45q.45.45.45 1.075t-.45 1.075l-9.4 9.4q-.4.4-.95.4-.55 0-.95-.4Z
+    </Geometry>
+    <Geometry x:Key="playlist_add_check_filled_rounded">
+        M7.5 14.95q-.65 0-1.075-.425Q6 14.1 6 13.45q0-.65.425-1.075.425-.425 1.075-.425h20.65q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm0 8.25q-.65 0-1.075-.425Q6 22.35 6 21.7q0-.65.425-1.075Q6.85 20.2 7.5 20.2h20.65q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425Zm0 8.25q-.65 0-1.075-.425Q6 30.6 6 29.95q0-.65.425-1.075.425-.425 1.075-.425h12.3q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075-.425.425-1.075.425ZM31.65 37l-4.8-4.8q-.45-.45-.45-1.075t.45-1.025q.45-.4 1.05-.425.6-.025 1.05.375l3.65 3.6 8.2-8.2q.45-.45 1.075-.45t1.075.45q.45.45.45 1.075t-.45 1.075l-9.4 9.4q-.4.4-.95.4-.55 0-.95-.4Z
+    </Geometry>
+    <Geometry x:Key="playlist_add_check_outline_sharp">
+        M6 31.45v-3h15.3v3Zm0-8.25v-3h23.65v3Zm0-8.25v-3h23.65v3Zm26.6 23-6.8-6.8L27.9 29l4.7 4.65 9.25-9.25L44 26.55Z
+    </Geometry>
+    <Geometry x:Key="playlist_add_check_filled_sharp">
+        M6 31.45v-3h15.3v3Zm0-8.25v-3h23.65v3Zm0-8.25v-3h23.65v3Zm26.6 23-6.8-6.8L27.9 29l4.7 4.65 9.25-9.25L44 26.55Z
+    </Geometry>
+    <Style x:Key="playlist_add_check"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource playlist_add_check_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource playlist_add_check_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource playlist_add_check_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource playlist_add_check_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

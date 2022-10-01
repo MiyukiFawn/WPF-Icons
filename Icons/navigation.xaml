@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="navigation_outline_rounded">
+        M10.45 41.55q-.45.2-.9.125-.45-.075-.8-.425-.35-.35-.45-.8-.1-.45.1-.9l14.25-32.4q.4-.9 1.35-.9.95 0 1.35.9l14.25 32.4q.2.45.1.9t-.45.8q-.35.35-.8.425-.45.075-.9-.125L24 35.4Zm2.45-4.45L24 32.2l11.1 4.9L24 11.4ZM24 32.2Z
+    </Geometry>
+    <Geometry x:Key="navigation_filled_rounded">
+        M10.45 41.55q-.45.2-.9.125-.45-.075-.8-.425-.35-.35-.45-.8-.1-.45.1-.9l14.25-32.4q.4-.85 1.35-.85.95 0 1.35.85l14.25 32.4q.2.45.1.9t-.45.8q-.35.35-.8.425-.45.075-.9-.125L24 35.4Z
+    </Geometry>
+    <Geometry x:Key="navigation_outline_sharp">
+        M9.5 42 8 40.5 24 4l16 36.5-1.5 1.5L24 35.4Zm3.4-4.9L24 32.2l11.1 4.9L24 11.4ZM24 32.2Z
+    </Geometry>
+    <Geometry x:Key="navigation_filled_sharp">
+        M9.5 42 8 40.5 24 4l16 36.5-1.5 1.5L24 35.4Z
+    </Geometry>
+    <Style x:Key="navigation"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource navigation_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource navigation_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource navigation_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource navigation_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

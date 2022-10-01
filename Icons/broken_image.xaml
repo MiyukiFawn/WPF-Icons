@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="broken_image_outline_rounded">
+        M9 42q-1.2 0-2.1-.9Q6 40.2 6 39V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm2.15-15.7 7.55-7.55q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l7.45 7.45 7.5-7.5q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35L39 19.85V9H9v15.15ZM9 39h30V24.1l-2.2-2.2-7.5 7.5q-.25.25-.5.35-.25.1-.55.1-.3 0-.55-.1-.25-.1-.5-.35l-7.45-7.45-7.55 7.55q-.25.25-.5.35-.25.1-.55.1-.3 0-.55-.1-.25-.1-.5-.35L9 28.4Zm0 0V24.1v3V9v19.4Z
+    </Geometry>
+    <Geometry x:Key="broken_image_filled_rounded">
+        M6 21.15V9q0-1.2.9-2.1Q7.8 6 9 6h30q1.2 0 2.1.9.9.9.9 2.1v13.85l-4.15-4.15q-.25-.25-.5-.35-.25-.1-.55-.1-.3 0-.55.1-.25.1-.5.35l-7.5 7.5-7.45-7.45q-.25-.25-.5-.35-.25-.1-.55-.1-.3 0-.55.1-.25.1-.5.35l-7.55 7.55ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39V25.4l4.1 4.1q.25.25.5.35.25.1.55.1.3 0 .55-.1.25-.1.5-.35l7.55-7.55 7.45 7.45q.25.25.5.35.25.1.55.1.3 0 .55-.1.25-.1.5-.35l7.5-7.5 5.2 5.2V39q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="broken_image_outline_sharp">
+        M6 42V6h36v36Zm5.15-15.7 8.6-8.6 8.5 8.5 8.55-8.55 2.2 2.2V9H9v15.15ZM9 39h30V24.1l-2.2-2.2-8.55 8.55-8.5-8.5-8.6 8.6L9 28.4Zm0 0V24.1v3V9v19.4Z
+    </Geometry>
+    <Geometry x:Key="broken_image_filled_sharp">
+        M11.15 26.3 6 21.15V6h36v16.85l-5.2-5.2-8.55 8.55-8.5-8.5ZM6 42V25.4l5.15 5.15 8.6-8.6 8.5 8.5 8.55-8.55 5.2 5.2V42Z
+    </Geometry>
+    <Style x:Key="broken_image"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource broken_image_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource broken_image_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource broken_image_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource broken_image_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

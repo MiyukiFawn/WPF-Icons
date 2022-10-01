@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="height_outline_rounded">
+        M24 41.4q-.3 0-.55-.1-.25-.1-.5-.35l-5.9-5.9q-.45-.45-.425-1.075.025-.625.475-1.075.45-.45 1.1-.45.65 0 1.1.45l3.2 3.2V11.9l-3.25 3.25q-.45.45-1.075.425-.625-.025-1.075-.475-.45-.45-.45-1.1 0-.65.45-1.1l5.85-5.85q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l5.9 5.9q.45.45.425 1.075-.025.625-.475 1.075-.45.45-1.1.45-.65 0-1.1-.45l-3.2-3.2v24.2l3.25-3.25q.45-.45 1.075-.425.625.025 1.075.475.45.45.45 1.1 0 .65-.45 1.1l-5.85 5.85q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="height_filled_rounded">
+        M24 41.4q-.3 0-.55-.1-.25-.1-.5-.35l-5.9-5.9q-.45-.45-.425-1.075.025-.625.475-1.075.45-.45 1.1-.45.65 0 1.1.45l3.2 3.2V11.9l-3.25 3.25q-.45.45-1.075.425-.625-.025-1.075-.475-.45-.45-.45-1.1 0-.65.45-1.1l5.85-5.85q.25-.25.5-.35.25-.1.55-.1.3 0 .55.1.25.1.5.35l5.9 5.9q.45.45.425 1.075-.025.625-.475 1.075-.45.45-1.1.45-.65 0-1.1-.45l-3.2-3.2v24.2l3.25-3.25q.45-.45 1.075-.425.625.025 1.075.475.45.45.45 1.1 0 .65-.45 1.1l-5.85 5.85q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="height_outline_sharp">
+        m24 42-8-8 2.2-2.2 4.3 4.3V11.9l-4.3 4.3L16 14l8-8 8 8-2.2 2.2-4.3-4.3v24.2l4.3-4.3L32 34Z
+    </Geometry>
+    <Geometry x:Key="height_filled_sharp">
+        m24 42-8-8 2.2-2.2 4.3 4.3V11.9l-4.3 4.3L16 14l8-8 8 8-2.2 2.2-4.3-4.3v24.2l4.3-4.3L32 34Z
+    </Geometry>
+    <Style x:Key="height"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource height_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource height_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource height_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource height_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

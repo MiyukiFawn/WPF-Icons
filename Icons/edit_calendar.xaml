@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="edit_calendar_outline_rounded">
+        M9 44q-1.2 0-2.1-.9Q6 42.2 6 41V10q0-1.2.9-2.1Q7.8 7 9 7h3.25V5.6q0-.7.45-1.15.45-.45 1.15-.45t1.175.45q.475.45.475 1.15V7h17V5.6q0-.7.45-1.15Q33.4 4 34.1 4t1.175.45q.475.45.475 1.15V7H39q1.2 0 2.1.9.9.9.9 2.1v15.05h-3V19.5H9V41h15.95v3Zm0-27.5h30V10H9Zm35.45 16.55L40.9 29.5l1.45-1.45q.4-.4 1.05-.4t1.05.4l1.45 1.45q.4.4.4 1.05t-.4 1.05Zm-16.5 12.2v-2.2q0-.3.1-.55.1-.25.35-.5l10.35-10.35 3.55 3.55-10.35 10.35q-.25.25-.5.35-.25.1-.55.1h-2.2q-.3 0-.525-.225-.225-.225-.225-.525ZM9 16.5V10v6.5Z
+    </Geometry>
+    <Geometry x:Key="edit_calendar_filled_rounded">
+        M9 44q-1.2 0-2.1-.9Q6 42.2 6 41V10q0-1.2.9-2.1Q7.8 7 9 7h3.25V5.6q0-.65.475-1.125T13.85 4q.7 0 1.175.475.475.475.475 1.125V7h17V5.6q0-.65.475-1.125T34.1 4q.7 0 1.175.475.475.475.475 1.125V7H39q1.2 0 2.1.9.9.9.9 2.1v15.05h-3V19.5H9V41h15.95v3Zm35.45-10.95L40.9 29.5l1.45-1.45q.4-.4 1.05-.4t1.05.4l1.45 1.45q.4.4.4 1.05t-.4 1.05Zm-16.5 12.2v-2.2q0-.3.1-.55.1-.25.35-.5l10.35-10.35 3.55 3.55-10.35 10.35q-.25.25-.5.35-.25.1-.55.1h-2.2q-.3 0-.525-.225-.225-.225-.225-.525Z
+    </Geometry>
+    <Geometry x:Key="edit_calendar_outline_sharp">
+        M6 44V7h6.25V4h3.25v3h17V4h3.25v3H42v18.05h-3V19.5H9V41h15.95v3Zm3-27.5h30V10H9Zm35.45 16.55L40.9 29.5l2.5-2.5 3.55 3.55ZM27.95 46v-3.55l10.8-10.8 3.55 3.55L31.5 46ZM9 16.5V10v6.5Z
+    </Geometry>
+    <Geometry x:Key="edit_calendar_filled_sharp">
+        M6 44V7h6.25V4h3.25v3h17V4h3.25v3H42v18.05h-3V19.5H9V41h15.95v3Zm38.45-10.95L40.9 29.5l2.5-2.5 3.55 3.55ZM27.95 46v-3.55l10.8-10.8 3.55 3.55L31.5 46Z
+    </Geometry>
+    <Style x:Key="edit_calendar"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource edit_calendar_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource edit_calendar_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource edit_calendar_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource edit_calendar_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="shop_outline_rounded">
+        M19.2 32.75q0 .9.775 1.325.775.425 1.525-.075l9.1-5.95q.7-.45.7-1.25t-.7-1.25l-9.05-6q-.75-.5-1.55-.075t-.8 1.325ZM7 42q-1.2 0-2.1-.9Q4 40.2 4 39V14.35q0-1.2.9-2.1.9-.9 2.1-.9h9.5V7q0-1.15.9-2.075Q18.3 4 19.5 4h9q1.2 0 2.1.925.9.925.9 2.075v4.35H41q1.2 0 2.1.9.9.9.9 2.1V39q0 1.2-.9 2.1-.9.9-2.1.9Zm12.5-30.65h9V7h-9ZM7 39h34V14.35H7V39Zm0 0V14.35 39Z
+    </Geometry>
+    <Geometry x:Key="shop_filled_rounded">
+        M19.2 32.7q0 .9.775 1.325.775.425 1.525-.075L30.6 28q.7-.45.7-1.25t-.7-1.25l-9.05-6q-.75-.5-1.55-.075t-.8 1.325ZM7 42q-1.2 0-2.1-.9Q4 40.2 4 39V14.35q0-1.2.9-2.1.9-.9 2.1-.9h9.5V7q0-1.15.9-2.075Q18.3 4 19.5 4h9q1.2 0 2.1.925.9.925.9 2.075v4.35H41q1.2 0 2.1.9.9.9.9 2.1V39q0 1.2-.9 2.1-.9.9-2.1.9Zm12.5-30.65h9V7h-9Z
+    </Geometry>
+    <Geometry x:Key="shop_outline_sharp">
+        M4 42V11.55h12.7V4h14.65v7.55H44V42Zm15.7-30.45h8.65V7H19.7ZM7 39h34V14.55H7Zm12.2-3.45 13.3-8.75L19.2 18ZM7 14.55V39Z
+    </Geometry>
+    <Geometry x:Key="shop_filled_sharp">
+        M4 41.95V11.5h12.7V3.95h14.65v7.55H44v30.45ZM19.7 11.5h8.65V6.95H19.7Zm-.5 24 13.3-8.75-13.3-8.8Z
+    </Geometry>
+    <Style x:Key="shop"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource shop_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource shop_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource shop_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource shop_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

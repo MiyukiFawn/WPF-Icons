@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="breaking_news_alt_1_outline_rounded">
+        M12.5 33.5h9v-3h-9Zm20 0h3v-3h-3Zm-20-8h9v-3h-9Zm20 0h3v-11h-3Zm-20-8h9v-3h-9ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34.8V9H6.6v30Zm0 0V9v30Z
+    </Geometry>
+    <Geometry x:Key="breaking_news_alt_1_filled_rounded">
+        M12.5 33.5h9v-3h-9Zm20 0h3v-3h-3Zm-20-8h9v-3h-9Zm20 0h3v-11h-3Zm-20-8h9v-3h-9ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="breaking_news_alt_1_outline_sharp">
+        M12.5 33.5h9v-3h-9Zm20 0h3v-3h-3Zm-20-8h9v-3h-9Zm20 0h3v-11h-3Zm-20-8h9v-3h-9ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h34.8V9H6.6v30Zm0 0V9v30Z
+    </Geometry>
+    <Geometry x:Key="breaking_news_alt_1_filled_sharp">
+        M12.5 33.5h9v-3h-9Zm20 0h3v-3h-3Zm-20-8h9v-3h-9Zm20 0h3v-11h-3Zm-20-8h9v-3h-9ZM6.6 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V9q0-1.2.9-2.1.9-.9 2.1-.9h34.8q1.2 0 2.1.9.9.9.9 2.1v30q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Style x:Key="breaking_news_alt_1"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource breaking_news_alt_1_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource breaking_news_alt_1_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource breaking_news_alt_1_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource breaking_news_alt_1_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="thumbs_up_down_outline_rounded">
+        M3 28q-1.2 0-2.1-.9Q0 26.2 0 25V11.7q0-.6.25-1.175Q.5 9.95.9 9.55L8.95 1.5q.4-.4 1.075-.5.675-.1 1.225.15t.825.85q.275.6.175 1.15L10.7 10H21q1.8 0 2.775 1.65.975 1.65.275 3.3l-4.75 11.2q-.35.85-1.1 1.35-.75.5-1.65.5Zm13.5-3L21 14.55V13H6.95l1.4-6.65L3 11.75V25Zm20.25 21.9q-.55-.25-.825-.875-.275-.625-.175-1.175L37.3 38H27q-1.8 0-2.775-1.65-.975-1.65-.275-3.3l4.75-11.2q.35-.85 1.1-1.35.75-.5 1.65-.5H45q1.2 0 2.1.9.9.9.9 2.1v13.3q0 .6-.25 1.175-.25.575-.65.975l-8.05 8.05q-.4.4-1.075.525-.675.125-1.225-.125ZM31.5 23 27 33.45V35h14.05l-1.4 6.65 5.35-5.4V23ZM3 25V11.75 25Zm42-2v13.25V23Z
+    </Geometry>
+    <Geometry x:Key="thumbs_up_down_filled_rounded">
+        M3 28q-1.2 0-2.1-.9Q0 26.2 0 25V11.7q0-.6.25-1.175Q.5 9.95.9 9.55L8.95 1.5q.4-.4 1.075-.5.675-.1 1.225.15t.825.85q.275.6.175 1.15L10.7 10H21q1.8 0 2.775 1.65.975 1.65.275 3.3l-4.75 11.2q-.35.85-1.1 1.35-.75.5-1.65.5Zm33.75 18.9q-.55-.25-.825-.875-.275-.625-.175-1.175L37.3 38H27q-1.8 0-2.775-1.65-.975-1.65-.275-3.3l4.75-11.2q.35-.85 1.1-1.35.75-.5 1.65-.5H45q1.2 0 2.1.9.9.9.9 2.1v13.3q0 .6-.25 1.175-.25.575-.65.975l-8.05 8.05q-.4.4-1.075.525-.675.125-1.225-.125Z
+    </Geometry>
+    <Geometry x:Key="thumbs_up_down_outline_sharp">
+        M0 28V10.45L10.45 0l1.95 2.2-1.7 7.8H24v5.1L18.55 28Zm3-3h13.5L21 14.55V13H6.95l1.4-6.65L3 11.75Zm34.55 23-1.95-2.2 1.7-7.8H24v-5.1L29.45 20H48v17.55Zm2.1-6.35 5.35-5.4V23H31.5L27 33.45V35h14.05ZM3 25V11.75 25Zm42 11.25V23v13.25Z
+    </Geometry>
+    <Geometry x:Key="thumbs_up_down_filled_sharp">
+        M0 28V10.45L10.45 0l1.95 2.2-1.7 7.8H24v5.1L18.55 28Zm37.55 20-1.95-2.2 1.7-7.8H24v-5.1L29.45 20H48v17.55Z
+    </Geometry>
+    <Style x:Key="thumbs_up_down"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource thumbs_up_down_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource thumbs_up_down_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource thumbs_up_down_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource thumbs_up_down_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="auto_awesome_motion_outline_rounded">
+        M5.5 32.7q-.65 0-1.075-.425Q4 31.85 4 31.2V7q0-1.25.875-2.125T7 4h24.2q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q31.85 7 31.2 7H7v24.2q0 .65-.425 1.075-.425.425-1.075.425Zm6 6q-.65 0-1.075-.425Q10 37.85 10 37.2V13q0-1.25.875-2.125T13 10h24.2q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q37.85 13 37.2 13H13v24.2q0 .65-.425 1.075-.425.425-1.075.425ZM41 44H19q-1.25 0-2.125-.875T16 41V19q0-1.25.875-2.125T19 16h22q1.25 0 2.125.875T44 19v22q0 1.25-.875 2.125T41 44Zm0-3V19H19v22ZM19 19v22-22Z
+    </Geometry>
+    <Geometry x:Key="auto_awesome_motion_filled_rounded">
+        M5.5 32.7q-.65 0-1.075-.425Q4 31.85 4 31.2V7q0-1.25.875-2.125T7 4h24.2q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q31.85 7 31.2 7H7v24.2q0 .65-.425 1.075-.425.425-1.075.425Zm6 6q-.65 0-1.075-.425Q10 37.85 10 37.2V13q0-1.25.875-2.125T13 10h24.2q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q37.85 13 37.2 13H13v24.2q0 .65-.425 1.075-.425.425-1.075.425ZM41 44H19q-1.25 0-2.125-.875T16 41V19q0-1.25.875-2.125T19 16h22q1.25 0 2.125.875T44 19v22q0 1.25-.875 2.125T41 44Z
+    </Geometry>
+    <Geometry x:Key="auto_awesome_motion_outline_sharp">
+        M4 32.7V4h28.7v3H7v25.7Zm6 6V10h28.7v3H13v25.7ZM44 44H16V16h28Zm-3-3V19H19v22ZM19 19v22Z
+    </Geometry>
+    <Geometry x:Key="auto_awesome_motion_filled_sharp">
+        M4 32.7V4h28.7v3H7v25.7Zm6 6V10h28.7v3H13v25.7ZM44 44H16V16h28Z
+    </Geometry>
+    <Style x:Key="auto_awesome_motion"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource auto_awesome_motion_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource auto_awesome_motion_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource auto_awesome_motion_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource auto_awesome_motion_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

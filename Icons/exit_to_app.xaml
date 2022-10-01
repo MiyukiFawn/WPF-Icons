@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="exit_to_app_outline_rounded">
+        M19.55 32.5q-.45-.45-.45-1.125t.45-1.125l4.75-4.75H7.5q-.65 0-1.075-.425Q6 24.65 6 24q0-.65.425-1.075Q6.85 22.5 7.5 22.5h16.8l-4.8-4.8q-.45-.45-.45-1.075t.5-1.125q.45-.45 1.125-.45t1.125.45l7.45 7.45q.25.25.35.5.1.25.1.55 0 .3-.1.55-.1.25-.35.5l-7.5 7.5q-.4.45-1.05.45t-1.15-.5ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39v-9q0-.65.425-1.075Q6.85 28.5 7.5 28.5q.65 0 1.075.425Q9 29.35 9 30v9h30V8.9H9V18q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q6 18.65 6 18V8.9q0-1.2.9-2.1.9-.9 2.1-.9h30q1.2 0 2.1.9.9.9.9 2.1V39q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="exit_to_app_filled_rounded">
+        M19.55 32.5q-.45-.45-.45-1.125t.45-1.125l4.75-4.75H7.5q-.65 0-1.075-.425Q6 24.65 6 24q0-.65.425-1.075Q6.85 22.5 7.5 22.5h16.8l-4.8-4.8q-.45-.45-.45-1.075t.5-1.125q.45-.45 1.125-.45t1.125.45l7.45 7.45q.25.25.35.5.1.25.1.55 0 .3-.1.55-.1.25-.35.5l-7.5 7.5q-.4.45-1.05.45t-1.15-.5ZM9 42q-1.2 0-2.1-.9Q6 40.2 6 39v-9q0-.65.425-1.075Q6.85 28.5 7.5 28.5q.65 0 1.075.425Q9 29.35 9 30v9h30V8.9H9V18q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q6 18.65 6 18V8.9q0-1.2.9-2.1.9-.9 2.1-.9h30q1.2 0 2.1.9.9.9.9 2.1V39q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="exit_to_app_outline_sharp">
+        M20.65 33.65 18.4 31.4l5.9-5.9H6v-3h18.3l-5.9-5.9 2.25-2.25L30.3 24ZM6 42V28.5h3V39h30V8.9H9v10.6H6V5.9h36V42Z
+    </Geometry>
+    <Geometry x:Key="exit_to_app_filled_sharp">
+        M20.65 33.65 18.4 31.4l5.9-5.9H6v-3h18.3l-5.9-5.9 2.25-2.25L30.3 24ZM6 42V28.5h3V39h30V8.9H9v10.6H6V5.9h36V42Z
+    </Geometry>
+    <Style x:Key="exit_to_app"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource exit_to_app_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource exit_to_app_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource exit_to_app_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource exit_to_app_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

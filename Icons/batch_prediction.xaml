@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="batch_prediction_outline_rounded">
+        M14 44q-1.65 0-2.825-1.175Q10 41.65 10 40V20q0-1.65 1.175-2.825Q12.35 16 14 16h20q1.65 0 2.825 1.175Q38 18.35 38 20v20q0 1.65-1.175 2.825Q35.65 44 34 44Zm10-3.9q.65 0 1.075-.425.425-.425.425-1.075v-.5h-3v.5q0 .65.425 1.075.425.425 1.075.425Zm-1.5-3.5h3q0-1.45.775-2.65T28 31.625t1.725-2.325q.775-1.2.775-2.7 0-2.7-1.875-4.6Q26.75 20.1 24 20.1q-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 1.5.775 2.7.775 1.2 1.725 2.325.95 1.125 1.725 2.325.775 1.2.775 2.65ZM12 12.5q0-1.15.675-1.825T14.5 10h19q1.15 0 1.825.675T36 12.5Zm2-6q0-1.15.675-1.825T16.5 4h15q1.15 0 1.825.675T34 6.5Z
+    </Geometry>
+    <Geometry x:Key="batch_prediction_filled_rounded">
+        M14 44q-1.65 0-2.825-1.175Q10 41.65 10 40V20q0-1.65 1.175-2.825Q12.35 16 14 16h20q1.65 0 2.825 1.175Q38 18.35 38 20v20q0 1.65-1.175 2.825Q35.65 44 34 44Zm10-3.9q.65 0 1.075-.425.425-.425.425-1.075v-.5h-3v.5q0 .65.425 1.075.425.425 1.075.425Zm-1.5-3.5h3q0-1.45.775-2.65T28 31.625t1.725-2.325q.775-1.2.775-2.7 0-2.7-1.875-4.6Q26.75 20.1 24 20.1q-2.7 0-4.6 1.9-1.9 1.9-1.9 4.6 0 1.5.775 2.7.775 1.2 1.725 2.325.95 1.125 1.725 2.325.775 1.2.775 2.65ZM12 12.5q0-1.15.675-1.825T14.5 10h19q1.15 0 1.825.675T36 12.5Zm2-6q0-1.15.675-1.825T16.5 4h15q1.15 0 1.825.675T34 6.5Z
+    </Geometry>
+    <Geometry x:Key="batch_prediction_outline_sharp">
+        M10 44V16h28v28Zm12.5-3.9h3v-2h-3Zm0-3.5h3q0-1.45.775-2.65T28 31.625t1.725-2.325q.775-1.2.775-2.7 0-2.7-1.875-4.6-1.875-1.9-4.575-1.9-2.75 0-4.65 1.9-1.9 1.9-1.9 4.6 0 1.5.775 2.7.775 1.2 1.725 2.325.95 1.125 1.725 2.325.775 1.2.775 2.65ZM12 12.5V10h24v2.5Zm2-6V4h20v2.5Z
+    </Geometry>
+    <Geometry x:Key="batch_prediction_filled_sharp">
+        M10 44V16h28v28Zm12.5-3.9h3v-2h-3Zm0-3.5h3q0-1.45.775-2.65T28 31.625t1.725-2.325q.775-1.2.775-2.7 0-2.7-1.875-4.6-1.875-1.9-4.575-1.9-2.75 0-4.65 1.9-1.9 1.9-1.9 4.6 0 1.5.775 2.7.775 1.2 1.725 2.325.95 1.125 1.725 2.325.775 1.2.775 2.65ZM12 12.5V10h24v2.5Zm2-6V4h20v2.5Z
+    </Geometry>
+    <Style x:Key="batch_prediction"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource batch_prediction_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource batch_prediction_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource batch_prediction_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource batch_prediction_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

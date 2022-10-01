@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="gite_outline_rounded">
+        M7 38q-1.25 0-2.125-.875T4 35V20.95q0-.6.25-1.175.25-.575.65-.975l5.9-5.9q.4-.4.975-.65T12.95 12h1.75V9.5q0-.65.425-1.075Q15.55 8 16.2 8q.65 0 1.075.425.425.425.425 1.075V12h17.35q.6 0 1.175.25.575.25.975.65l5.9 5.9q.4.4.65.975T44 20.95V35q0 1.25-.875 2.125T41 38Zm25-3h9V20.95l-4.5-4.5-4.5 4.5ZM7 35h22V23H7Z
+    </Geometry>
+    <Geometry x:Key="gite_filled_rounded">
+        M7 38q-1.25 0-2.125-.875T4 35V20.95q0-.6.25-1.175.25-.575.65-.975l5.9-5.9q.4-.4.975-.65T12.95 12h1.75V9.5q0-.65.425-1.075Q15.55 8 16.2 8q.65 0 1.075.425.425.425.425 1.075V12h17.35q.6 0 1.175.25.575.25.975.65l5.9 5.9q.4.4.65.975T44 20.95V35q0 1.25-.875 2.125T41 38Zm25-3h9V20.95l-4.5-4.5-4.5 4.5ZM7 35h22V23H7Z
+    </Geometry>
+    <Geometry x:Key="gite_outline_sharp">
+        M4 38V19.7l7.7-7.7h3V8h3v4h18.6l7.7 7.7V38Zm28-3h9V20.95l-4.5-4.5-4.5 4.5ZM7 35h22V23H7Z
+    </Geometry>
+    <Geometry x:Key="gite_filled_sharp">
+        M4 38V19.7l7.7-7.7h3V8h3v4h18.6l7.7 7.7V38Zm28-3h9V20.95l-4.5-4.5-4.5 4.5ZM7 35h22V23H7Z
+    </Geometry>
+    <Style x:Key="gite"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource gite_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource gite_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource gite_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource gite_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

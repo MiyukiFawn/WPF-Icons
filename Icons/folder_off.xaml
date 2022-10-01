@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="folder_off_outline_rounded">
+        m43.55 38.6-2.5-2.5V14H22.8l-3-3h-3.85l-3-3h8.1l3 3h17q1.2 0 2.1.9.9.9.9 2.1v23q0 .35-.1.775-.1.425-.4.825Zm-1.5 6.95L36.5 40H7.05q-1.2 0-2.1-.9-.9-.9-.9-2.1V11q0-1.2.9-2.1.9-.9 2.1-.9H8.7l3 3H7.05v26h26.4L3.85 7.35Q3.4 6.9 3.4 6.3q0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l38.2 38.2q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45ZM20.45 24Zm7.95-.55Z
+    </Geometry>
+    <Geometry x:Key="folder_off_filled_rounded">
+        M43.55 38.6 12.95 8h8.1l3 3h17q1.2 0 2.1.9.9.9.9 2.1v23q0 .35-.1.775-.1.425-.4.825Zm-1.5 6.95L36.5 40H7.05q-1.2 0-2.1-.9-.9-.9-.9-2.1V11q0-1.2.9-2.1.9-.9 2.1-.9H8.7v4.2L3.85 7.35Q3.4 6.9 3.4 6.3q0-.6.45-1.05.45-.45 1.05-.45.6 0 1.05.45l38.2 38.2q.45.45.45 1.05 0 .6-.45 1.05-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="folder_off_outline_sharp">
+        m44.05 39.1-3-3V14H22.8l-3-3h-3.85l-3-3h8.1l3 3h20Zm-23.4-14.9Zm7.95-.55ZM43.1 46.6 36.5 40H4.05V8H8.7l3 3H7.05v26h26.4L2.8 6.3l2.1-2.1 40.3 40.3Z
+    </Geometry>
+    <Geometry x:Key="folder_off_filled_sharp">
+        M44.05 39.1 12.95 8h8.1l3 3h20Zm-.95 7.5L36.5 40H4.05V8H8.7v4.2L2.8 6.3l2.1-2.1 40.3 40.3Z
+    </Geometry>
+    <Style x:Key="folder_off"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource folder_off_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource folder_off_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource folder_off_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource folder_off_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="expand_more_outline_rounded">
+        M24 30.15q-.3 0-.55-.1-.25-.1-.5-.35l-9.9-9.9q-.4-.4-.375-1.075.025-.675.425-1.075.5-.5 1.075-.425.575.075 1.025.475l8.8 8.8 8.8-8.8q.4-.4 1.075-.45.675-.05 1.075.45.5.4.425 1.05-.075.65-.475 1.1l-9.85 9.85q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="expand_more_filled_rounded">
+        M24 30.15q-.3 0-.55-.1-.25-.1-.5-.35l-9.9-9.9q-.4-.4-.375-1.075.025-.675.425-1.075.5-.5 1.075-.425.575.075 1.025.475l8.8 8.8 8.8-8.8q.4-.4 1.075-.45.675-.05 1.075.45.5.4.425 1.05-.075.65-.475 1.1l-9.85 9.85q-.25.25-.5.35-.25.1-.55.1Z
+    </Geometry>
+    <Geometry x:Key="expand_more_outline_sharp">
+        m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z
+    </Geometry>
+    <Geometry x:Key="expand_more_filled_sharp">
+        m24 30.75-12-12 2.15-2.15L24 26.5l9.85-9.85L36 18.8Z
+    </Geometry>
+    <Style x:Key="expand_more"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource expand_more_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource expand_more_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource expand_more_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource expand_more_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

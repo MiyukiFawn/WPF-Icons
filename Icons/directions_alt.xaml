@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="directions_alt_outline_rounded">
+        M24 44.15q-.6 0-1.175-.2-.575-.2-.975-.6l-17.2-17.2q-.4-.4-.6-.975-.2-.575-.2-1.175 0-.6.2-1.175.2-.575.6-.975l17.2-17.2q.4-.4.975-.6.575-.2 1.175-.2.6 0 1.175.2.575.2.975.6l17.2 17.2q.4.4.6.975.2.575.2 1.175 0 .6-.2 1.175-.2.575-.6.975l-17.2 17.2q-.4.4-.975.6-.575.2-1.175.2ZM15.4 32.6l8.6 8.6L41.2 24 24 6.8 6.8 24ZM24 24Zm4.05 1.5-5.15 5.15q-.45.45-.425 1.05.025.6.475 1.05.45.45 1.075.45t1.075-.45l7.7-7.7q.45-.45.45-1.05 0-.6-.45-1.05l-7.75-7.75q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.075t.45 1.075l5.1 5.15h-12.4q-.65 0-1.075.425-.425.425-.425 1.075 0 .65.425 1.075.425.425 1.075.425Z
+    </Geometry>
+    <Geometry x:Key="directions_alt_filled_rounded">
+        M24 44.15q-.6 0-1.175-.2-.575-.2-.975-.6l-17.2-17.2q-.4-.4-.6-.975-.2-.575-.2-1.175 0-.6.2-1.175.2-.575.6-.975l17.2-17.2q.4-.4.975-.6.575-.2 1.175-.2.6 0 1.175.2.575.2.975.6l17.2 17.2q.4.4.6.975.2.575.2 1.175 0 .6-.2 1.175-.2.575-.6.975l-17.2 17.2q-.4.4-.975.6-.575.2-1.175.2Zm4.05-18.65-5.15 5.15q-.45.45-.425 1.05.025.6.475 1.05.45.45 1.075.45t1.075-.45l7.7-7.7q.45-.45.45-1.05 0-.6-.45-1.05l-7.75-7.75q-.45-.45-1.05-.45-.6 0-1.05.45-.45.45-.45 1.075t.45 1.075l5.1 5.15h-12.4q-.65 0-1.075.425-.425.425-.425 1.075 0 .65.425 1.075.425.425 1.075.425Z
+    </Geometry>
+    <Geometry x:Key="directions_alt_outline_sharp">
+        M24 45.5 2.5 24 24 2.5 45.5 24Zm0-4.3L41.2 24 24 6.8 6.8 24Zm0-7.35L33.85 24 24 14.15l-2.15 2.15 6.2 6.2h-13.9v3h13.9l-6.2 6.2ZM24 24Z
+    </Geometry>
+    <Geometry x:Key="directions_alt_filled_sharp">
+        M24 45.5 2.5 24 24 2.5 45.5 24Zm0-11.65L33.85 24 24 14.15l-2.15 2.15 6.2 6.2h-13.9v3h13.9l-6.2 6.2Z
+    </Geometry>
+    <Style x:Key="directions_alt"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource directions_alt_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource directions_alt_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource directions_alt_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource directions_alt_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

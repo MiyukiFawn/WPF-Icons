@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="nest_locator_tag_outline_rounded">
+        M24 44q-5.6 0-9.55-3.95-3.95-3.95-3.95-9.55 0-4.6 2.8-8.2 2.8-3.6 7.2-4.9V5.5q0-.65.425-1.075Q21.35 4 22 4h4q.65 0 1.075.425.425.425.425 1.075v11.9q4.4 1.3 7.2 4.9 2.8 3.6 2.8 8.2 0 5.6-3.95 9.55Q29.6 44 24 44Zm0-3q4.4 0 7.45-3.075T34.5 30.5q0-4.4-3.05-7.45T24.05 20q-4.4 0-7.475 3.05-3.075 3.05-3.075 7.4 0 4.4 3.075 7.475Q19.65 41 24 41Z
+    </Geometry>
+    <Geometry x:Key="nest_locator_tag_filled_rounded">
+        M24 44q-5.6 0-9.55-3.95-3.95-3.95-3.95-9.55 0-4.6 2.8-8.2 2.8-3.6 7.2-4.9V5.5q0-.65.425-1.075Q21.35 4 22 4h4q.65 0 1.075.425.425.425.425 1.075v11.9q4.4 1.3 7.2 4.9 2.8 3.6 2.8 8.2 0 5.6-3.95 9.55Q29.6 44 24 44Zm0-3q4.4 0 7.45-3.075T34.5 30.5q0-4.4-3.05-7.45T24.05 20q-4.4 0-7.475 3.05-3.075 3.05-3.075 7.4 0 4.4 3.075 7.475Q19.65 41 24 41Z
+    </Geometry>
+    <Geometry x:Key="nest_locator_tag_outline_sharp">
+        M24 44q-5.6 0-9.55-3.95-3.95-3.95-3.95-9.55 0-4.6 2.8-8.2 2.8-3.6 7.2-4.9V5.5q0-.65.425-1.075Q21.35 4 22 4h4q.65 0 1.075.425.425.425.425 1.075v11.9q4.4 1.3 7.2 4.9 2.8 3.6 2.8 8.2 0 5.6-3.95 9.55Q29.6 44 24 44Zm0-3q4.4 0 7.45-3.075T34.5 30.5q0-4.4-3.05-7.45T24.05 20q-4.4 0-7.475 3.05-3.075 3.05-3.075 7.4 0 4.4 3.075 7.475Q19.65 41 24 41Z
+    </Geometry>
+    <Geometry x:Key="nest_locator_tag_filled_sharp">
+        M24 44q-5.6 0-9.55-3.95-3.95-3.95-3.95-9.55 0-4.6 2.8-8.2 2.8-3.6 7.2-4.9V5.5q0-.65.425-1.075Q21.35 4 22 4h4q.65 0 1.075.425.425.425.425 1.075v11.9q4.4 1.3 7.2 4.9 2.8 3.6 2.8 8.2 0 5.6-3.95 9.55Q29.6 44 24 44Zm0-3q4.4 0 7.45-3.075T34.5 30.5q0-4.4-3.05-7.45T24.05 20q-4.4 0-7.475 3.05-3.075 3.05-3.075 7.4 0 4.4 3.075 7.475Q19.65 41 24 41Z
+    </Geometry>
+    <Style x:Key="nest_locator_tag"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource nest_locator_tag_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource nest_locator_tag_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource nest_locator_tag_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource nest_locator_tag_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="battery_horiz_000_outline_rounded">
+        M44 32.5q0 .65-.425 1.075Q43.15 34 42.5 34H8.7q-.65 0-1.075-.425Q7.2 33.15 7.2 32.5V28H5.5q-.65 0-1.075-.425Q4 27.15 4 26.5v-5q0-.65.425-1.075Q4.85 20 5.5 20h1.7v-4.5q0-.65.425-1.075Q8.05 14 8.7 14h33.8q.65 0 1.075.425Q44 14.85 44 15.5ZM41 31V17H10.2v14Z
+    </Geometry>
+    <Geometry x:Key="battery_horiz_000_filled_rounded">
+        M44 32.5q0 .65-.425 1.075Q43.15 34 42.5 34H8.7q-.65 0-1.075-.425Q7.2 33.15 7.2 32.5V28H5.5q-.65 0-1.075-.425Q4 27.15 4 26.5v-5q0-.65.425-1.075Q4.85 20 5.5 20h1.7v-4.5q0-.65.425-1.075Q8.05 14 8.7 14h33.8q.65 0 1.075.425Q44 14.85 44 15.5ZM41 31V17H10.2v14Z
+    </Geometry>
+    <Geometry x:Key="battery_horiz_000_outline_sharp">
+        M41 31V17H10.2v14Zm3 3H7.2v-6H4v-8h3.2v-6H44Z
+    </Geometry>
+    <Geometry x:Key="battery_horiz_000_filled_sharp">
+        M41 31V17H10.2v14Zm3 3H7.2v-6H4v-8h3.2v-6H44Z
+    </Geometry>
+    <Style x:Key="battery_horiz_000"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource battery_horiz_000_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource battery_horiz_000_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource battery_horiz_000_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource battery_horiz_000_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

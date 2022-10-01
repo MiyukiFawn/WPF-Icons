@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="fiber_dvr_outline_rounded">
+        M31.5 30.15q.55 0 .9-.35t.35-.9v-3.2h2.9L37 29.4q.1.35.4.55.3.2.7.2.6 0 .975-.525t.125-1.075l-1.15-3.1q.85-.2 1.45-.825t.6-1.425v-2.85q0-1-.75-1.75t-1.75-.75H31q-.3 0-.525.225-.225.225-.225.525v10.3q0 .55.35.9t.9.35Zm1.25-6.95v-2.85h4.85v2.85Zm-8.95 6.95q.55 0 1-.35.45-.35.6-.85l3-9.55q.2-.55-.175-1.05t-.925-.5q-.4 0-.725.25-.325.25-.425.65l-2.2 7.85-2.45-8q-.1-.35-.375-.55-.275-.2-.675-.2-.55 0-.85.4-.3.4-.15.95l2.75 9.75q.15.5.6.85.45.35 1 .35Zm-15.1 0h6.6q1 0 1.75-.75t.75-1.75v-7.3q0-1-.75-1.75t-1.75-.75H8.7q-.3 0-.525.225-.225.225-.225.525v10.8q0 .3.225.525.225.225.525.225Zm1.75-2.5v-7.3h4.85v7.3ZM5 40q-1.2 0-2.1-.9Q2 38.2 2 37V11q0-1.2.9-2.1Q3.8 8 5 8h38q1.25 0 2.125.9T46 11v26q0 1.2-.875 2.1-.875.9-2.125.9Zm0-3V11v26Zm0 0h38V11H5v26Z
+    </Geometry>
+    <Geometry x:Key="fiber_dvr_filled_rounded">
+        M31.5 30.15q.55 0 .9-.35t.35-.9v-3.2h2.9L37 29.4q.1.35.4.55.3.2.7.2.6 0 .975-.525t.125-1.075l-1.15-3.1q.85-.2 1.45-.825t.6-1.425v-2.85q0-1-.75-1.75t-1.75-.75H31q-.3 0-.525.225-.225.225-.225.525v10.3q0 .55.35.9t.9.35Zm1.25-6.95v-2.85h4.85v2.85Zm-8.95 6.95q.55 0 1-.35.45-.35.6-.85l3-9.55q.2-.55-.175-1.05t-.925-.5q-.4 0-.725.25-.325.25-.425.65l-2.2 7.85-2.45-8q-.1-.35-.375-.55-.275-.2-.675-.2-.55 0-.85.4-.3.4-.15.95l2.75 9.75q.15.5.6.85.45.35 1 .35Zm-15.1 0h6.6q1 0 1.75-.75t.75-1.75v-7.3q0-1-.75-1.75t-1.75-.75H8.7q-.3 0-.525.225-.225.225-.225.525v10.8q0 .3.225.525.225.225.525.225Zm1.75-2.5v-7.3h4.85v7.3ZM5 40q-1.2 0-2.1-.9Q2 38.2 2 37V11q0-1.2.9-2.1Q3.8 8 5 8h38q1.25 0 2.125.9T46 11v26q0 1.2-.875 2.1-.875.9-2.125.9Z
+    </Geometry>
+    <Geometry x:Key="fiber_dvr_outline_sharp">
+        M30.25 30.15h2.5V25.7h2.9l1.65 4.45h2.5l-1.75-4.7h2.05v-7.6h-9.85Zm2.5-6.95v-2.85h4.85v2.85Zm-10.2 6.95h2.5l3.85-12.3h-2.5l-2.45 8.75-2.7-8.75h-2.2Zm-14.6 0h7.35q1 0 1.75-.75t.75-1.75v-7.3q0-1-.75-1.75t-1.75-.75H7.95Zm2.5-2.5v-7.3h4.85v7.3ZM2 40V8h44v32Zm3-3h38V11H5Zm0 0V11v26Z
+    </Geometry>
+    <Geometry x:Key="fiber_dvr_filled_sharp">
+        M30.25 30.15h2.5V25.7h2.9l1.65 4.45h2.5l-1.75-4.7h2.05v-7.6h-9.85Zm2.5-6.95v-2.85h4.85v2.85Zm-10.2 6.95h2.5l3.85-12.3h-2.5l-2.45 8.75-2.7-8.75h-2.2Zm-14.6 0h7.35q1 0 1.75-.75t.75-1.75v-7.3q0-1-.75-1.75t-1.75-.75H7.95Zm2.5-2.5v-7.3h4.85v7.3ZM2 40V8h44v32Z
+    </Geometry>
+    <Style x:Key="fiber_dvr"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource fiber_dvr_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource fiber_dvr_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource fiber_dvr_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource fiber_dvr_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

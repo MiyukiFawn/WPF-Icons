@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="golf_course_outline_rounded">
+        M39.55 41.85q-1 0-1.725-.725Q37.1 40.4 37.1 39.4t.725-1.725q.725-.725 1.725-.725t1.725.725Q42 38.4 42 39.4t-.725 1.725q-.725.725-1.725.725ZM19.8 44q-4.85 0-8.325-.95Q8 42.1 8 40.55q0-1.05 2-1.975t4.7-1.375v2q0 .75.525 1.275Q15.75 41 16.5 41q.75 0 1.275-.525.525-.525.525-1.275V6.4q0-.9.7-1.325.7-.425 1.45-.025l9.8 4.75q.85.4.875 1.35.025.95-.825 1.35l-9 4.7V37q4.5.25 7.4 1.25 2.9 1 2.9 2.3 0 1.55-3.475 2.5T19.8 44Z
+    </Geometry>
+    <Geometry x:Key="golf_course_filled_rounded">
+        M39.55 41.85q-1 0-1.725-.725Q37.1 40.4 37.1 39.4t.725-1.725q.725-.725 1.725-.725t1.725.725Q42 38.4 42 39.4t-.725 1.725q-.725.725-1.725.725ZM19.8 44q-4.85 0-8.325-.95Q8 42.1 8 40.55q0-1.05 2-1.975t4.7-1.375v2q0 .75.525 1.275Q15.75 41 16.5 41q.75 0 1.275-.525.525-.525.525-1.275V6.4q0-.9.7-1.325.7-.425 1.45-.025l9.8 4.75q.85.4.875 1.35.025.95-.825 1.35l-9 4.7V37q4.5.25 7.4 1.25 2.9 1 2.9 2.3 0 1.55-3.475 2.5T19.8 44Z
+    </Geometry>
+    <Geometry x:Key="golf_course_outline_sharp">
+        M39.55 41.85q-1 0-1.725-.725Q37.1 40.4 37.1 39.4t.725-1.725q.725-.725 1.725-.725t1.725.725Q42 38.4 42 39.4t-.725 1.725q-.725.725-1.725.725ZM19.8 44q-4.85 0-8.325-.95Q8 42.1 8 40.55q0-1.05 2-1.975t4.7-1.375V41h3.6V4l14.6 7.1-11.6 6.1V37q4.5.25 7.4 1.25 2.9 1 2.9 2.3 0 1.55-3.475 2.5T19.8 44Z
+    </Geometry>
+    <Geometry x:Key="golf_course_filled_sharp">
+        M39.55 41.85q-1 0-1.725-.725Q37.1 40.4 37.1 39.4t.725-1.725q.725-.725 1.725-.725t1.725.725Q42 38.4 42 39.4t-.725 1.725q-.725.725-1.725.725ZM19.8 44q-4.85 0-8.325-.95Q8 42.1 8 40.55q0-1.05 2-1.975t4.7-1.375V41h3.6V4l14.6 7.1-11.6 6.1V37q4.5.25 7.4 1.25 2.9 1 2.9 2.3 0 1.55-3.475 2.5T19.8 44Z
+    </Geometry>
+    <Style x:Key="golf_course"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource golf_course_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource golf_course_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource golf_course_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource golf_course_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

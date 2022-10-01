@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="dangerous_outline_rounded">
+        M17.75 42q-.6 0-1.175-.25-.575-.25-.975-.65l-8.7-8.7q-.4-.4-.65-.975T6 30.25v-12.5q0-.6.25-1.175.25-.575.65-.975l8.7-8.7q.4-.4.975-.65T17.75 6h12.5q.6 0 1.175.25.575.25.975.65l8.7 8.7q.4.4.65.975T42 17.75v12.5q0 .6-.25 1.175-.25.575-.65.975l-8.7 8.7q-.4.4-.975.65T30.25 42ZM24 26.1l5.15 5.15q.4.4 1 .4t1.05-.45q.45-.45.45-1.05 0-.6-.45-1.05L26.1 24l5.15-5.15q.4-.4.4-1t-.45-1.05q-.45-.45-1.05-.45-.6 0-1.05.45L24 21.9l-5.15-5.15q-.4-.4-1-.4t-1.05.45q-.45.45-.45 1.05 0 .6.45 1.05l5.1 5.1-5.15 5.15q-.4.4-.4 1t.45 1.05q.45.45 1.05.45.6 0 1.05-.45ZM17.75 39h12.5L39 30.25v-12.5L30.25 9h-12.5L9 17.75v12.5ZM24 24Z
+    </Geometry>
+    <Geometry x:Key="dangerous_filled_rounded">
+        M17.75 42q-.6 0-1.15-.225-.55-.225-1-.675l-8.7-8.7q-.45-.45-.675-1Q6 30.85 6 30.25v-12.5q0-.6.225-1.15.225-.55.675-1l8.7-8.7q.45-.45 1-.675Q17.15 6 17.75 6h12.5q.6 0 1.15.225.55.225 1 .675l8.7 8.7q.45.45.675 1 .225.55.225 1.15v12.5q0 .6-.225 1.15-.225.55-.675 1l-8.7 8.7q-.45.45-1 .675-.55.225-1.15.225ZM24 26.1l5.15 5.15q.4.4 1 .4t1.05-.45q.45-.45.45-1.05 0-.6-.45-1.05L26.1 24l5.15-5.15q.4-.4.4-1t-.45-1.05q-.45-.45-1.05-.45-.6 0-1.05.45L24 21.9l-5.15-5.15q-.4-.4-1-.4t-1.05.45q-.45.45-.45 1.05 0 .6.45 1.05l5.1 5.1-5.15 5.15q-.4.4-.4 1t.45 1.05q.45.45 1.05.45.6 0 1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="dangerous_outline_sharp">
+        M16.5 42 6 31.5v-15L16.5 6h15L42 16.5v15L31.5 42Zm1.25-3h12.5L39 30.25v-12.5L30.25 9h-12.5L9 17.75v12.5Zm.1-6.75L24 26.1l6.15 6.15 2.1-2.1L26.1 24l6.15-6.15-2.1-2.1L24 21.9l-6.15-6.15-2.1 2.1L21.9 24l-6.15 6.15ZM24 24Z
+    </Geometry>
+    <Geometry x:Key="dangerous_filled_sharp">
+        M16.5 42 6 31.5v-15L16.5 6h15L42 16.5v15L31.5 42Zm1.35-9.75L24 26.1l6.15 6.15 2.1-2.1L26.1 24l6.15-6.15-2.1-2.1L24 21.9l-6.15-6.15-2.1 2.1L21.9 24l-6.15 6.15Z
+    </Geometry>
+    <Style x:Key="dangerous"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource dangerous_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource dangerous_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource dangerous_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource dangerous_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

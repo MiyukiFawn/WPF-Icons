@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="desktop_mac_outline_rounded">
+        M18.65 44q-1 0-1.375-.925t.325-1.625L21 38H7q-1.25 0-2.125-.875T4 35V9q0-1.25.875-2.125T7 6h34q1.25 0 2.125.875T44 9v26q0 1.25-.875 2.125T41 38H27l3.4 3.45q.7.7.325 1.625Q30.35 44 29.35 44ZM7 30.2h34V9H7Zm0 0V9v21.2Z
+    </Geometry>
+    <Geometry x:Key="desktop_mac_filled_rounded">
+        M18.65 44q-1 0-1.375-.925t.325-1.625L21 38H7q-1.25 0-2.125-.875T4 35V9q0-1.25.875-2.125T7 6h34q1.25 0 2.125.875T44 9v26q0 1.25-.875 2.125T41 38H27l3.4 3.45q.7.7.325 1.625Q30.35 44 29.35 44Z
+    </Geometry>
+    <Geometry x:Key="desktop_mac_outline_sharp">
+        M16.8 44v-1.75L21 38H4V6h40v32H27l4.2 4.25V44ZM7 30.2h34V9H7Zm0 0V9v21.2Z
+    </Geometry>
+    <Geometry x:Key="desktop_mac_filled_sharp">
+        M16.8 44v-1.75L21 38H4V6h40v32H27l4.2 4.25V44Z
+    </Geometry>
+    <Style x:Key="desktop_mac"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource desktop_mac_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource desktop_mac_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource desktop_mac_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource desktop_mac_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

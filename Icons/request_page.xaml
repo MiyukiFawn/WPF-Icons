@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="request_page_outline_rounded">
+        M28.5 34q.65 0 1.075-.425Q30 33.15 30 32.5V26q0-.65-.425-1.075-.425-.425-1.075-.425H21V21h7.5q.65 0 1.075-.425Q30 20.15 30 19.5q0-.65-.425-1.075Q29.15 18 28.5 18h-3v-.5q0-.65-.425-1.075Q24.65 16 24 16q-.65 0-1.075.425-.425.425-.425 1.075v.5h-3q-.65 0-1.075.425Q18 18.85 18 19.5V26q0 .65.425 1.075.425.425 1.075.425H27V31h-7.5q-.65 0-1.075.425Q18 31.85 18 32.5q0 .65.425 1.075Q18.85 34 19.5 34h3v.5q0 .65.425 1.075Q23.35 36 24 36q.65 0 1.075-.425.425-.425.425-1.075V34ZM11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h15.8q.6 0 1.15.225.55.225 1 .675L39.1 15.05q.45.45.675 1Q40 16.6 40 17.2V41q0 1.2-.9 2.1-.9.9-2.1.9Zm26-3V17.3L26.7 7H11v34Zm-26 0V7v34Z
+    </Geometry>
+    <Geometry x:Key="request_page_filled_rounded">
+        M28.5 34q.65 0 1.075-.425Q30 33.15 30 32.5V26q0-.65-.425-1.075-.425-.425-1.075-.425H21V21h7.5q.65 0 1.075-.425Q30 20.15 30 19.5q0-.65-.425-1.075Q29.15 18 28.5 18h-3v-.5q0-.65-.425-1.075Q24.65 16 24 16q-.65 0-1.075.425-.425.425-.425 1.075v.5h-3q-.65 0-1.075.425Q18 18.85 18 19.5V26q0 .65.425 1.075.425.425 1.075.425H27V31h-7.5q-.65 0-1.075.425Q18 31.85 18 32.5q0 .65.425 1.075Q18.85 34 19.5 34h3v.5q0 .65.425 1.075Q23.35 36 24 36q.65 0 1.075-.425.425-.425.425-1.075V34ZM11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h15.8q.6 0 1.175.25.575.25.975.65L39.1 15.05q.4.4.65.975T40 17.2V41q0 1.2-.9 2.1-.9.9-2.1.9Z
+    </Geometry>
+    <Geometry x:Key="request_page_outline_sharp">
+        M22.5 36h3v-2H30v-9.5h-9V21h9v-3h-4.5v-2h-3v2H18v9.5h9V31h-9v3h4.5ZM8 44V4h20.05L40 15.95V44Zm3-3h26V17.3L26.7 7H11Zm0-34v34Z
+    </Geometry>
+    <Geometry x:Key="request_page_filled_sharp">
+        M22.5 36h3v-2H30v-9.5h-9V21h9v-3h-4.5v-2h-3v2H18v9.5h9V31h-9v3h4.5ZM8 44V4h20.05L40 15.95V44Z
+    </Geometry>
+    <Style x:Key="request_page"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource request_page_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource request_page_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource request_page_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource request_page_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

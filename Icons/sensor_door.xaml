@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="sensor_door_outline_rounded">
+        M11.5 43.5q-1.25 0-2.125-.875T8.5 40.5v-33q0-1.25.875-2.125T11.5 4.5h25q1.25 0 2.125.875T39.5 7.5v33q0 1.25-.875 2.125T36.5 43.5Zm0-3h25v-33h-25v33Zm19.55-14q1 0 1.725-.75.725-.75.725-1.8 0-1-.725-1.725Q32.05 21.5 31 21.5q-1 0-1.75.725T28.5 24q0 1 .75 1.75t1.8.75ZM11.5 7.5v33-33Z
+    </Geometry>
+    <Geometry x:Key="sensor_door_filled_rounded">
+        M11.5 43.5q-1.25 0-2.125-.875T8.5 40.5v-33q0-1.25.875-2.125T11.5 4.5h25q1.25 0 2.125.875T39.5 7.5v33q0 1.25-.875 2.125T36.5 43.5Zm19.55-17q1 0 1.725-.75.725-.75.725-1.8 0-1-.725-1.725Q32.05 21.5 31 21.5q-1 0-1.75.725T28.5 24q0 1 .75 1.75t1.8.75Z
+    </Geometry>
+    <Geometry x:Key="sensor_door_outline_sharp">
+        M8 44V4h32v40Zm3-3h26V7H11Zm20.05-14.5q1 0 1.725-.75.725-.75.725-1.8 0-1-.725-1.725Q32.05 21.5 31 21.5q-1 0-1.75.725T28.5 24q0 1 .75 1.75t1.8.75ZM11 41V7Z
+    </Geometry>
+    <Geometry x:Key="sensor_door_filled_sharp">
+        M8.5 43.5v-39h31v39Zm22.55-17q1 0 1.725-.75.725-.75.725-1.8 0-1-.725-1.725Q32.05 21.5 31 21.5q-1 0-1.75.725T28.5 24q0 1 .75 1.75t1.8.75Z
+    </Geometry>
+    <Style x:Key="sensor_door"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource sensor_door_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource sensor_door_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource sensor_door_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource sensor_door_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

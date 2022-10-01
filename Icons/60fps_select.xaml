@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="60fps_select_outline_rounded">
+        M11.4 28q-1.2 0-2.1-.9-.9-.9-.9-2.1V11q0-1.2.9-2.1.9-.9 2.1-.9h8.65q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q20.7 11 20.05 11H11.4v5.5h7.15q1.2 0 2.1.9.9.9.9 2.1V25q0 1.2-.9 2.1-.9.9-2.1.9Zm0-8.5V25h7.15v-5.5ZM29.55 28q-1.2 0-2.1-.9-.9-.9-.9-2.1V11q0-1.2.9-2.1.9-.9 2.1-.9h7.15q1.2 0 2.1.9.9.9.9 2.1v14q0 1.2-.9 2.1-.9.9-2.1.9Zm7.15-3V11h-7.15v14ZM7.5 44q-.65 0-1.075-.425Q6 43.15 6 42.5v-6.4q0-.65.425-1.075Q6.85 34.6 7.5 34.6q.65 0 1.075.425Q9 35.45 9 36.1v6.4q0 .65-.425 1.075Q8.15 44 7.5 44Zm6 0q-.65 0-1.075-.425Q12 43.15 12 42.5v-6.4q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q15 35.45 15 36.1v6.4q0 .65-.425 1.075Q14.15 44 13.5 44Zm6 0q-.65 0-1.075-.425Q18 43.15 18 42.5v-6.4q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q21 35.45 21 36.1v6.4q0 .65-.425 1.075Q20.15 44 19.5 44Zm6 0q-.65 0-1.075-.425Q24 43.15 24 42.5v-6.4q0-.65.425-1.075.425-.425 1.075-.425h15q.65 0 1.075.425Q42 35.45 42 36.1v6.4q0 .65-.425 1.075Q41.15 44 40.5 44Z
+    </Geometry>
+    <Geometry x:Key="60fps_select_filled_rounded">
+        M11.4 28q-1.2 0-2.1-.9-.9-.9-.9-2.1V11q0-1.2.9-2.1.9-.9 2.1-.9h8.65q.65 0 1.075.425.425.425.425 1.075 0 .65-.425 1.075Q20.7 11 20.05 11H11.4v5.5h7.15q1.2 0 2.1.9.9.9.9 2.1V25q0 1.2-.9 2.1-.9.9-2.1.9Zm0-8.5V25h7.15v-5.5ZM29.55 28q-1.2 0-2.1-.9-.9-.9-.9-2.1V11q0-1.2.9-2.1.9-.9 2.1-.9h7.15q1.2 0 2.1.9.9.9.9 2.1v14q0 1.2-.9 2.1-.9.9-2.1.9Zm7.15-3V11h-7.15v14ZM7.5 44q-.65 0-1.075-.425Q6 43.15 6 42.5v-6.4q0-.65.425-1.075Q6.85 34.6 7.5 34.6q.65 0 1.075.425Q9 35.45 9 36.1v6.4q0 .65-.425 1.075Q8.15 44 7.5 44Zm6 0q-.65 0-1.075-.425Q12 43.15 12 42.5v-6.4q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q15 35.45 15 36.1v6.4q0 .65-.425 1.075Q14.15 44 13.5 44Zm6 0q-.65 0-1.075-.425Q18 43.15 18 42.5v-6.4q0-.65.425-1.075.425-.425 1.075-.425.65 0 1.075.425Q21 35.45 21 36.1v6.4q0 .65-.425 1.075Q20.15 44 19.5 44Zm6 0q-.65 0-1.075-.425Q24 43.15 24 42.5v-6.4q0-.65.425-1.075.425-.425 1.075-.425h15q.65 0 1.075.425Q42 35.45 42 36.1v6.4q0 .65-.425 1.075Q41.15 44 40.5 44Z
+    </Geometry>
+    <Geometry x:Key="60fps_select_outline_sharp">
+        M8.4 28V8h13.15v3H11.4v5.5h10.15V28Zm3-3h7.15v-5.5H11.4Zm15.15 3V8H39.7v20Zm3-3h7.15V11h-7.15ZM6 44v-9.4h3V44Zm6 0v-9.4h3V44Zm6 0v-9.4h3V44Zm6 0v-9.4h18V44Z
+    </Geometry>
+    <Geometry x:Key="60fps_select_filled_sharp">
+        M8.4 28V8h13.15v3H11.4v5.5h10.15V28Zm3-3h7.15v-5.5H11.4Zm15.15 3V8H39.7v20Zm3-3h7.15V11h-7.15ZM6 44v-9.4h3V44Zm6 0v-9.4h3V44Zm6 0v-9.4h3V44Zm6 0v-9.4h18V44Z
+    </Geometry>
+    <Style x:Key="60fps_select"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource 60fps_select_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource 60fps_select_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource 60fps_select_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource 60fps_select_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

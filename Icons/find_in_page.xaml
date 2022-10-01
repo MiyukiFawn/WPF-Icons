@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="find_in_page_outline_rounded">
+        M24 30.4q1.85 0 3.1-1.25t1.25-3.1q0-1.85-1.25-3.1T24 21.7q-1.85 0-3.1 1.25t-1.25 3.1q0 1.85 1.25 3.1T24 30.4ZM36.8 41l-8.7-8.7q-1 .6-1.975.85-.975.25-2.125.25-3.1 0-5.225-2.125-2.125-2.125-2.125-5.225 0-3.1 2.125-5.225Q20.9 18.7 24 18.7q3.1 0 5.225 2.125 2.125 2.125 2.125 5.225 0 1.15-.325 2.2-.325 1.05-.975 1.85L37 37.05V16.9L28.4 7H11v34ZM11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h17.25q.65 0 1.25.275t1 .775l8.75 10.05q.4.4.575.9.175.5.175 1.05V41q0 1.2-.9 2.1-.9.9-2.1.9Zm14.5-18.9Z
+    </Geometry>
+    <Geometry x:Key="find_in_page_filled_rounded">
+        M24 30.4q1.85 0 3.1-1.25t1.25-3.1q0-1.85-1.25-3.1T24 21.7q-1.85 0-3.1 1.25t-1.25 3.1q0 1.85 1.25 3.1T24 30.4ZM11 44q-1.2 0-2.1-.9Q8 42.2 8 41V7q0-1.2.9-2.1Q9.8 4 11 4h17.25q.65 0 1.25.25t1 .8l8.75 10.05q.4.4.575.9.175.5.175 1.05v23l-9.95-9.95q.65-.8.975-1.85.325-1.05.325-2.2 0-3.1-2.125-5.225Q27.1 18.7 24 18.7q-3.1 0-5.225 2.125-2.125 2.125-2.125 5.225 0 3.1 2.125 5.225Q20.9 33.4 24 33.4q1.15 0 2.125-.25.975-.25 1.975-.85l10.6 10.6q-.65.55-1.525.825Q36.3 44 35.6 44Z
+    </Geometry>
+    <Geometry x:Key="find_in_page_outline_sharp">
+        M24 30.4q1.85 0 3.1-1.25t1.25-3.1q0-1.85-1.25-3.1T24 21.7q-1.85 0-3.1 1.25t-1.25 3.1q0 1.85 1.25 3.1T24 30.4ZM11 41h25.8l-8.7-8.7q-1 .6-1.975.85-.975.25-2.125.25-3.1 0-5.225-2.125-2.125-2.125-2.125-5.225 0-3.1 2.125-5.225Q20.9 18.7 24 18.7q3.1 0 5.225 2.125 2.125 2.125 2.125 5.225 0 1.15-.325 2.2-.325 1.05-.975 1.85L37 37.05V16.9L28.4 7H11Zm-3 3V4h21.6L40 15.95V44Zm17.5-18.5Z
+    </Geometry>
+    <Geometry x:Key="find_in_page_filled_sharp">
+        M8 44V4h21.6L40 15.95v24.1l-9.95-9.95q.65-.8.975-1.85.325-1.05.325-2.2 0-3.1-2.125-5.225Q27.1 18.7 24 18.7q-3.1 0-5.225 2.125-2.125 2.125-2.125 5.225 0 3.1 2.125 5.225Q20.9 33.4 24 33.4q1.15 0 2.125-.25.975-.25 1.975-.85L39.8 44Zm16-13.6q-1.85 0-3.1-1.25t-1.25-3.1q0-1.85 1.25-3.1T24 21.7q1.85 0 3.1 1.25t1.25 3.1q0 1.85-1.25 3.1T24 30.4Z
+    </Geometry>
+    <Style x:Key="find_in_page"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource find_in_page_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource find_in_page_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource find_in_page_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource find_in_page_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

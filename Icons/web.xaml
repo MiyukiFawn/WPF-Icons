@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="web_outline_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h23.05v-8.15H7V37Zm26.05 0H41V17.7h-7.95ZM7 25.85h23.05V17.7H7Z
+    </Geometry>
+    <Geometry x:Key="web_filled_rounded">
+        M7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.2 0 2.1.9.9.9.9 2.1v26q0 1.2-.9 2.1-.9.9-2.1.9Zm0-3h23.05v-8.15H7V37Zm26.05 0H41V17.7h-7.95ZM7 25.85h23.05V17.7H7Z
+    </Geometry>
+    <Geometry x:Key="web_outline_sharp">
+        M4 40V8h40v32Zm3-14.15h23.05V17.7H7ZM7 37h23.05v-8.15H7Zm26.05 0H41V17.7h-7.95Z
+    </Geometry>
+    <Geometry x:Key="web_filled_sharp">
+        M4 40V8h40v32Zm3-14.15h23.05V17.7H7ZM7 37h23.05v-8.15H7Zm26.05 0H41V17.7h-7.95Z
+    </Geometry>
+    <Style x:Key="web"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource web_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource web_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource web_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource web_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

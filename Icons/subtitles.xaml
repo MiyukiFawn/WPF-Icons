@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="subtitles_outline_rounded">
+        M13.55 24.5q.6 0 1.025-.425Q15 23.65 15 23q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425Q12 22.35 12 23q0 .65.45 1.075.45.425 1.1.425Zm-.05 6h15q.65 0 1.075-.425Q30 29.65 30 29q0-.65-.425-1.075-.425-.425-1.075-.425h-15q-.65 0-1.075.425Q12 28.35 12 29q0 .65.425 1.075.425.425 1.075.425Zm21.05 0q.6 0 1.025-.425Q36 29.65 36 29q0-.65-.45-1.075-.45-.425-1.05-.425-.65 0-1.075.425Q33 28.35 33 29q0 .65.45 1.075.45.425 1.1.425Zm-15.05-6h15q.65 0 1.075-.425Q36 23.65 36 23q0-.65-.425-1.075-.425-.425-1.075-.425h-15q-.65 0-1.075.425Q18 22.35 18 23q0 .65.425 1.075.425.425 1.075.425ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.25 0 2.125.9T44 11v26q0 1.2-.875 2.1-.875.9-2.125.9Zm0-3V11v26Zm0 0h34V11H7v26Z
+    </Geometry>
+    <Geometry x:Key="subtitles_filled_rounded">
+        M13.55 24.5q.6 0 1.025-.425Q15 23.65 15 23q0-.65-.425-1.075-.425-.425-1.075-.425-.65 0-1.075.425Q12 22.35 12 23q0 .65.45 1.075.45.425 1.1.425Zm-.05 6h15q.65 0 1.075-.425Q30 29.65 30 29q0-.65-.425-1.075-.425-.425-1.075-.425h-15q-.65 0-1.075.425Q12 28.35 12 29q0 .65.425 1.075.425.425 1.075.425Zm21.05 0q.6 0 1.025-.425Q36 29.65 36 29q0-.65-.45-1.075-.45-.425-1.05-.425-.65 0-1.075.425Q33 28.35 33 29q0 .65.45 1.075.45.425 1.1.425Zm-15.05-6h15q.65 0 1.075-.425Q36 23.65 36 23q0-.65-.425-1.075-.425-.425-1.075-.425h-15q-.65 0-1.075.425Q18 22.35 18 23q0 .65.425 1.075.425.425 1.075.425ZM7 40q-1.2 0-2.1-.9Q4 38.2 4 37V11q0-1.2.9-2.1Q5.8 8 7 8h34q1.25 0 2.125.9T44 11v26q0 1.2-.875 2.1-.875.9-2.125.9Z
+    </Geometry>
+    <Geometry x:Key="subtitles_outline_sharp">
+        M12 24.5h3v-3h-3Zm0 6h18v-3H12Zm21 0h3v-3h-3Zm-15-6h18v-3H18ZM4 40V8h40v32Zm3-3V11Zm34 0V11H7v26Z
+    </Geometry>
+    <Geometry x:Key="subtitles_filled_sharp">
+        M12 24.5h3v-3h-3Zm0 6h18v-3H12Zm21 0h3v-3h-3Zm-15-6h18v-3H18ZM4 40V8h40v32Z
+    </Geometry>
+    <Style x:Key="subtitles"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource subtitles_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource subtitles_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource subtitles_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource subtitles_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="mark_unread_chat_alt_outline_rounded">
+        m12 36-5.45 5.45q-.7.7-1.625.325Q4 41.4 4 40.4V7q0-1.15.9-2.075Q5.8 4 7 4h21.85q-.2.7-.3 1.475-.1.775-.05 1.525H7v26h34V15.55q.85-.25 1.575-.675Q43.3 14.45 44 13.9V33q0 1.15-.925 2.075Q42.15 36 41 36Zm14.15-7.95q.65 0 1.075-.425.425-.425.425-1.075 0-.65-.425-1.075-.425-.425-1.075-.425H13.5q-.65 0-1.075.425Q12 25.9 12 26.55q0 .65.425 1.075.425.425 1.075.425Zm8.35-6.5q.65 0 1.075-.425Q36 20.7 36 20.05q0-.65-.425-1.075-.425-.425-1.075-.425h-21q-.65 0-1.075.425Q12 19.4 12 20.05q0 .65.425 1.075.425.425 1.075.425Zm-4.25-9.5H13.5q-.65 0-1.075.425Q12 12.9 12 13.55q0 .65.425 1.075.425.425 1.075.425h20.25q-1.05-.55-1.925-1.3t-1.575-1.7ZM7 7v26V7Zm31 5.05q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6Z
+    </Geometry>
+    <Geometry x:Key="mark_unread_chat_alt_filled_rounded">
+        M26.15 28.05q.65 0 1.075-.425.425-.425.425-1.075 0-.65-.425-1.075-.425-.425-1.075-.425H13.5q-.65 0-1.075.425Q12 25.9 12 26.55q0 .65.425 1.075.425.425 1.075.425Zm8.35-6.5q.65 0 1.075-.425Q36 20.7 36 20.05q0-.65-.425-1.075-.425-.425-1.075-.425h-21q-.65 0-1.075.425Q12 19.4 12 20.05q0 .65.425 1.075.425.425 1.075.425Zm3.5-9.5q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6ZM12 36l-5.45 5.45q-.7.7-1.625.325Q4 41.4 4 40.4V7q0-1.15.9-2.075Q5.8 4 7 4h21.85q-.2.7-.3 1.475-.1.775-.05 1.525.1 1.4.525 2.675.425 1.275 1.225 2.375H13.5q-.65 0-1.075.425Q12 12.9 12 13.55q0 .65.425 1.075.425.425 1.075.425h20.25q1 .5 2.05.75 1.05.25 2.2.25 1.65 0 3.175-.55T44 13.9V33q0 1.15-.925 2.075Q42.15 36 41 36Z
+    </Geometry>
+    <Geometry x:Key="mark_unread_chat_alt_outline_sharp">
+        M4 44V4h24.85q-.2.7-.3 1.475-.1.775-.05 1.525H7v26h34V15.55q.85-.25 1.575-.675Q43.3 14.45 44 13.9V36H12Zm8-15.95h15.65v-3H12Zm0-6.5h24v-3H12Zm0-6.5h21.75q-1.05-.55-1.925-1.3t-1.575-1.7H12ZM7 7v26V7Zm31 5.05q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6Z
+    </Geometry>
+    <Geometry x:Key="mark_unread_chat_alt_filled_sharp">
+        M38 12.05q-2.3 0-3.9-1.6t-1.6-3.9q0-2.3 1.6-3.9t3.9-1.6q2.3 0 3.9 1.6t1.6 3.9q0 2.3-1.6 3.9t-3.9 1.6ZM4 44V4h24.85q-.2.7-.3 1.475-.1.775-.05 1.525.1 1.4.525 2.675.425 1.275 1.225 2.375H12v3h21.75q1 .5 2.05.75 1.05.25 2.2.25 1.65 0 3.175-.55T44 13.9V36H12Zm8-22.45h24v-3H12Zm0 6.5h15.65v-3H12Z
+    </Geometry>
+    <Style x:Key="mark_unread_chat_alt"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource mark_unread_chat_alt_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource mark_unread_chat_alt_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource mark_unread_chat_alt_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource mark_unread_chat_alt_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

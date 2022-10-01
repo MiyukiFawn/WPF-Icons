@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="power_outline_rounded">
+        M22.1 39h3.8v-4.1l7.1-7.8v-9.55H15v9.55l7.1 7.8Zm-3-2.9-6.3-6.95q-.4-.4-.6-.925-.2-.525-.2-1.075v-9.6q0-1.25.875-2.125T15 14.55h3.6l-1.5 1.5V7.5q0-.65.425-1.075Q17.95 6 18.6 6q.65 0 1.075.425.425.425.425 1.075v7.05h7.8V7.5q0-.65.425-1.075Q28.75 6 29.4 6q.65 0 1.075.425.425.425.425 1.075v8.55l-1.5-1.5H33q1.25 0 2.125.875T36 17.55v9.6q0 .55-.2 1.075-.2.525-.6.925l-6.3 6.95v4.4q0 .65-.425 1.075Q28.05 42 27.4 42h-6.8q-.65 0-1.075-.425-.425-.425-.425-1.075Zm4.9-7.85Z
+    </Geometry>
+    <Geometry x:Key="power_filled_rounded">
+        m19.1 36.1-6.3-6.95q-.4-.4-.6-.925-.2-.525-.2-1.075v-9.6q0-1.25.875-2.125T15 14.55h3.6l-1.5 1.5V7.5q0-.65.425-1.075Q17.95 6 18.6 6q.65 0 1.075.425.425.425.425 1.075v7.05h7.8V7.5q0-.65.425-1.075Q28.75 6 29.4 6q.65 0 1.075.425.425.425.425 1.075v8.55l-1.5-1.5H33q1.25 0 2.125.875T36 17.55v9.6q0 .55-.2 1.075-.2.525-.6.925l-6.3 6.95v4.4q0 .65-.425 1.075Q28.05 42 27.4 42h-6.8q-.65 0-1.075-.425-.425-.425-.425-1.075Z
+    </Geometry>
+    <Geometry x:Key="power_outline_sharp">
+        M22.1 39h3.8v-4.1l7.1-7.8v-9.55H15v9.55l7.1 7.8Zm-3 3v-5.9L12 28.3V14.55h5.1V6h3v8.55h7.8V6h3v8.55H36V28.3l-7.1 7.8V42ZM24 28.25Z
+    </Geometry>
+    <Geometry x:Key="power_filled_sharp">
+        M19.1 42v-5.9L12 28.3V14.55h5.1V6h3v8.55h7.8V6h3v8.55H36V28.3l-7.1 7.8V42Z
+    </Geometry>
+    <Style x:Key="power"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource power_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource power_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource power_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource power_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

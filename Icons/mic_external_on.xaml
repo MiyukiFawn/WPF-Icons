@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="mic_external_on_outline_rounded">
+        M9.2 13.4q-.7-.75-.95-1.7T8 9.75q0-2.4 1.675-4.075Q11.35 4 13.7 4q2.4 0 4.05 1.675T19.4 9.75q0 1-.25 1.95t-.95 1.7ZM19.8 44q-3.2 0-5.475-2.25-2.275-2.25-2.275-5.5h-1q-.3 0-.5-.2t-.25-.5L8.5 17.1q-.1-.7.375-1.175.475-.475 1.125-.475h7.4q.7 0 1.15.475.45.475.35 1.175l-1.8 18.45q-.05.3-.25.5t-.5.2h-1.3q0 1.95 1.4 3.35 1.4 1.4 3.35 1.4 1.95 0 3.325-1.4 1.375-1.4 1.375-3.35v-24.5q0-3.25 2.25-5.5T32.25 4q3.25 0 5.5 2.25t2.25 5.5V42.5q0 .65-.425 1.075Q39.15 44 38.5 44q-.65 0-1.075-.425Q37 43.15 37 42.5V11.75q0-1.95-1.4-3.35Q34.2 7 32.25 7 30.3 7 28.9 8.4q-1.4 1.4-1.4 3.35v24.5q0 3.25-2.25 5.5T19.8 44Zm-6.75-10.75h1.3l1.4-14.8h-4.1Zm1.3-14.8h-2.7 4.1Z
+    </Geometry>
+    <Geometry x:Key="mic_external_on_filled_rounded">
+        M9.2 13.4q-.7-.75-.95-1.7T8 9.75q0-2.4 1.675-4.075Q11.35 4 13.7 4q2.4 0 4.05 1.675T19.4 9.75q0 1-.25 1.95t-.95 1.7ZM19.8 44q-3.2 0-5.475-2.25-2.275-2.25-2.275-5.5h-1q-.3 0-.5-.2t-.25-.5L8.5 17.1q-.1-.7.375-1.175.475-.475 1.125-.475h7.4q.7 0 1.15.475.45.475.35 1.175l-1.8 18.45q-.05.3-.25.5t-.5.2h-1.3q0 1.95 1.4 3.35 1.4 1.4 3.35 1.4 1.95 0 3.325-1.4 1.375-1.4 1.375-3.35v-24.5q0-3.25 2.25-5.5T32.25 4q3.25 0 5.5 2.25t2.25 5.5V42.5q0 .65-.425 1.075Q39.15 44 38.5 44q-.65 0-1.075-.425Q37 43.15 37 42.5V11.75q0-1.95-1.4-3.35Q34.2 7 32.25 7 30.3 7 28.9 8.4q-1.4 1.4-1.4 3.35v24.5q0 3.25-2.25 5.5T19.8 44Z
+    </Geometry>
+    <Geometry x:Key="mic_external_on_outline_sharp">
+        M9.2 13.4q-.7-.75-.95-1.7T8 9.75q0-2.4 1.65-4.075Q11.3 4 13.7 4t4.05 1.675Q19.4 7.35 19.4 9.75q0 1-.25 1.95t-.95 1.7ZM12.05 44v-7.75h-1.7l-2-20.8h10.7l-2 20.8h-2V41h9.45V4H40v40h-3V7h-9.5v37Zm1-10.75h1.3l1.4-14.8h-4.1Zm1.3-14.8h-2.7 4.1Z
+    </Geometry>
+    <Geometry x:Key="mic_external_on_filled_sharp">
+        M9.2 13.4q-.7-.75-.95-1.7T8 9.75q0-2.4 1.675-4.075Q11.35 4 13.7 4q2.4 0 4.05 1.675T19.4 9.75q0 1-.25 1.95t-.95 1.7ZM12.05 44v-7.75h-1.7l-2-20.8h10.7l-2 20.8h-2V41h9.45V4H40v40h-3V7h-9.5v37Z
+    </Geometry>
+    <Style x:Key="mic_external_on"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource mic_external_on_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource mic_external_on_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource mic_external_on_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource mic_external_on_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

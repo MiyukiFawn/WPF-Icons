@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="swipe_right_outline_rounded">
+        M5.85 13.5q-.8 0-1.15-.575-.35-.575.05-1.275 1.95-3.75 7-6.7T23.95 2q4.85 0 9.35 1.8t8.15 4.8V5.5q0-.55.35-.9t.9-.35q.55 0 .9.35t.35.9v6.75q0 .65-.425 1.075-.425.425-1.075.425H35.7q-.55 0-.9-.35t-.35-.9q0-.55.35-.9t.9-.35h4.95q-3.45-3-7.775-4.875T23.95 4.5q-6.7 0-11.075 2.7Q8.5 9.9 6.95 12.8q-.15.3-.475.5-.325.2-.625.2ZM21.1 46q-.85 0-1.6-.325-.75-.325-1.3-.875l-7.9-7.9q-.75-.75-.9-2.225-.15-1.475.65-2.575.85-1.15 1.975-1.55 1.125-.4 2.075-.15l3.9.9V15q0-2.1 1.45-3.55Q20.9 10 23 10q2.1 0 3.55 1.45Q28 12.9 28 15v8.6h1.3q.25 0 .45.1t.45.2l7.4 3.6q1.2.55 1.775 1.775.575 1.225.325 2.525l-1.8 10.9q-.25 1.45-1.4 2.375T33.9 46Zm-.4-3h14.05l2.15-12.45L27.75 26H25V15q0-.9-.55-1.45Q23.9 13 23 13q-.9 0-1.45.55Q21 14.1 21 15v19.95l-7.7-1.65-1.15 1.15Zm0 0h14.05Z
+    </Geometry>
+    <Geometry x:Key="swipe_right_filled_rounded">
+        M5.85 13.5q-.8 0-1.15-.575-.35-.575.05-1.275 1.95-3.75 7-6.7T23.95 2q4.85 0 9.35 1.8t8.15 4.8V5.5q0-.55.35-.9t.9-.35q.55 0 .9.35t.35.9v6.75q0 .65-.425 1.075-.425.425-1.075.425H35.7q-.55 0-.9-.35t-.35-.9q0-.55.35-.9t.9-.35h4.95q-3.45-3-7.775-4.875T23.95 4.5q-6.7 0-11.075 2.7Q8.5 9.9 6.95 12.8q-.15.3-.475.5-.325.2-.625.2ZM22 46q-.85 0-1.6-.325-.75-.325-1.3-.875l-7.55-8q-.65-.7-.65-1.6 0-.9.5-1.5.55-.65 1.3-.85.75-.2 1.6 0L20 34.1V13q0-1.3.85-2.15Q21.7 10 23 10q1.3 0 2.15.85.85.85.85 2.15v12h1.8q.55 0 .95.075.4.075.85.325l8.15 4.1q1.2.6 1.8 1.75.6 1.15.4 2.45l-1.3 9q-.25 1.45-1.4 2.375t-2.6.925Z
+    </Geometry>
+    <Geometry x:Key="swipe_right_outline_sharp">
+        M4 13.5q1.2-4.25 6.55-7.875T23.95 2q4.85 0 9.35 1.8t8.15 4.8V4.25h2.5v9.5h-9.5v-2.5h6.25q-3.45-3-7.8-4.875T23.95 4.5q-7.15 0-11.6 3-4.45 3-5.7 6ZM19.4 46 7.9 34.5l4.35-4.5L18 31.3V15q0-2.1 1.45-3.55Q20.9 10 23 10q2.1 0 3.55 1.45Q28 12.9 28 15v8.6h1.6l10.6 5.15L37.35 46Zm1.3-3h14.05l2.15-12.45L27.75 26H25V15q0-.9-.55-1.45Q23.9 13 23 13q-.9 0-1.45.55Q21 14.1 21 15v19.95l-7.7-1.65-1.15 1.15Zm0 0h14.05Z
+    </Geometry>
+    <Geometry x:Key="swipe_right_filled_sharp">
+        M4 13.5q1.2-4.25 6.55-7.875T23.95 2q4.85 0 9.35 1.8t8.15 4.8V4.25h2.5v9.5h-9.5v-2.5h6.25q-3.45-3-7.8-4.875T23.95 4.5q-7.15 0-11.6 3-4.45 3-5.7 6ZM20.25 46 10 35.15l2.6-2.65 7.4 1.6V13q0-1.3.85-2.15Q21.7 10 23 10q1.3 0 2.15.85.85.85.85 2.15v12h2.8l11.55 5.8-2.2 15.2Z
+    </Geometry>
+    <Style x:Key="swipe_right"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource swipe_right_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource swipe_right_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource swipe_right_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource swipe_right_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

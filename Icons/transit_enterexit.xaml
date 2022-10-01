@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="transit_enterexit_outline_rounded">
+        M14.2 36q-.9 0-1.55-.65T12 33.8V18.3q0-1 .7-1.675t1.7-.675q1 0 1.675.675t.675 1.675v9.25l13.8-13.8q.75-.75 1.8-.75t1.85.8q.75.75.75 1.85t-.75 1.85L20.45 31.25h9.25q1 0 1.675.675t.675 1.675q0 1-.675 1.7T29.7 36Z
+    </Geometry>
+    <Geometry x:Key="transit_enterexit_filled_rounded">
+        M14.2 36q-.9 0-1.55-.65T12 33.8V18.3q0-1 .7-1.675t1.7-.675q1 0 1.675.675t.675 1.675v9.25l13.8-13.8q.75-.75 1.8-.75t1.85.8q.75.75.75 1.85t-.75 1.85L20.45 31.25h9.25q1 0 1.675.675t.675 1.675q0 1-.675 1.7T29.7 36Z
+    </Geometry>
+    <Geometry x:Key="transit_enterexit_outline_sharp">
+        M12 36V15.95h4.75v11.6l15.6-15.6 3.7 3.7-15.6 15.6h11.6V36Z
+    </Geometry>
+    <Geometry x:Key="transit_enterexit_filled_sharp">
+        M12 36V15.95h4.75v11.6l15.6-15.6 3.7 3.7-15.6 15.6h11.6V36Z
+    </Geometry>
+    <Style x:Key="transit_enterexit"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource transit_enterexit_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource transit_enterexit_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource transit_enterexit_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource transit_enterexit_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

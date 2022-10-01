@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="door_back_outline_rounded">
+        M7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5q0-.65.425-1.075Q6.85 39 7.5 39H10V9q0-1.2.875-2.1Q11.75 6 13 6h22.05q1.2 0 2.075.9Q38 7.8 38 9v30h2.5q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Zm5.5-3h22V9H13Zm6.65-13.45q.7 0 1.2-.5t.5-1.2q0-.7-.5-1.2t-1.2-.5q-.7 0-1.2.5t-.5 1.2q0 .7.5 1.2t1.2.5ZM13 9v30V9Z
+    </Geometry>
+    <Geometry x:Key="door_back_filled_rounded">
+        M7.5 42q-.65 0-1.075-.425Q6 41.15 6 40.5q0-.65.425-1.075Q6.85 39 7.5 39H10V9q0-1.2.875-2.1Q11.75 6 13 6h22.05q1.2 0 2.075.9Q38 7.8 38 9v30h2.5q.65 0 1.075.425Q42 39.85 42 40.5q0 .65-.425 1.075Q41.15 42 40.5 42Zm12.15-16.45q.7 0 1.2-.5t.5-1.2q0-.7-.5-1.2t-1.2-.5q-.7 0-1.2.5t-.5 1.2q0 .7.5 1.2t1.2.5Z
+    </Geometry>
+    <Geometry x:Key="door_back_outline_sharp">
+        M6 42v-3h4V6h28v33h4v3Zm7-3h22V9H13Zm6.65-13.45q.7 0 1.2-.5t.5-1.2q0-.7-.5-1.2t-1.2-.5q-.7 0-1.2.5t-.5 1.2q0 .7.5 1.2t1.2.5ZM13 9v30Z
+    </Geometry>
+    <Geometry x:Key="door_back_filled_sharp">
+        M6 42v-3h4V6h28v33h4v3Zm13.65-16.45q.7 0 1.2-.5t.5-1.2q0-.7-.5-1.2t-1.2-.5q-.7 0-1.2.5t-.5 1.2q0 .7.5 1.2t1.2.5Z
+    </Geometry>
+    <Style x:Key="door_back"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource door_back_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource door_back_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource door_back_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource door_back_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

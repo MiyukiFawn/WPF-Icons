@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="school_outline_rounded">
+        M23.95 41.55q-.4 0-.75-.075t-.7-.275L11 34.9q-.7-.4-1.125-1.1-.425-.7-.425-1.55v-10.2L4.4 19.3q-.4-.2-.575-.55-.175-.35-.175-.75t.175-.75Q4 16.9 4.4 16.7l18.1-9.9q.35-.2.7-.3.35-.1.75-.1t.75.1q.35.1.7.3l19.8 10.75q.4.25.6.6.2.35.2.75v13.45q0 .65-.425 1.075-.425.425-1.075.425-.65 0-1.075-.425Q43 33 43 32.35v-12.6l-4.55 2.3v10.2q0 .85-.425 1.55-.425.7-1.125 1.1l-11.5 6.3q-.35.2-.7.275-.35.075-.75.075Zm0-14.95L39.7 18 23.95 9.55 8.3 18Zm0 12 11.5-6.35v-8.4l-10.05 5.4q-.35.2-.7.275-.35.075-.75.075t-.725-.075q-.325-.075-.675-.275l-10.1-5.5v8.5Zm.05-12Zm-.05 4.5Zm0 0Z
+    </Geometry>
+    <Geometry x:Key="school_filled_rounded">
+        M44.5 33.85q-.65 0-1.075-.425Q43 33 43 32.35v-12.6l-17.6 9.5q-.35.2-.7.275-.35.075-.75.075t-.725-.075q-.325-.075-.675-.275L4.4 19.3q-.4-.2-.575-.55-.175-.35-.175-.75t.175-.75Q4 16.9 4.4 16.7l18.1-9.9q.35-.2.7-.3.35-.1.75-.1t.75.1q.35.1.7.3l19.8 10.75q.4.25.6.6.2.35.2.75v13.45q0 .65-.425 1.075-.425.425-1.075.425Zm-20.55 7.7q-.4 0-.75-.075t-.7-.275L11 34.9q-.7-.4-1.125-1.1-.425-.7-.425-1.55v-8.7l12.45 6.8 1 .5q.5.25 1.05.25t1.075-.25q.525-.25 1.025-.5l12.4-6.8v8.7q0 .85-.425 1.55-.425.7-1.125 1.1l-11.5 6.3q-.35.2-.7.275-.35.075-.75.075Z
+    </Geometry>
+    <Geometry x:Key="school_outline_sharp">
+        m23.95 42-14.5-7.95v-12L2 18 23.95 6 46 18v15.85h-3v-14.1l-4.55 2.3v12Zm0-15.4L39.7 18 23.95 9.55 8.3 18Zm0 12 11.5-6.35v-8.4L23.95 30l-11.5-6.25v8.5Zm.05-12Zm-.05 3.7Zm0 0Z
+    </Geometry>
+    <Geometry x:Key="school_filled_sharp">
+        M43 33.85v-14.1L23.95 30 2 18 23.95 6 46 18v15.85ZM23.95 42l-14.5-7.95v-10.5l14.5 7.95 14.5-7.95v10.5Z
+    </Geometry>
+    <Style x:Key="school"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource school_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource school_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource school_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource school_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

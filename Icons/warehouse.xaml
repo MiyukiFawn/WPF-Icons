@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="warehouse_outline_rounded">
+        M24 9.2 7 16v23h6V26q0-1.25.875-2.125T16 23h16q1.25 0 2.125.875T35 26v13h6V16ZM16 42H7q-1.25 0-2.125-.875T4 39V16.05q0-.95.525-1.7t1.375-1.1l17-6.8q.55-.25 1.1-.25t1.1.25l17 6.8q.85.35 1.375 1.1.525.75.525 1.7V39q0 1.25-.875 2.125T41 42h-9V26H16Zm2.5 0v-3h3v3Zm4-6v-3h3v3Zm4 6v-3h3v3ZM32 23H16h16Z
+    </Geometry>
+    <Geometry x:Key="warehouse_filled_rounded">
+        M16 42H7q-1.25 0-2.125-.875T4 39V16.05q0-.95.525-1.7t1.375-1.1l17-6.8q.55-.25 1.1-.25t1.1.25l17 6.8q.85.35 1.375 1.1.525.75.525 1.7V39q0 1.25-.875 2.125T41 42h-9V26H16Zm2.5 0v-3h3v3Zm4-6v-3h3v3Zm4 6v-3h3v3Z
+    </Geometry>
+    <Geometry x:Key="warehouse_outline_sharp">
+        M7 39h6V23h22v16h6V16L24 9.2 7 16Zm-3 3V14l20-8 20 8v28H32V26H16v16Zm14.5 0v-3h3v3Zm4-6v-3h3v3Zm4 6v-3h3v3ZM13 23h22Z
+    </Geometry>
+    <Geometry x:Key="warehouse_filled_sharp">
+        M4 42V14l20-8 20 8v28H32V26H16v16Zm14.5 0v-3h3v3Zm4-6v-3h3v3Zm4 6v-3h3v3Z
+    </Geometry>
+    <Style x:Key="warehouse"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource warehouse_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource warehouse_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource warehouse_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource warehouse_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

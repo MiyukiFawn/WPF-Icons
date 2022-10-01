@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="hardware_outline_rounded">
+        M19.7 42q-.8 0-1.25-.675Q18 40.65 18 39.8V16H8q0-4.15 2.925-7.075T18 6h9q1.25 0 2.125.875T30 9v4.1l6.25-6.35q.3-.3.85-.525.55-.225 1-.225.8 0 1.35.55T40 7.9v13.4q0 .8-.55 1.35t-1.4.55q-.45 0-.975-.225-.525-.225-.825-.525L30 16.1v23.7q0 .9-.65 1.55T27.8 42ZM27 25.65ZM21 39h6V27.15h-6Zm0-14.85h6V9h-9q-1.95 0-3.75 1.1T11.7 13H21Zm6 0V9v15.15ZM27 39V27.15 39Z
+    </Geometry>
+    <Geometry x:Key="hardware_filled_rounded">
+        M19.7 42q-.8 0-1.25-.675Q18 40.65 18 39.8V27.15h12V39.8q0 .9-.65 1.55T27.8 42Zm18.35-18.8q-.45 0-.975-.225-.525-.225-.825-.525L30 16.1v8.05H18V16H8q0-4.15 2.925-7.075T18 6h9q1.25 0 2.125.875T30 9v4.1l6.25-6.35q.3-.3.85-.525.55-.225 1-.225.8 0 1.35.55T40 7.9v13.4q0 .8-.55 1.35t-1.4.55Z
+    </Geometry>
+    <Geometry x:Key="hardware_outline_sharp">
+        M18 42V16H8q0-4.15 2.925-7.075T18 6h12v7.1L37 6h3v17.2h-3l-7-7.1V42Zm9-16.35ZM21 39h6V27.15h-6Zm0-14.85h6V9h-9q-1.95 0-3.75 1.1T11.7 13H21Zm6 0V9v15.15ZM27 39V27.15 39Z
+    </Geometry>
+    <Geometry x:Key="hardware_filled_sharp">
+        m37 23.2-7-7.1v8.05H18V16H8q0-4.15 2.925-7.075T18 6h12v7.1L37 6h3v17.2ZM18 42V27.15h12V42Z
+    </Geometry>
+    <Style x:Key="hardware"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource hardware_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource hardware_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource hardware_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource hardware_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

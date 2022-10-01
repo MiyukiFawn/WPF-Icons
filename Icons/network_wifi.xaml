@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="network_wifi_outline_rounded">
+        M24 41.4q-.3 0-.55-.1-.25-.1-.5-.35l-21.9-21.9Q.6 18.6.625 18q.025-.6.475-1 4.75-4.2 10.575-6.6Q17.5 8 24 8q6.5 0 12.325 2.4Q42.15 12.8 46.9 17q.45.4.475 1 .025.6-.425 1.05l-21.9 21.9q-.25.25-.5.35-.25.1-.55.1Zm-17.5-21q3.8-3 8.15-4.7Q19 14 24 14t9.35 1.7q4.35 1.7 8.15 4.7l2.1-2.1q-4.35-3.4-9.225-5.35Q29.5 11 24 11t-10.375 1.95Q8.75 14.9 4.4 18.3Z
+    </Geometry>
+    <Geometry x:Key="network_wifi_filled_rounded">
+        M24 41.4q-.3 0-.55-.1-.25-.1-.5-.35l-21.9-21.9Q.6 18.6.625 18q.025-.6.475-1 4.75-4.2 10.575-6.6Q17.5 8 24 8q6.5 0 12.325 2.4Q42.15 12.8 46.9 17q.45.4.475 1 .025.6-.425 1.05l-21.9 21.9q-.25.25-.5.35-.25.1-.55.1Zm-17.5-21q3.8-3 8.15-4.7Q19 14 24 14t9.35 1.7q4.35 1.7 8.15 4.7l2.1-2.1q-4.35-3.4-9.225-5.35Q29.5 11 24 11t-10.375 1.95Q8.75 14.9 4.4 18.3Z
+    </Geometry>
+    <Geometry x:Key="network_wifi_outline_sharp">
+        M24 42 0 18q4.85-4.65 11-7.325T24 8q6.85 0 13 2.675T48 18ZM6.5 20.4q3.8-3 8.15-4.7Q19 14 24 14t9.35 1.7q4.35 1.7 8.15 4.7l2.1-2.1q-4.35-3.4-9.225-5.35Q29.5 11 24 11t-10.375 1.95Q8.75 14.9 4.4 18.3Z
+    </Geometry>
+    <Geometry x:Key="network_wifi_filled_sharp">
+        M24 42 0 18q4.85-4.65 11-7.325T24 8q6.85 0 13 2.675T48 18ZM6.5 20.4q3.8-3 8.15-4.7Q19 14 24 14t9.35 1.7q4.35 1.7 8.15 4.7l2.1-2.1q-4.35-3.4-9.225-5.35Q29.5 11 24 11t-10.375 1.95Q8.75 14.9 4.4 18.3Z
+    </Geometry>
+    <Style x:Key="network_wifi"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource network_wifi_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource network_wifi_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource network_wifi_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource network_wifi_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

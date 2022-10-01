@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="checklist_rtl_outline_rounded">
+        M5.5 17.5q-.65 0-1.075-.425Q4 16.65 4 16q0-.65.425-1.075Q4.85 14.5 5.5 14.5h15q.65 0 1.075.425Q22 15.35 22 16q0 .65-.425 1.075-.425.425-1.075.425Zm0 16q-.65 0-1.075-.425Q4 32.65 4 32q0-.65.425-1.075Q4.85 30.5 5.5 30.5h15q.65 0 1.075.425Q22 31.35 22 32q0 .65-.425 1.075-.425.425-1.075.425Zm26.4-13.25-5-5q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.425.6.025 1.05.425l3.95 3.9 7.9-7.9q.45-.45 1.05-.425.6.025 1.05.475.45.45.45 1.05 0 .6-.45 1.05L34 20.25q-.45.45-1.05.45-.6 0-1.05-.45Zm0 16-5-5q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.425.6.025 1.05.425l3.95 3.9 7.9-7.9q.45-.45 1.05-.425.6.025 1.05.475.45.45.45 1.05 0 .6-.45 1.05L34 36.25q-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="checklist_rtl_filled_rounded">
+        M5.5 17.5q-.65 0-1.075-.425Q4 16.65 4 16q0-.65.425-1.075Q4.85 14.5 5.5 14.5h15q.65 0 1.075.425Q22 15.35 22 16q0 .65-.425 1.075-.425.425-1.075.425Zm0 16q-.65 0-1.075-.425Q4 32.65 4 32q0-.65.425-1.075Q4.85 30.5 5.5 30.5h15q.65 0 1.075.425Q22 31.35 22 32q0 .65-.425 1.075-.425.425-1.075.425Zm26.4-13.25-5-5q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.425.6.025 1.05.425l3.95 3.9 7.9-7.9q.45-.45 1.05-.425.6.025 1.05.475.45.45.45 1.05 0 .6-.45 1.05L34 20.25q-.45.45-1.05.45-.6 0-1.05-.45Zm0 16-5-5q-.45-.45-.45-1.05 0-.6.45-1.05.45-.45 1.05-.425.6.025 1.05.425l3.95 3.9 7.9-7.9q.45-.45 1.05-.425.6.025 1.05.475.45.45.45 1.05 0 .6-.45 1.05L34 36.25q-.45.45-1.05.45-.6 0-1.05-.45Z
+    </Geometry>
+    <Geometry x:Key="checklist_rtl_outline_sharp">
+        M4 33.5v-3h18v3Zm0-16v-3h18v3Zm28.95 19.8-7.1-7.1 2.1-2.1 5 4.95 8.95-8.95 2.1 2.15Zm0-16-7.1-7.1 2.1-2.1 5 4.95L41.9 8.1l2.1 2.15Z
+    </Geometry>
+    <Geometry x:Key="checklist_rtl_filled_sharp">
+        M4 33.5v-3h18v3Zm0-16v-3h18v3Zm28.95 19.8-7.1-7.1 2.1-2.1 5 4.95 8.95-8.95 2.1 2.15Zm0-16-7.1-7.1 2.1-2.1 5 4.95L41.9 8.1l2.1 2.15Z
+    </Geometry>
+    <Style x:Key="checklist_rtl"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource checklist_rtl_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource checklist_rtl_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource checklist_rtl_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource checklist_rtl_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

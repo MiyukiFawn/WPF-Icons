@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="3g_mobiledata_outline_rounded">
+        M7.5 34q-.65 0-1.075-.425Q6 33.15 6 32.5q0-.65.425-1.075Q6.85 31 7.5 31h8.85v-5.5H7.6q-.65 0-1.075-.425Q6.1 24.65 6.1 24q0-.65.425-1.075Q6.95 22.5 7.6 22.5h8.75V17H7.5q-.65 0-1.075-.425Q6 16.15 6 15.5q0-.65.425-1.075Q6.85 14 7.5 14h8.85q1.2 0 2.1.9.9.9.9 2.1v4.2q0 1.15-.65 2-.65.85-1.8.85 1.15 0 1.8.825.65.825.65 1.975V31q0 1.2-.9 2.1-.9.9-2.1.9Zm20 0q-1.2 0-2.1-.9-.9-.9-.9-2.1V17q0-1.2.9-2.1.9-.9 2.1-.9h13q.65 0 1.075.425Q42 14.85 42 15.5q0 .65-.425 1.075Q41.15 17 40.5 17h-13v14h11.55v-5.6H35.4q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075.425-.425 1.075-.425h5.1q.65 0 1.075.425Q42 23.25 42 23.9V31q0 1.2-.875 2.1-.875.9-2.075.9Z
+    </Geometry>
+    <Geometry x:Key="3g_mobiledata_filled_rounded">
+        M7.5 34q-.65 0-1.075-.425Q6 33.15 6 32.5q0-.65.425-1.075Q6.85 31 7.5 31h8.85v-5.5H7.6q-.65 0-1.075-.425Q6.1 24.65 6.1 24q0-.65.425-1.075Q6.95 22.5 7.6 22.5h8.75V17H7.5q-.65 0-1.075-.425Q6 16.15 6 15.5q0-.65.425-1.075Q6.85 14 7.5 14h8.85q1.2 0 2.1.9.9.9.9 2.1v4.2q0 1.15-.65 2-.65.85-1.8.85 1.15 0 1.8.825.65.825.65 1.975V31q0 1.2-.9 2.1-.9.9-2.1.9Zm20 0q-1.2 0-2.1-.9-.9-.9-.9-2.1V17q0-1.2.9-2.1.9-.9 2.1-.9h13q.65 0 1.075.425Q42 14.85 42 15.5q0 .65-.425 1.075Q41.15 17 40.5 17h-13v14h11.55v-5.6H35.4q-.65 0-1.075-.425-.425-.425-.425-1.075 0-.65.425-1.075.425-.425 1.075-.425h5.1q.65 0 1.075.425Q42 23.25 42 23.9V31q0 1.2-.875 2.1-.875.9-2.075.9Z
+    </Geometry>
+    <Geometry x:Key="3g_mobiledata_outline_sharp">
+        M6 34v-3h10.35v-5.5H6.1v-3h10.25V17H6v-3h13.35v20Zm18.5 0V14H42v3H27.5v14h11.55v-5.6H33.9v-3H42V34Z
+    </Geometry>
+    <Geometry x:Key="3g_mobiledata_filled_sharp">
+        M6 34v-3h10.35v-5.5H6.1v-3h10.25V17H6v-3h13.35v20Zm18.5 0V14H42v3H27.5v14h11.55v-5.6H33.9v-3H42V34Z
+    </Geometry>
+    <Style x:Key="3g_mobiledata"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource 3g_mobiledata_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource 3g_mobiledata_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource 3g_mobiledata_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource 3g_mobiledata_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

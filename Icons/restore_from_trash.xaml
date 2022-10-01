@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="restore_from_trash_outline_rounded">
+        M13.05 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V10.5H9.5q-.65 0-1.075-.425Q8 9.65 8 9q0-.65.425-1.075Q8.85 7.5 9.5 7.5h7.9q0-.65.425-1.075Q18.25 6 18.9 6h10.2q.65 0 1.075.425.425.425.425 1.075h7.9q.65 0 1.075.425Q40 8.35 40 9q0 .65-.425 1.075-.425.425-1.075.425h-.55V39q0 1.2-.9 2.1-.9.9-2.1.9Zm0-31.5V39h21.9V10.5Zm0 0V39 10.5Zm9.45 10.75v8.3q0 .65.425 1.075.425.425 1.075.425.65 0 1.075-.425.425-.425.425-1.075v-8.3l2.95 3.1q.45.45 1.075.475.625.025 1.075-.425.45-.45.45-1.05 0-.6-.45-1.05l-5.55-5.6q-.45-.45-1.05-.45-.6 0-1.05.45l-5.55 5.6q-.45.45-.425 1.05.025.6.475 1.05.4.45 1.025.425.625-.025 1.075-.475Z
+    </Geometry>
+    <Geometry x:Key="restore_from_trash_filled_rounded">
+        M13.05 42q-1.2 0-2.1-.9-.9-.9-.9-2.1V10.5H9.5q-.65 0-1.075-.425Q8 9.65 8 9q0-.65.425-1.075Q8.85 7.5 9.5 7.5h7.9q0-.65.425-1.075Q18.25 6 18.9 6h10.2q.65 0 1.075.425.425.425.425 1.075h7.9q.65 0 1.075.425Q40 8.35 40 9q0 .65-.425 1.075-.425.425-1.075.425h-.55V39q0 1.2-.9 2.1-.9.9-2.1.9Zm9.45-20.75v8.3q0 .65.425 1.075.425.425 1.075.425.65 0 1.075-.425.425-.425.425-1.075v-8.3l2.95 3.1q.45.45 1.075.475.625.025 1.075-.425.45-.45.45-1.05 0-.6-.45-1.05l-5.55-5.6q-.45-.45-1.05-.45-.6 0-1.05.45l-5.55 5.6q-.45.45-.425 1.05.025.6.425 1.05.45.45 1.075.425.625-.025 1.075-.475Z
+    </Geometry>
+    <Geometry x:Key="restore_from_trash_outline_sharp">
+        M22.5 31.05h3v-9.8l4 4.25 2.15-2.15-7.65-7.7-7.65 7.7 2.15 2.15 4-4.25ZM10.05 42V10.5H8v-3h9.4V6h13.2v1.5H40v3h-2.05V42Zm3-3h21.9V10.5h-21.9Zm0-28.5V39Z
+    </Geometry>
+    <Geometry x:Key="restore_from_trash_filled_sharp">
+        M22.5 31.05h3v-9.8l4 4.25 2.15-2.15-7.65-7.7-7.65 7.7 2.15 2.15 4-4.25ZM10.05 42V10.5H8v-3h9.4V6h13.2v1.5H40v3h-2.05V42Z
+    </Geometry>
+    <Style x:Key="restore_from_trash"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource restore_from_trash_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource restore_from_trash_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource restore_from_trash_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource restore_from_trash_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

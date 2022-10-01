@@ -1,0 +1,29 @@
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:controls="clr-namespace:WPF_Icons;assembly=WPF-Icons">
+    <Geometry x:Key="thumb_up_outline_rounded">
+        M13.6 42V16.4L24.85 4.5q.7-.7 1.625-.825t1.775.375q.85.5 1.275 1.375.425.875.225 1.825L27.8 16.4h14.95q1.2 0 2.1.9.9.9.9 2.1v4.1q0 .35.075.725t-.075.725l-6.3 14.5q-.45 1.05-1.475 1.8Q36.95 42 35.8 42Zm3-24.35V39h19.85l6.3-14.95V19.4H24.1l2.65-12.45ZM6.95 42q-1.25 0-2.125-.875T3.95 39V19.4q0-1.25.875-2.125T6.95 16.4h6.65v3H6.95V39h6.65v3Zm9.65-3V17.65 39Z
+    </Geometry>
+    <Geometry x:Key="thumb_up_filled_rounded">
+        M15.7 42q-1.25 0-2.125-.875T12.7 39V17.6q0-.55.225-1.1t.625-.95L23.9 4.65q.7-.7 1.675-.85.975-.15 1.825.35t1.275 1.4q.425.9.225 1.85l-1.9 9h16q1.15 0 2.075.925Q46 18.25 46 19.4v4.1q0 .55-.125 1.275-.125.725-.375 1.275l-5.8 13.4q-.45 1.05-1.475 1.8Q37.2 42 36.05 42Zm-8.85 0q-1.15 0-2-.85-.85-.85-.85-2v-19.9q0-1.15.85-2 .85-.85 2-.85t2 .85q.85.85.85 2v19.9q0 1.15-.85 2-.85.85-2 .85Z
+    </Geometry>
+    <Geometry x:Key="thumb_up_outline_sharp">
+        M13.6 42V16.4L27.5 2l2.9 2.3-2.6 12.1h17.95v8.55L38.35 42Zm3-3h19.85l6.3-14.95V19.4H24.1l2.65-12.45-10.15 10.7Zm0-21.35V39Zm-3-1.25v3H6.95V39h6.65v3H3.95V16.4Z
+    </Geometry>
+    <Geometry x:Key="thumb_up_filled_sharp">
+        M12.7 42V16.4L26.6 2l2.9 2.25-2.6 12.15H46v8.5L38.6 42Zm-3-25.6V42H4V16.4Z
+    </Geometry>
+    <Style x:Key="thumb_up"
+           TargetType="controls:Icon"
+           BasedOn="{StaticResource {x:Type controls:Icon}}">
+        <Setter Property="RoundedFilledGeometry"
+                Value="{StaticResource thumb_up_filled_rounded}" />
+        <Setter Property="RoundedOutlineGeometry"
+                Value="{StaticResource thumb_up_outline_rounded}" />
+        <Setter Property="SharpFilledGeometry"
+                Value="{StaticResource thumb_up_filled_sharp}" />
+        <Setter Property="SharpOutlineGeometry"
+                Value="{StaticResource thumb_up_outline_sharp}" />
+    </Style>
+
+</ResourceDictionary>

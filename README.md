@@ -140,12 +140,10 @@ Defines if the corners of the drawing are **Sharp** or **Rounded**.
 Defines if the icon is a **Filled** or a **Outline** icon.
 > **DISCLAIMER**: Not all the icons have a Filled or Outline variant.
 
-
+---
 
 I hope that this collection can help.
 Feel free to use it on watever project you wanna use.
-
----
 
 Have fun!
 

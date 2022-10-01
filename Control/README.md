@@ -1,21 +1,6 @@
-<h1 align="center">
-    WPF Icons
-</h1>
-
-<h4 align="center">This is a collection of probably all the Material Symbols from Google Fonts converted to a xaml file</h4>
-
-<p align="center">
-    <a href="#setup">Setup</a> •
-    <a href="#import-nuget-package">Import NuGet Package</a> •
-    <a href="#add-icons">Add Icons</a> •
-    <a href="#how-to-use">How To Use</a> •
-    <a href="#display-the-icons">Display The Icons</a> •
-    <a href="#the-icon-control">The Icon Control</a>
-</p>
-
 ## Setup
 
-* Add [this](https://nuget.com) NuGet package to your project.
+* Add [this](https://www.nuget.org/packages/WPF-Icons) NuGet package to your project.
 * Download the xaml files from the **Icons** folder and add the files in your project.
 > **DISCLAIMER**: Be careful with the ammount of icons you add to your project, it can become really slow and even crash your editor.
 ## Import NuGet Package

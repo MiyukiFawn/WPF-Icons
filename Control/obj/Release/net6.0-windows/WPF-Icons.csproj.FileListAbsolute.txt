@@ -1,0 +1,17 @@
+C:\Users\geywy\source\repos\WPF-Icons\bin\Release\net6.0-windows\WPF-Icons.deps.json
+C:\Users\geywy\source\repos\WPF-Icons\bin\Release\net6.0-windows\WPF-Icons.dll
+C:\Users\geywy\source\repos\WPF-Icons\bin\Release\net6.0-windows\WPF-Icons.pdb
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.csproj.AssemblyReference.cache
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons_MarkupCompile.cache
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons_MarkupCompile.lref
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\Themes\Generic.baml
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.g.resources
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.AssemblyInfoInputs.cache
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.AssemblyInfo.cs
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.csproj.CoreCompileInputs.cache
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.dll
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\refint\WPF-Icons.dll
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\WPF-Icons.pdb
+C:\Users\geywy\source\repos\WPF-Icons\obj\Release\net6.0-windows\ref\WPF-Icons.dll

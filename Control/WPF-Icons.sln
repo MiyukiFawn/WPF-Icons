@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32616.157
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WPF-Icons", "WPF-Icons.csproj", "{34C3674E-1F8D-43BA-AD87-5BC67B291FF0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{34C3674E-1F8D-43BA-AD87-5BC67B291FF0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34C3674E-1F8D-43BA-AD87-5BC67B291FF0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34C3674E-1F8D-43BA-AD87-5BC67B291FF0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34C3674E-1F8D-43BA-AD87-5BC67B291FF0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5FAB3501-4988-4234-B7BA-0A83E9B7B8DE}
+	EndGlobalSection
+EndGlobal

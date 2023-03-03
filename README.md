@@ -2,7 +2,7 @@
     WPF Icons
 </h1>
 
-<h4 align="center">This is a collection of probably all the Material Symbols from Google Fonts converted to a xaml file</h4>
+<h4 align="center">A simple controll created to display icons from the Google's Material Symbols library</h4>
 
 <p align="center">
     <a href="#setup">Setup</a> •

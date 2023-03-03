@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>WPF-Icons</id>
+    <version>2.0.0</version>
+    <authors>Miyuki Fawn</authors>
+    <license type="expression">MIT</license>
+    <licenseUrl>https://licenses.nuget.org/MIT</licenseUrl>
+    <icon>WPF Icons icon.png</icon>
+    <readme>README.md</readme>
+    <description>Package Description</description>
+    <tags>wpf icon icons material material icons symbol material symbol google material3 material2</tags>
+    <repository url="https://github.com/GEYWYD/WPF-Icons" />
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0" />
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WPF" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="C:\Users\geywy\OneDrive\Documentos\GitHub\WPF-Icons\Control\bin\Release\net6.0-windows\WPF-Icons.dll" target="lib\net6.0-windows7.0\WPF-Icons.dll" />
+    <file src="C:\Users\geywy\OneDrive\Documentos\GitHub\WPF-Icons\Control\README.md" target="\README.md" />
+    <file src="C:\Users\geywy\OneDrive\Documentos\GitHub\WPF-Icons\Control\WPF Icons icon.png" target="\WPF Icons icon.png" />
+  </files>
+</package>

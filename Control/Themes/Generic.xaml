@@ -1,7 +1,6 @@
-<ResourceDictionary
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="clr-namespace:WPF_Icons">
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:WPF_Icons">
     <Style TargetType="{x:Type local:Icon}">
         <Style.Triggers>
             <!-- Filled Rounded -->
@@ -55,7 +54,7 @@
                     <Border Width="{TemplateBinding Size}"
                             Height="{TemplateBinding Size}"
                             Padding="2">
-                        <Path Fill="{TemplateBinding Color}"
+                        <Path VerticalAlignment="Center" Fill="{TemplateBinding Color}"
                               Data="{TemplateBinding SelectedGeometry}"
                               Stretch="Uniform" />
                     </Border>

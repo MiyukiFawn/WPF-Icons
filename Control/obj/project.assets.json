@@ -13,18 +13,18 @@
   "project": {
     "version": "1.0.1",
     "restore": {
-      "projectUniqueName": "C:\\Users\\geywy\\OneDrive\\Área de Trabalho\\WPF-Icons\\WPF-Icons\\Control\\WPF-Icons.csproj",
+      "projectUniqueName": "C:\\Users\\geywy\\OneDrive\\Documentos\\GitHub\\WPF-Icons\\Control\\WPF-Icons.csproj",
       "projectName": "WPF-Icons",
-      "projectPath": "C:\\Users\\geywy\\OneDrive\\Área de Trabalho\\WPF-Icons\\WPF-Icons\\Control\\WPF-Icons.csproj",
+      "projectPath": "C:\\Users\\geywy\\OneDrive\\Documentos\\GitHub\\WPF-Icons\\Control\\WPF-Icons.csproj",
       "packagesPath": "C:\\Users\\geywy\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\geywy\\OneDrive\\Área de Trabalho\\WPF-Icons\\WPF-Icons\\Control\\obj\\",
+      "outputPath": "C:\\Users\\geywy\\OneDrive\\Documentos\\GitHub\\WPF-Icons\\Control\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\geywy\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
-        "net6.0-windows7.0"
+        "net6.0-windows"
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
@@ -51,7 +51,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -63,7 +64,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\6.0.301\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "c:\\program files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -16,6 +16,14 @@ using System.Windows.Shapes;
 namespace WPF_Icons;
 
 public class Icon : Control {
+    public IconType Kind {
+        get { return (IconType)GetValue(KindProperty); }
+        set { SetValue(KindProperty, value); }
+    }
+    public Geometry SelectedGeometry {
+        get { return (Geometry)GetValue(SelectedGeometryProperty); }
+        set { SetValue(SelectedGeometryProperty, value); DefineGeometry(); }
+    }
     public Geometry RoundedOutlineGeometry {
         get { return (Geometry)GetValue(RoundedOutlineGeometryProperty); }
         set { SetValue(RoundedOutlineGeometryProperty, value); }
@@ -31,10 +39,6 @@ public class Icon : Control {
     public Geometry SharpFilledGeometry {
         get { return (Geometry)GetValue(SharpFilledGeometryProperty); }
         set { SetValue(SharpFilledGeometryProperty, value); }
-    }
-    public Geometry SelectedGeometry {
-        get { return (Geometry)GetValue(SelectedGeometryProperty); }
-        set { SetValue(SelectedGeometryProperty, value); }
     }
 
     public double Size {
@@ -54,6 +58,8 @@ public class Icon : Control {
         set { SetValue(FilledProperty, value); }
     }
 
+    public static readonly DependencyProperty KindProperty =
+        DependencyProperty.Register("Kind", typeof(IconType), typeof(Icon), new PropertyMetadata(IconType.icon_home));
     public static readonly DependencyProperty SizeProperty =
         DependencyProperty.Register("Size", typeof(double), typeof(Icon), new PropertyMetadata(48.0));
     public static readonly DependencyProperty ColorProperty =
@@ -62,6 +68,7 @@ public class Icon : Control {
         DependencyProperty.Register("Rounded", typeof(bool), typeof(Icon), new PropertyMetadata(true));
     public static readonly DependencyProperty FilledProperty =
         DependencyProperty.Register("Filled", typeof(bool), typeof(Icon), new PropertyMetadata(false));
+
     public static readonly DependencyProperty RoundedOutlineGeometryProperty =
         DependencyProperty.Register("RoundedOutlineGeometry", typeof(Geometry), typeof(Icon), new PropertyMetadata(Geometry.Empty));
     public static readonly DependencyProperty RoundedFilledGeometryProperty =
@@ -75,5 +82,30 @@ public class Icon : Control {
 
     static Icon() {
         DefaultStyleKeyProperty.OverrideMetadata(typeof(Icon), new FrameworkPropertyMetadata(typeof(Icon)));
+    }
+
+    protected override void OnInitialized(EventArgs e) {
+        DefineGeometry();
+        base.OnInitialized(e);
+    }
+
+    protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e) {
+        base.OnPropertyChanged(e);
+        if (e.Property == KindProperty) {
+            DefineGeometry();
+        }
+    }
+
+    private void DefineGeometry() {
+        string outline_rounded_key = $"{Kind}_outline_rounded";
+        string filled_rounded_key = $"{Kind}_filled_rounded";
+        string outline_sharp_key = $"{Kind}_outline_sharp";
+        string filled_sharp_key = $"{Kind}_filled_sharp";
+
+        RoundedOutlineGeometry = Geometry.Parse(IconsCollection.Icons[outline_rounded_key]);
+        RoundedFilledGeometry = Geometry.Parse(IconsCollection.Icons[filled_rounded_key]);
+        SharpOutlineGeometry = Geometry.Parse(IconsCollection.Icons[outline_sharp_key]);
+        SharpFilledGeometry = Geometry.Parse(IconsCollection.Icons[filled_sharp_key]);
+
     }
 }

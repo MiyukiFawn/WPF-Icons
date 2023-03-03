@@ -6,7 +6,7 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
-      "WPF-Icons/1.0.1": {
+      "WPF-Icons/2.0.0": {
         "runtime": {
           "WPF-Icons.dll": {}
         }
@@ -14,7 +14,7 @@
     }
   },
   "libraries": {
-    "WPF-Icons/1.0.1": {
+    "WPF-Icons/2.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

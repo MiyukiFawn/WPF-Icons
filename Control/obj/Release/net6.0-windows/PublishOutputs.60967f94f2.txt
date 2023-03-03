@@ -1,0 +1,3 @@
+C:\Users\geywy\OneDrive\Área de Trabalho\NuGet Packages\WPF-Icons.dll
+C:\Users\geywy\OneDrive\Área de Trabalho\NuGet Packages\WPF-Icons.deps.json
+C:\Users\geywy\OneDrive\Área de Trabalho\NuGet Packages\WPF-Icons.pdb

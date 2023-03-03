@@ -1,10 +1,10 @@
 ﻿WPF-Icons
-1.0.1.0
+
 
 library
 C#
 .cs
-c:\Users\geywy\OneDrive\Documentos\GitHub\WPF-Icons\Control\obj\Debug\net6.0-windows\
+C:\Users\geywy\OneDrive\Documentos\GitHub\WPF-Icons\Control\obj\Debug\net6.0-windows\
 WPF_Icons
 none
 false
@@ -12,9 +12,9 @@ TRACE;DEBUG;NET;NET6_0;NETCOREAPP
 
 1204305769
 
-634141920
+4-1074439955
 194-1941918672
 Themes\Generic.xaml;
 
-True
+False
 

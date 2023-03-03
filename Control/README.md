@@ -1,14 +1,3 @@
-<h1 align="center">
-    WPF Icons
-</h1>
-
-<h4 align="center">A simple controll created to display icons from the Google's Material Symbols library</h4>
-
-<p align="center">
-    <a href="#setup">Setup</a> •
-    <a href="#the-icons">The Icons</a> •
-    <a href="#the-icon-control">The Icon Control</a>
-</p>
 
 ## Setup
 

@@ -11,7 +11,7 @@
     <RepositoryUrl>https://github.com/GEYWYD/WPF-Icons</RepositoryUrl>
     <PackageTags>wpf;icon;icons;material;material icons;symbol;material symbol;google;material3;material2</PackageTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <Version>1.0.1</Version>
+    <Version>2.0.0</Version>
   </PropertyGroup>
 
   <ItemGroup>

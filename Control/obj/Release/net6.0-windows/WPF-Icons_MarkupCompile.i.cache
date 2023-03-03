@@ -1,5 +1,5 @@
 ﻿WPF-Icons
-1.0.1.0
+2.0.0.0
 
 library
 C#
@@ -16,5 +16,5 @@ TRACE;RELEASE;NET;NET6_0;NETCOREAPP
 194-1941918672
 Themes\Generic.xaml;
 
-False
+True
 

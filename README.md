@@ -26,8 +26,6 @@ Add a ***xmlns:i="clr-namespace:WPF_Icons;assembly=WPF-Icons"*** tag of the NuGe
 **WPF Icons** provides more than 2,500 different symbols from Google
 > You can list all of them [here](https://fonts.google.com/icons)
 
-```
-
 ## The Icon Control
 
 The Icon Control has 5 main properties:

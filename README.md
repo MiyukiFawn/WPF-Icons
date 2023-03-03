@@ -1,3 +1,15 @@
+<h1 align="center">
+    WPF Icons
+</h1>
+
+<h4 align="center">This is a collection of probably all the Material Symbols from Google Fonts converted to a xaml file</h4>
+
+<p align="center">
+    <a href="#setup">Setup</a> •
+    <a href="#the-icons">The Icons</a> •
+    <a href="#the-icon-control">The Icon Control</a>
+</p>
+
 ## Setup
 
 * Add [this](https://www.nuget.org/packages/WPF-Icons) NuGet package to your project.

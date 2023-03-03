@@ -1,3 +1,15 @@
+<h1 align="center">
+    WPF Icons
+</h1>
+
+<h4 align="center">A simple controll created to display icons from the Google's Material Symbols library</h4>
+
+<p align="center">
+    <a href="#setup">Setup</a> •
+    <a href="#the-icons">The Icons</a> •
+    <a href="#the-icon-control">The Icon Control</a>
+</p>
+
 ## Setup
 
 * Add [this](https://www.nuget.org/packages/WPF-Icons) NuGet package to your project.
@@ -23,11 +35,8 @@ Add a ***xmlns:i="clr-namespace:WPF_Icons;assembly=WPF-Icons"*** tag of the NuGe
 
 ## The Icons
 
-**WPF Icons** provides more than 2,500 different symbols from Google
+**WPF Icons** provides over 2,500 different symbols from Google
 > You can list all of them [here](https://fonts.google.com/icons)
-
-
-```
 
 ## The Icon Control
 
